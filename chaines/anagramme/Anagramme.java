@@ -1,17 +1,18 @@
-// -----------------------------------------------
-// Fonction Base
-// -----------------------------------------------
-// Fonction convertissant un nombre une base vers
-// une autre..
-// -----------------------------------------------
+//-----------------------------------------------
+// Fonctions anagramme
+/*-----------------------------------------------
+/ Identifie si deux chaines sont anagrammes, donc
+/ si elles sont composées des mêmes lettres exac-
+/ tement.
+//----------------------------------------------*/
 
 import java.util.Arrays;
 
 public class Anagramme {
 
-// -----------------------------------------------
+//-----------------------------------------------
 // Version courte
-// -----------------------------------------------
+//-----------------------------------------------
 // Cette version permet de comprendre le contexte
 // de la fonction et sa logique.
 
@@ -32,9 +33,9 @@ public class Anagramme {
         return sortedStrA.equals(sortedStrB);
     }
 
-// -----------------------------------------------
+//-----------------------------------------------
 // Application
-// -----------------------------------------------
+//-----------------------------------------------
 
     public static void main(String[] args) {
         String str1 = "listen";
@@ -51,9 +52,9 @@ public class Anagramme {
 
 
 
-// -----------------------------------------------
+//-----------------------------------------------
 // Version golf
-// -----------------------------------------------
+//-----------------------------------------------
 // Version condensee et optimisee du code, utili-
 // sant des noms de variables courts et combinant
 // certaines operations pour reduire la taille du
@@ -61,20 +62,21 @@ public class Anagramme {
 
     static boolean anagramme_golf(
         String s1, String s2) {
-        char[] a = s1.toUpperCase().toCharArray(),
-                b = s2.toUpperCase().toCharArray();
+        char[] a =s1.toUpperCase().toCharArray(),
+               b =s2.toUpperCase().toCharArray();
         Arrays.sort(a);Arrays.sort(b);
         return 
             new String(a).equals(new String(b));
     }
 
 
-// -----------------------------------------------
+//-----------------------------------------------
 // Version commentee
-// -----------------------------------------------
-// Similaire a la version detaillee, mais avec des
+//-----------------------------------------------
+// Proche de la version raccourcie, mais avec des
 // commentaires concis pour expliquer les etapes
 // principales de la fonction.
+
 
     public static boolean anagramme_explication(
             String str1,
@@ -96,7 +98,7 @@ public class Anagramme {
         String sortedStrA = new String(sortedA);
         String sortedStrB = new String(sortedB);
 
-        // Vérifier l'équivalence des chaînes triées.
+        // Vérifier l'équivalence des chaînes.
         return sortedStrA.equals(sortedStrB);
     }
 }

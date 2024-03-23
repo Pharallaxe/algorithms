@@ -1,13 +1,14 @@
 # -----------------------------------------------
 # Fonction rendre_monnaie
 # -----------------------------------------------
-# Calcul le rendu de monnaie en fonction du prix
-# et des quantités des différentes pièces.
+# Calcule le rendu de monnaie en fonction du prix
+# et des quantites des differentes pieces.
 # -----------------------------------------------
 
 
+
 # -----------------------------------------------
-# Version Courte
+# Version courte
 # -----------------------------------------------
 # Cette version permet de comprendre le contexte
 # de la fonction et sa logique.
@@ -30,19 +31,19 @@ def rendre_monnaie(prix, x20, x10, x5, x2, x1):
 # -----------------------------------------------
 
 prix_article = 47    # Prix de l'article en euros
-x20 = 2      # Nbre de billets de 20 euros donnés
-x10 = 2      # Nbre de billets de 10 euros donnés
-x5 = 1        # Nbre de billets de 5 euros donnés
-x2 = 3        # Nbre de pièces de 2 euros données
-x1 = 4         # Nbre de pièces de 1 euro données
+x20 = 2      # Nbre de billets de 20 euros donnes
+x10 = 2      # Nbre de billets de 10 euros donnes
+x5 =  1       # Nbre de billets de 5 euros donnes
+x2 =  3       # Nbre de pieces de 2 euros donnees
+x1 =  4        # Nbre de pieces de 1 euro donnees
 
-# Calcul de la monnaie à rendre
+# Calcul de la monnaie a rendre
 monnaie_rendue = rendre_monnaie(
     prix_article, x20, x10, x5, x2, x1
 )
 
-# Affichage du résultat
-print("Monnaie à rendre :")
+# Affichage du resultat
+print("Monnaie a rendre :")
 print("20 euros :", monnaie_rendue[0])
 print("10 euros :", monnaie_rendue[1])
 print("5 euros  :", monnaie_rendue[2])
@@ -50,12 +51,12 @@ print("2 euros  :", monnaie_rendue[3])
 print("1 euro   :", monnaie_rendue[4])
 
 # -----------------------------------------------
-# Version Golf
+# Version golf
 # -----------------------------------------------
-# Version condensée et optimisée du code, utili-
+# Version condensee et optimisee du code, utili-
 # sant des noms de variables courts et combinant
-# certaines opérations pour réduire la taille du
-# code. Pour la beauté du geste !
+# certaines operations pour reduire la taille du
+# code. Pour la beaute du geste !
 
 def rendre_monnaie(p,a,b,c,d,e):
     s,R=a*20+b*10+c*5+d*2+e-p,[]
@@ -63,9 +64,9 @@ def rendre_monnaie(p,a,b,c,d,e):
     return R if s>=0 else[0,0,0,0,0]
 
 # -----------------------------------------------
-# Version Détaillée
+# Version detaillee
 # -----------------------------------------------
-# Cette version permet de suivre pas à pas l'exé-
+# Cette version permet de suivre pas a pas l'exe-
 # cution de la fonction.
 
 def rendre_monnaie(prix, x20, x10, x5, x2, x1):
@@ -93,14 +94,14 @@ def rendre_monnaie(prix, x20, x10, x5, x2, x1):
         return rendus
 
 # -----------------------------------------------
-# Version Commentée
+# Version commentee
 # -----------------------------------------------
-# Similaire à la version détaillée, mais avec des
-# commentaires concis afin d'expliquer les étapes
+# Similaire a la version detaillee, mais avec des
+# commentaires concis afin d'expliquer les etapes
 # principales de la fonction.
 
 def rendre_monnaie(prix, x20, x10, x5, x2, x1):
-    # Calculer le montant total donné en monnaie.
+    # Calculer le montant total donne en monnaie.
     donne = (
         x20 * 20 +
         x10 * 10 +
@@ -109,12 +110,12 @@ def rendre_monnaie(prix, x20, x10, x5, x2, x1):
         x1 * 1
     )
     
-    # Calculer la somme à rendre.
+    # Calculer la somme a rendre.
     somme = donne - prix
     
-    # Si la somme est négative ou 0
+    # Si la somme est negative ou 0
     if somme < 1:
-        # Retourner une liste de zéros.
+        # Retourner une liste de zeros.
         return [0, 0, 0, 0, 0]
     
     # Sinon,
@@ -122,18 +123,28 @@ def rendre_monnaie(prix, x20, x10, x5, x2, x1):
         # Initialiser une liste vide de stockage.
         rendus = []
         
-        # Définir les différentes de monnaie.
+        # Definir les differentes de monnaie.
         monnaies = [20, 10, 5, 2, 1]
         
-        # Parcourir chaque dénomination.
+        # Parcourir chaque denomination.
         for monnaie in monnaies:
             
-            # Identifier les pièces rendues.
+            # Identifier les pieces rendues.
             rendu = somme // monnaie
             somme = somme - (rendu * monnaie)
             
-            # Ajouter le nombre de pièces.
+            # Ajouter le nombre de pieces.
             rendus += [rendu]
         
         # Retourner la liste des rendus.
         return rendus
+
+
+
+
+
+
+
+
+
+#

@@ -1,9 +1,10 @@
 // -----------------------------------------------
 // Fonction rendre_monnaie
 // -----------------------------------------------
-// Calcul le rendu de monnaie en fonction du prix
+// Calcule le rendu de monnaie en fonction du prix
 // et des quantites des differentes pieces.
 // -----------------------------------------------
+
 
 // -----------------------------------------------
 // Version Courte
@@ -32,9 +33,9 @@ function rendre_monnaie(prx, x20, x10, x5, x2, x1)
 let prix = 47;       // Prix de l'article en euros
 let x20 = 2; // Nbre de billets de 20 euros donnes
 let x10 = 2; // Nbre de billets de 10 euros donnes
-let x5 = 1;   // Nbre de billets de 5 euros donnes
-let x2 = 3;   // Nbre de pieces de 2 euros donnees
-let x1 = 4;    // Nbre de pieces de 1 euro donnees
+let x5  = 1;  // Nbre de billets de 5 euros donnes
+let x2  = 3;  // Nbre de pieces de 2 euros donnees
+let x1  = 4;   // Nbre de pieces de 1 euro donnees
 
 // Calcul de la monnaie a rendre
 let monnaie_rendue = rendre_monnaie(
@@ -102,7 +103,7 @@ function rendre_monnaie_detaille(prx, x20, x10,
 function rendre_monnaie_commentee(prx, x20, x10,
     x5, x2, x1) {
 
-    // Calculer le montant total donne en monnaie.
+    // Calculer le montant total de la monnaie.
     let donne = ( x20 * 20 + x10 * 10 + x5 * 5 +
         x2 * 2 + x1 * 1);
 
@@ -111,10 +112,14 @@ function rendre_monnaie_commentee(prx, x20, x10,
 
     // Si la somme est negative ou 0
     if (somme < 1) {
+
         // Retourner une liste de zeros.
         return [0, 0, 0, 0, 0];
+    
+    // Sinon,
     } else {
-        // Initialiser une liste vide de stockage.
+
+        // Initialiser une liste vide.
         let rendus = [];
         
         // Definir les differentes de monnaie.

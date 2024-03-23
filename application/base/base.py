@@ -8,7 +8,7 @@
 
 
 # -----------------------------------------------
-# Version Courte:
+# Version courte
 # -----------------------------------------------
 # Cette version permet de comprendre le contexte
 # de la fonction et sa logique.
@@ -33,7 +33,7 @@ def base(nombre, depart, fin):
 
 
 # -----------------------------------------------
-# Application:
+# Application
 # -----------------------------------------------
 
 chaine1 = "1010"
@@ -54,7 +54,7 @@ print(f"{chaine2} de {conv_2} donne : {res_2}")
 
 
 # -----------------------------------------------
-# Version Golf:
+# Version golf
 # -----------------------------------------------
 # Version condensée et optimisée du code, utili-
 # sant des noms de variables courts et combinant
@@ -71,7 +71,7 @@ def base_golf(n,d,f):
 
 
 # -----------------------------------------------
-# Version Détaillée:
+# Version détaillée
 # -----------------------------------------------
 # Cette version permet de suivre pas à pas l'exé-
 # cution de la fonction.
@@ -107,10 +107,10 @@ def base_detaillee(nombre, depart, fin):
 
 
 # -----------------------------------------------
-# Version Commentée:
+# Version commentée
 # -----------------------------------------------
 # Similaire à la version détaillée, mais avec des
-# commentaires concis pour expliquer les étapes
+# commentaires concis afin d'expliquer les étapes
 # principales de la fonction.
 
 def base(nombre, depart, fin):
@@ -121,7 +121,7 @@ def base(nombre, depart, fin):
     # Initialiser la val convertie en base 10.
     val = 0
     
-    # Inverser la chaîne pour faciliter le calcul.
+    # Inverser la chaîne.
     nombre_inv = list(nombre)[::-1]
     
     # Récupérer la longueur de la chaine.
@@ -139,13 +139,15 @@ def base(nombre, depart, fin):
     # Initialiser une liste.
     convertis = []
     
-    # Si la val est zéro,
+    # Si la val est 0,
     if val == 0:
         
         # Retourner 0.
         return "0"
     
+    # Sinon,
     else:
+        
         # Convertir de la base 10 vers "fin".
         while val >= fin - 1:
             
@@ -164,11 +166,21 @@ def base(nombre, depart, fin):
         # Si la val est différente de 0.
         if val != 0:
             
-            # Ajouter le dernier chiffre..
+            # Ajouter le dernier chiffre.
             convertis.append(base[val])
         
-        # Concaténer tous les chiffres convertis.
+        # Concaténer tous les chiffres.
         retour = ''.join(convertis)
         
         # Retourner le résultat.
         return retour
+
+
+
+
+
+
+
+
+
+#

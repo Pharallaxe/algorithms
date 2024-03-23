@@ -8,7 +8,7 @@
 
 
 # -----------------------------------------------
-# Version Courte
+# Version courte
 # -----------------------------------------------
 # Cette version permet de comprendre le contexte
 # de la fonction et sa logique.
@@ -35,11 +35,11 @@ for annee in annees:
     est_bis = bissextile(annee)
     chaine = texte[est_bis]
     print(f"{annee} {chaine} bissextile.")
-    
+
 
 
 # -----------------------------------------------
-# Version Golf
+# Version golf
 # -----------------------------------------------
 # Version condensée et optimisée du code, utili-
 # sant des noms de variables courts et combinant
@@ -52,16 +52,16 @@ def bissextile(a):
 
 
 # -----------------------------------------------
-# Version Commentée
+# Version commentée
 # -----------------------------------------------
 # Similaire à la version détaillée, mais avec des
-# commentaires concis pour expliquer les étapes
+# commentaires concis afin d'expliquer les étapes
 # principales de la fonction.
 
 # On va du plus large vers le plus court.
 
 def bissextile(annee):
-    # Si une année est divisible par 400, Elle
+    # Si une année est divisible par 400, elle
     # est bissextile.
     if annee % 400 == 0:
         return True
@@ -80,3 +80,13 @@ def bissextile(annee):
     # sauf si c'est votre anniversaire.
     else:
         return False
+
+
+
+
+
+
+
+
+
+#

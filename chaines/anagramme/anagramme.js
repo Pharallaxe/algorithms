@@ -1,10 +1,10 @@
 //-----------------------------------------------
 // Fonctions anagramme
-//-----------------------------------------------
-// Identifie si deux chaines sont anagrammes, donc
-// si elles sont composées des mêmes lettres exac-
-// tement.
-//-----------------------------------------------
+/*-----------------------------------------------
+/ Identifie si deux chaines sont anagrammes, donc
+/ si elles sont composées des mêmes lettres exac-
+/ tement.
+//----------------------------------------------*/
 
 
 //-----------------------------------------------
@@ -53,7 +53,7 @@ let a=(s1,s2)=>s1.toUpperCase().split``.sort().join``
 //-----------------------------------------------
 // Version commentee
 //-----------------------------------------------
-// Similaire a la version detaillee, mais avec des
+// Proche de la version raccourcie, mais avec des
 // commentaires concis pour expliquer les etapes
 // principales de la fonction.
 
