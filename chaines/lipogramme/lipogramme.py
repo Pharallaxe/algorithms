@@ -38,20 +38,20 @@ print(f'"{chaine}" est un \
 # -----------------------------------------------
 # Version golf
 # -----------------------------------------------
-# Version condensée et optimisée du code, utili-
+# Version condensee et optimisee du code, utili-
 # sant des noms de variables courts et combinant
-# certaines opérations pour réduire la taille du
-# code. Pour la beauté du geste !
+# certaines operations pour reduire la taille du
+# code. Pour la beaute du geste !
 
 L=lambda s,l:l not in s.lower().replace(' ','')
 
 
 
 # -----------------------------------------------
-# Version commentée
+# Version commentee
 # -----------------------------------------------
-# Similaire à la version détaillée, mais avec des
-# commentaires concis afin d'expliquer les étapes
+# Proche de la version raccourcie, mais avec des
+# commentaires concis pour expliquer les etapes
 # principales de la fonction.
 
 def lipogramme(chaine, lettre):

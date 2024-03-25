@@ -61,12 +61,9 @@ print(f"{chaine2} de {conv_2} donne : {res_2}")
 # certaines opérations pour réduire la taille du
 # code. Pour la beauté du geste !
 
-def base_golf(n,d,f):
-    b="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";v=0
-    for c in n[::-1]:v=v*d+b.index(c)
-    r=[]
-    while v:r=[b[v%f]]+r;v//=f
-    return''.join(r)or'0'
+B=lambda n,d,f,b="0123456789ABCDEFGHIJKLMNOPQRST\
+UVWXYZ":''.join([b[v%f]for v in[sum([b.index(c)*d
+**i for i,c in enumerate(n[::-1])])]][::-1])or'0'
 
 
 

@@ -32,6 +32,7 @@ estOuPas = ["n'est pas", "est"][est_pangramme]
 print(f'"{chaine}" {estOuPas} un pangramme.')
 
 
+
 # -----------------------------------------------
 # Version golf
 # -----------------------------------------------
@@ -40,18 +41,16 @@ print(f'"{chaine}" {estOuPas} un pangramme.')
 # certaines operations pour reduire la taille du
 # code. Pour la beaute du geste !
 
-def pangramme_golf1(ch):
-    return len(
-        set(c.lower()
-            for c in ch if c.isalnum())) == 26
+def p2(ch):return len(set(c.lower()for c in ch if
+c.isalnum())) == 26
 
-def pangramme_golf2(chaine):
-    return len(
-        set(filter(str.isalpha,
-                   chaine.lower()))) == 26
+def p1(chaine):return len(set(filter(str.isalpha,
+chaine.lower()))) == 26
 
 p=lambda C:len(
     {c for c in C.lower() if c.isalpha()})==26
+
+
 
 # -----------------------------------------------
 # Version detaillee

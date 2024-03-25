@@ -52,7 +52,7 @@ F=lambda n: (lambda f:f(f,n))(lambda s,x:1 if x==
 # commentaires concis pour expliquer les etapes
 # principales de la fonction.
 
-def calculer_factorielle(nombre):
+def factorielle_commentee(nombre):
  
  # Initialiser du produit a 1.
  produit = 1

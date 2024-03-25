@@ -3,7 +3,7 @@
 # Fonctions anagramme
 # -----------------------------------------------
 # Identifie si deux chaines sont anagrammes, donc
-# si elles sont composées des mêmes lettres exac-
+# si elles sont composees des mêmes lettres exac-
 # tement.
 # -----------------------------------------------
 
@@ -33,8 +33,8 @@ function anagramme($str1, $str2) {
 
 $str1 = "listen";
 $str2 = "silent";
-$sontAnagrammes = anagramme($str1, $str2);
-$chaine = $sontAnagrammes ? "sont" : "ne sont pas";
+$sontAnagram = anagramme($str1, $str2);
+$chaine = $sontAnagram ? "sont" : "ne sont pas";
 echo "Les chaînes $chaine des anagrammes.";
 
 
@@ -42,21 +42,20 @@ echo "Les chaînes $chaine des anagrammes.";
 # -----------------------------------------------
 # Version golf
 # -----------------------------------------------
-# Version condensée et optimisée du code, utili-
+# Version condensee et optimisee du code, utili-
 # sant des noms de variables courts et combinant
-# certaines opérations pour réduire la taille du
-# code. Pour la beauté du geste !
+# certaines operations pour reduire la taille du
+# code. Pour la beaute du geste !
 
-function anagramme_golf($s1, $s2)
-    {return count_chars(strtoupper($s1),1)
-        ==count_chars(strtoupper($s2),1);}
+$A=function($B,$C){return count_chars(strtoupper(
+$B),1)==count_chars(strtoupper($C),1);};
 
 
 
 # -----------------------------------------------
-# Version détaillée
+# Version detaillee
 # -----------------------------------------------
-# Cette version permet de suivre pas à pas l'exé-
+# Cette version permet de suivre pas a pas l'exe-
 # cution de la fonction.
 
 function anagramme_detaillee($str1, $str2) {
@@ -98,7 +97,7 @@ function anagramme_explication($str1, $str2) {
     sort($B_Sorted);
     $B_Sorted = implode('', $B_Sorted);
 
-    // Vérifier l'équivalence des chaines.
+    // Verifier l'equivalence des chaines.
     return $A_sorted === $B_Sorted;
 }
 

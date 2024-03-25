@@ -63,10 +63,10 @@ console.log(solution_2);
 // certaines operations pour reduire la taille du
 // code. Pour la beaute du geste !
 
-solveur_golf=(a,b,c)=>(F=e=>e.toFixed(2),D=b**2-4
-*a*c,s=D===0?[-b/(2*a)]:D>0?(d=Math.sqrt(D),x1=(-
-b-d)/(2*a),x2=(-b+d)/(2*a),[Math.min(x1,x2),Math.
-    max(x1,x2)]):[])
+S=(a,b,c)=>(F=e=>e.toFixed(2),D=b**2-4*a*c,s=D===
+0?[-b/(2*a)]:D>0?(d=Math.sqrt(D),x1=(-b-d)/(2*a),
+x2=(-b+d)/(2*a),[Math.min(x1,x2),Math.max(x1,x2)]
+):[])
 
 
 

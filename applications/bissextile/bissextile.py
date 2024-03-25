@@ -46,8 +46,7 @@ for annee in annees:
 # certaines opérations pour réduire la taille du
 # code. Pour la beauté du geste !
 
-def bissextile(a):
-    return a%400==0 or (a%100!=0 and a%4==0)
+B=lambda a:a%400==0 or(a%100!=0 and a%4==0)
 
 
 

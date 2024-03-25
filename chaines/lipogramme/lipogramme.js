@@ -1,9 +1,9 @@
 //-----------------------------------------------
 // Fonction Base
-//-----------------------------------------------
-// Un lipogramme est une chaine de caracteres qui
-// ne contient aucun caractere donne, comme le e.
-//-----------------------------------------------
+/*-----------------------------------------------
+/ Un lipogramme est une chaine de caracteres qui
+/ ne contient aucun caractere donne, comme le e.
+/----------------------------------------------*/
 
 
 //-----------------------------------------------
@@ -47,17 +47,17 @@ console.log(
 // certaines opérations pour réduire la taille du
 // code. Pour la beauté du geste !
 
-let lipogramme=(c,l)=>(c=c.toLowerCase()
- .replace(" ",'')).indexOf(l.toLowerCase())==-1
+let L=(c,l)=>(c=c.toLowerCase().replace(" ",'')).
+indexOf(l.toLowerCase())==-1
 
 
 
 //-----------------------------------------------
 // Version commentee
-//-----------------------------------------------
-// Proche de la version raccourcie, mais avec des
-// commentaires concis pour expliquer les etapes
-// principales de la fonction.
+/*-----------------------------------------------
+/ Proche de la version raccourcie, mais avec des
+/ commentaires concis pour expliquer les etapes
+/ principales de la fonction. */
 
 function lipogramme(chaine, lettre) {
 

@@ -58,7 +58,7 @@ public class Factorielle {
 // Proche de la version raccourcie, mais avec des
 // commentaires concis pour expliquer les etapes
 // principales de la fonction.
-    public static int calculer_commentee(
+    public static int factorielle_commentee(
         int nombre) {
 
         // Initialiser le produit a 1

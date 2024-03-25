@@ -1,9 +1,9 @@
 //-----------------------------------------------
 // Fonction palindrome
 /*-----------------------------------------------
-/ Un palindrome, c'est une chaîne qui de gauche à
-/ droite, et de droite à gauche possède les memes
-/ caractères.
+/ Un palindrome, c'est une chaine qui de gauche a
+/ droite, et de droite a gauche possede les memes
+/ caracteres.
 //---------------------------------------------*/
 
 
@@ -50,24 +50,23 @@ console.log(
 //-----------------------------------------------
 // Version golf
 //-----------------------------------------------
-// Version condensée et optimisée du code, utili-
+// Version condensee et optimisee du code, utili-
 // sant des noms de variables courts et combinant
-// certaines opérations pour réduire la taille du
-// code. Pour la beauté du geste !
+// certaines operations pour reduire la taille du
+// code. Pour la beaute du geste !
 
-function palindrome_golf(ch) {
-    let r = [...ch.toLowerCase()].filter(c =>
-        /[a-z0-9]/ .test(c)).join("");
-    return r === [...r].reverse().join("");}
+const P=(c)=>(r=[...c.toLowerCase()].filter(e=>
+/[a-z0-9]/.test(e)).join(""),r==[...r].reverse().
+join(""))
 
 
 
 //-----------------------------------------------
 // Version commentee
-//-----------------------------------------------
-// Proche de la version raccourcie, mais avec des
-// commentaires concis pour expliquer les etapes
-// principales de la fonction.
+/*-----------------------------------------------
+/ Proche de la version raccourcie, mais avec des
+/ commentaires concis pour expliquer les etapes
+/ principales de la fonction. */
 
 
 function palindrome_commentee(chaine) {

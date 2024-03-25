@@ -45,16 +45,15 @@ print(f"Les chaînes {chaine} des anagrammes.")
 # certaines opérations pour réduire la taille du
 # code. Pour la beauté du geste !
 
-def anagramme(s1, s2):
-    return sorted(s1.upper())==sorted(s2.upper())
+A=lambda s,S:sorted(s.upper())==sorted(S.upper())
 
 
 
 # -----------------------------------------------
 # Version commentee
 # -----------------------------------------------
-# Similaire a la version detaillee, mais avec des
-# commentaires concis afin d'expliquer les etapes
+# Proche de la version raccourcie, mais avec des
+# commentaires concis pour expliquer les etapes
 # principales de la fonction.
 
 def anagramme_commentee(chaine1, chaine2):

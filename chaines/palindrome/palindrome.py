@@ -51,16 +51,16 @@ print(f'Le chaine "{chaine}" est un palindromme.')
 # certaines opérations pour réduire la taille du
 # code. Pour la beauté du geste !
 
-p=lambda c:(c:=''.join(x.lower()for x in c if
+P=lambda c:(c:=''.join(x.lower()for x in c if
                        x.isalnum()))==c[::-1]
 
 
 
 # -----------------------------------------------
-# Version commentée
+# Version commentee
 # -----------------------------------------------
-# Similaire à la version détaillée, mais avec des
-# commentaires concis afin d'expliquer les étapes
+# Proche de la version raccourcie, mais avec des
+# commentaires concis pour expliquer les etapes
 # principales de la fonction.
 
 def palindrome_explication(chaine):

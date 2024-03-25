@@ -1,14 +1,14 @@
-// -----------------------------------------------
+//-----------------------------------------------
 // Fonction rendre_monnaie
-// -----------------------------------------------
-// Calcule le rendu de monnaie en fonction du prix
-// et des quantites des differentes pieces.
-// -----------------------------------------------
+/*-----------------------------------------------
+/ Calcule le rendu de monnaie en fonction du prix
+/ et des quantites des differentes pieces.
+/----------------------------------------------*/
 
 
-// -----------------------------------------------
+//-----------------------------------------------
 // Version Courte
-// -----------------------------------------------
+//-----------------------------------------------
 // Cette version permet de comprendre le contexte
 // de la fonction et sa logique.
 
@@ -26,9 +26,11 @@ function rendre_monnaie(prx, x20, x10, x5, x2, x1)
     return somme >= 0 ? rendus : [0, 0, 0, 0, 0];
 }
 
-// -----------------------------------------------
+
+
+//-----------------------------------------------
 // Application
-// -----------------------------------------------
+//-----------------------------------------------
 
 let prix = 47;       // Prix de l'article en euros
 let x20 = 2; // Nbre de billets de 20 euros donnes
@@ -50,26 +52,25 @@ console.log("5 euros  :", monnaie_rendue[2]);
 console.log("2 euros  :", monnaie_rendue[3]);
 console.log("1 euro   :", monnaie_rendue[4]);
 
-// -----------------------------------------------
+//-----------------------------------------------
 // Version Golf
-// -----------------------------------------------
+//-----------------------------------------------
 // Version condensee et optimisee du code, utili-
 // sant des noms de variables courts et combinant
 // certaines operations pour reduire la taille du
 // code. Pour la beaute du geste !
 
-function rendre_monnaie_golf(p,a,b,c,d,e) {
-    let s=a*20+b*10+c*5+d*2+e-p,R=[];
-    for (let m of[20,10,5,2,1])
-        {let r=Math.floor(s/m);s-=r*m;R.push(r)}
-    return s>=0?R:[0,0,0,0,0];
-}
+let R=(p,a,b,c,d,e)=>{let s=a*20+b*10+c*5+d*2+e-p
+    ,R=[];for(let m of[20,10,5,2,1]) {let r=Math.
+    floor(s/m);s-=r*m;R.push(r)}return s>=0?R:[0,
+    0,0,0,0];}
 
-// -----------------------------------------------
-// Version Detaillee
-// -----------------------------------------------
-// Cette version permet de suivre pas a pas l'exe-
-// cution de la fonction.
+
+//-----------------------------------------------
+// Version detaillee
+/*-----------------------------------------------
+/ Cette version permet de suivre pas a pas l'exe-
+/ cution de la fonction. */
 
 function rendre_monnaie_detaille(prx, x20, x10,
     x5, x2, x1) {
@@ -93,12 +94,12 @@ function rendre_monnaie_detaille(prx, x20, x10,
     }
 }
 
-// -----------------------------------------------
-// Version Commentee
-// -----------------------------------------------
-// Similaire a la version detaillee, mais avec des
-// commentaires concis afin d'expliquer les etapes
-// principales de la fonction.
+//-----------------------------------------------
+// Version commentee
+/*-----------------------------------------------
+/ Similaire a la version detaillee, mais avec des
+/ commentaires concis afin d'expliquer les etapes
+/ principales de la fonction. */
 
 function rendre_monnaie_commentee(prx, x20, x10,
     x5, x2, x1) {
@@ -136,3 +137,13 @@ function rendre_monnaie_commentee(prx, x20, x10,
         return rendus;
     }
 }
+
+
+
+
+
+
+
+
+
+//

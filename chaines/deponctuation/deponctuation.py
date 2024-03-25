@@ -12,7 +12,6 @@
 # Cette version permet de comprendre le contexte
 # de la fonction et sa logique.
 
-
 def deponctuer(chaine, liste):
 
     for char in liste:
@@ -49,10 +48,10 @@ D=lambda c,l:''.join(x for x in c if x not in l)
 
 
 # -----------------------------------------------
-# Version commentée
+# Version commentee
 # -----------------------------------------------
-# Similaire à la version détaillée, mais avec des
-# commentaires concis afin d'expliquer les étapes
+# Proche de la version raccourcie, mais avec des
+# commentaires concis pour expliquer les etapes
 # principales de la fonction.
 
 def deponctuer_commentee(chaine, liste):

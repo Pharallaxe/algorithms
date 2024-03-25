@@ -38,8 +38,9 @@ echo $ch." $est"." un lipogramme en '".$let."'.";
 #  code. Pour la beaute du geste !
 
 
-function l_golf($c,$l){return strpos(str_replace(
-    ' ','',strtolower($c)), strtolower($l))===0;}
+$l=function($c,$l){return strpos(str_replace(' ',
+'',strtolower($c)),strtolower($l))===0;};
+
 
 
 # -----------------------------------------------

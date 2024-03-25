@@ -1,5 +1,5 @@
 //-----------------------------------------------
-// Fonctions anagramme
+// Fonction anagramme
 /*-----------------------------------------------
 / Identifie si deux chaines sont anagrammes, donc
 / si elles sont composées des mêmes lettres exac-
@@ -17,8 +17,8 @@ function anagramme(str1, str2) {
     let str_A = str1.toUpperCase();
     let str_B = str2.toUpperCase();
 
-    let A_sorted = str_A.split('').sort().join('');
-    let B_Sorted = str_B.split('').sort().join('');
+    let A_sorted=str_A.split('').sort().join('');
+    let B_Sorted=str_B.split('').sort().join('');
 
     return A_sorted === B_Sorted;
 }
@@ -31,9 +31,10 @@ function anagramme(str1, str2) {
 
 let str1 = "listen";
 let str2 = "silent";
-let sont_anagrammes = anagramme(str1, str2);
-let chaine = sont_anagrammes ? "sont" : "ne sont pas";
-console.log(`Les chaînes ${chaine} des anagrammes.`);
+let sont_anag = anagramme(str1, str2);
+let chaine = sont_anag ? "sont" : "ne sont pas";
+console.log(`Les chaînes ${str1} et ${str2} ${
+    chaine} des anagrammes.`);
 
 
 
@@ -45,17 +46,17 @@ console.log(`Les chaînes ${chaine} des anagrammes.`);
 // certaines operations pour reduire la taille du
 // code. Pour la beaute du geste !
 
-let a=(s1,s2)=>s1.toUpperCase().split``.sort().join``
-    ==s2.toUpperCase().split``.sort().join``
+const A=(s1,s2)=>s1.toUpperCase().split``.sort()
+.join``==s2.toUpperCase().split``.sort().join``
 
 
 
 //-----------------------------------------------
 // Version commentee
-//-----------------------------------------------
-// Proche de la version raccourcie, mais avec des
-// commentaires concis pour expliquer les etapes
-// principales de la fonction.
+/*-----------------------------------------------
+/ Proche de la version raccourcie, mais avec des
+/ commentaires concis pour expliquer les etapes
+/ principales de la fonction. */
 
 function anagramme(str1, str2) {
 
@@ -64,8 +65,8 @@ function anagramme(str1, str2) {
     let str_B = str2.toUpperCase();
 
     // Trier les deux chaines.
-    let A_sorted = str_A.split('').sort().join('');
-    let B_Sorted = str_B.split('').sort().join('');
+    let A_sorted=str_A.split('').sort().join('');
+    let B_Sorted=str_B.split('').sort().join('');
 
     // Vérifier l'équivalence des chaines.
     return A_sorted === B_Sorted;

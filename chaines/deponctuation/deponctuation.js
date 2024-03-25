@@ -1,9 +1,9 @@
 //-----------------------------------------------
 // Fonction deponctuer
-//-----------------------------------------------
-// Elle supprime d'une chaîne les caractères don-
-// nés en paramètre.
-//-----------------------------------------------
+/*-----------------------------------------------
+/ Elle supprime d'une chaîne les caractères don-
+/ nés en paramètre.
+/----------------------------------------------*/
 
 
 //-----------------------------------------------
@@ -24,7 +24,7 @@ function deponctuer(chaine, liste) {
 // Application
 //-----------------------------------------------
 
-let chaine = "C'est, un exemple! de ponctuation.";
+let chaine= "C'est, un exemple! de ponctuation.";
 let caracteres = ",.!'";
 let deponctuee = deponctuer(chaine, caracteres);
 
@@ -40,16 +40,16 @@ console.log("Chaine deponctuée :", deponctuee);
 // certaines opérations pour réduire la taille du
 // code. Pour la beauté du geste !
 
-const D=(c,l="")=>
-    c.replace(new RegExp(`[${l}]`, 'g'), '');
+let D=(c,l="")=>c.replace(new RegExp(`[${l}]`,
+'g'),'');
 
 
 //-----------------------------------------------
 // Version commentee
-//-----------------------------------------------
-// Proche de la version raccourcie, mais avec des
-// commentaires concis pour expliquer les etapes
-// principales de la fonction.
+/*-----------------------------------------------
+/ Proche de la version raccourcie, mais avec des
+/ commentaires concis pour expliquer les etapes
+/ principales de la fonction. */
 
 function deponctuer_commentee(chaine, liste) {
 

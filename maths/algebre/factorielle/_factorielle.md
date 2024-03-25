@@ -1,15 +1,16 @@
 # Calculer une factorielle
 
+### Enoncé
 Cette fonction calcule la factorielle d'un nombre donné.
 
-### Etapes :
+### Etapes
 * Initialiser le produit à 1.
 * Calculer la factorielle en multipliant jusqu'au nombre donné.
 * Retourner la factorielle calculée.
 
 Note si le nombre est 0 ou 1; la valeur renvoyée sera 1.
 
-### Pseudocode :
+### Pseudocode
 ```pseudode
 Fonction factorielle (n)
     r <- 1
@@ -21,34 +22,37 @@ Fin Fonction
 ```
 
 
-### Exemples d'utilisation :
+### Exemples d'utilisation
 
-En Python :
+Cet exemple va afficher
+* "La factorielle de 6 est : 720"
+
+En Python
+
 
 ```python
-resultat = calculer_factorielle(6) 
+resultat = factorielle(6) 
 print(f"La factorielle de 6 est : "{resultat})
-# Affiche "La factorielle de 6 est : 720
 ```
 
 En Javascript
 
+
 ```javascript
-let resultat = calculer_factorielle(6)
+let resultat = factorielle(6)
 console.log("La factorielle de 6 est :", resultat)
-// Affiche "La factorielle de 6 est : 720
 ```
 
 En Java
 
+
 ```java
 public class Main {
-    // Insérer ici la fonction calculer_factorielle
+    // Insérer ici la fonction factorielle
 
     public static void main(String[] args) {
-        int resultat = calculer_factorielle(6);
+        int resultat = factorielle(6);
         System.out.println("La factorielle de 6 est : " + resultat);
-        // Affiche "La factorielle de 6 est : 720
     }
 }
 ```
@@ -57,8 +61,7 @@ En PHP
 
 ```PHP
 <?php
-$resultat = calculer_factorielle(6);
+$resultat = factorielle(6);
 echo "La factorielle de 6 est : " . $resultat;
-// Affiche "La factorielle de 6 est : 720
 ?>
 ```

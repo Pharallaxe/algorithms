@@ -43,7 +43,7 @@ echo "La factorielle de 6 est : $resultat";
 # certaines operations pour reduire la taille du
 # code. Pour la beaute du geste !
 
-$F = fn($n)=>array_product(range(1,$n));
+$F=fn($n)=>array_product(range(1,$n));
 
 
 

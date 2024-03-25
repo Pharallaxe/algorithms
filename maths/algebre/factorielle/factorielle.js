@@ -39,8 +39,8 @@ console.log(`La factorielle de 6 est : ${res}`);
 // certaines operations pour reduire la taille du
 // code. Pour la beaute du geste !
 
-const F=n=>[...Array(n)].reduce((p,_,i)=>p*(i+
-    1),1);
+const F=n=>[...Array(n)].reduce((p,_,i)=>p*(i+1),
+1);
 
 
 
@@ -51,7 +51,7 @@ const F=n=>[...Array(n)].reduce((p,_,i)=>p*(i+
 // commentaires concis pour expliquer les etapes
 // principales de la fonction.
 
-function calculer_factorielle(nombre) {
+function factorielle_commentee(nombre) {
 
     // Initialiser du produit a 1.
     let produit = 1;
