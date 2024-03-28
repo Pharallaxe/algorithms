@@ -38,10 +38,14 @@ def fascinant(nombre):
 # Application
 # -----------------------------------------------
 
-nombre_test = 192
-resultat_test = fascinant(nombre_test)
-chaine = ["n'est pas", "est"][resultat_test]
-print(f"{nombre_test} {chaine} fascinant")
+nombres = [108, 133, 192, 5832]
+for nb in nombres:
+    res = fascinant(nb)
+    if res:
+        print(f"{nb} est fascinant.")
+    else:
+        print(f"{nb} n'est pas fascinant.")
+
 
 
 # -----------------------------------------------

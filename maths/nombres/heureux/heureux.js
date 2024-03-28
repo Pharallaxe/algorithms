@@ -35,10 +35,14 @@ function heureux(nombre) {
 // Application
 //-----------------------------------------------
 
-for (let nombre = 10; nombre < 16; nombre++) {
-    let res = heureux(nombre);
-    let chaine = res ? "est" : "n'est pas";
-    console.log(`${nombre} ${chaine} heureux.`);
+for (let nb = 10; nb < 16; nb++) {
+    let res = heureux(nb);
+    if (res) {
+        console.log(nb, "est heureux.");
+    }
+    else {
+        console.log(nb, "n'est pas heureux.");
+    }
 }
 
 

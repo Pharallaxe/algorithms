@@ -43,7 +43,7 @@ function base(nb, depart, fin) {
 let ch1 = "1010";
 let depart1 = 2;
 let arrivee1 = 10;
-let res1 = B(ch1, depart1, arrivee1);
+let res1 = base(ch1, depart1, arrivee1);
 let conv1 = `${depart1} vers ${arrivee1}`;
 console.log(`${ch1} de ${conv1} = ${res1}`);
 

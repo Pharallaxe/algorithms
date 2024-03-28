@@ -22,10 +22,10 @@ def strobogrammatique(nombre):
     
     for i in range(len(nombre) // 2 + 1):
         chif = nombre[i]
-        corrs = nombre[len(nombre) - 1 - i]
+        corr = nombre[len(nombre) - 1 - i]
         
         if chif not in chifs or \
-            corrs[chifs.index(chif)] != corrs:
+            corrs[chifs.index(chif)] != corr:
             return False
             
     return True
@@ -36,15 +36,15 @@ def strobogrammatique(nombre):
 # Application
 # -----------------------------------------------
 
-nombre1 = 88
-res1 = strobogrammatique(nombre1)
-chaine1 = "est" if res1 else "n'est pas"
-print(f"{nombre1} {chaine1} strobogrammatique.")
 
-nombre2 = 133
-res2 = strobogrammatique(nombre2)
-chaine2 = "est" if res2 else "n'est pas"
-print(f"{nombre2} {chaine2} strobogrammatique.")
+nombres = [88, 133, 96, 101]
+for nb in nombres:
+    res = strobogrammatique(nb)
+    strobo = "strobogrammatique.";
+    if res:
+        print(f"{nb} est {strobo}.")
+    else:
+        print(f"{nb} n'est pas {strobo}.")
 
 
 

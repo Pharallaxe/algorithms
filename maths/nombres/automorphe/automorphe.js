@@ -19,7 +19,7 @@ function automorphe(nombre) {
     var carre = nombre ** 2;
 
     var carre_str = carre.toString();
-    var carre_fin = carre_str.slice(longueur - 1);
+    var carre_fin = carre_str.slice(-longueur);
     var carre_fin_nombre = parseInt(carre_fin);
 
     return carre_fin_nombre == nombre;
@@ -31,11 +31,18 @@ function automorphe(nombre) {
 // Application
 //-----------------------------------------------
 
-var nombre = 76;
-var res = automorphe(nombre);
-var chaine = ["n'est pas", "est"][res];
-console.log(`${76} ${chaine} automorphe`);
-
+let nombres = [125, 76, 89, 5];
+for (let nb of nombres) {
+    console.log(nb)
+    let res = automorphe(nb);
+    console.log(res)
+    if (res) {
+        console.log(nb, "est automorphe.");
+    }
+    else {
+        console.log(nb, "n'est pas automorphe.");
+    }
+}
 
 
 //-----------------------------------------------
@@ -69,7 +76,7 @@ function automorphe_explication(nombre) {
     var carre_str = carre.toString();
 
     // Récupérer la fin du carré.
-    var carre_fin = carre_str.slice(longueur - 1);
+    var carre_fin = carre_str.slice(-longueur);
 
     // Convertir la fin du carré en nombre.
     var carre_fin_nombre = parseInt(carre_fin);

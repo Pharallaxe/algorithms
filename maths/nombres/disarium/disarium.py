@@ -29,15 +29,13 @@ def disarium(nombre):
 # Application
 # -----------------------------------------------
 
-nombre1 = 135
-res1 = disarium(nombre1)
-chaine1 = ["n'est pas", "est"][res1]
-print(f"{nombre1} {chaine1} disarium.")
-
-nombre2 = 133
-res2 = disarium(nombre2)
-chaine2 = ["n'est pas", "est"][res2]
-print(f"{nombre2} {chaine2} disarium.")
+nombres = [120, 133, 135, 145]
+for nb in nombres:
+    res = disarium(nb)
+    if res:
+        print(f"{nb} est disarium.")
+    else:
+        print(f"{nb} n'est pas disarium.")
 
 
 

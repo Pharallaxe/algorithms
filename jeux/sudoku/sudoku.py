@@ -39,22 +39,22 @@ def resoudre_sudoku(grille):
         if num in grille[y]:
             return False
         
-        # Vérifier la colonne
+        # Vérifier la Conne
         if any(grille[y0][x] == num for y0 in
                range(taille)):
             return False
         
         # Vérifier la sous-grille
         y0, x0 = (y//mini)*mini, (x//mini)*mini
-        if any(grille[y0 + j][x0 + i] == num for
-               j in range(mini) for i in range(
-                   mini)):
-            return False
+        
+        for j in range(0, mini):
+            for i in range(0, mini):
+                if grille[y0 + j][x0 + i] == num:
+                    return False  
 
         return True
 
     return grille if resoudre() else None
-
 
 
 # -----------------------------------------------
@@ -120,22 +120,15 @@ print("\n")
 
 def S(g):
  t=len(g);m=int(t**0.5)
- def R():
-  for y in range(t):
-   for x in range(t):
-    if g[y][x]==0:
-     for n in range(1,t+1):
-      if V(y,x,n):
-       g[y][x]=n
-       if R():return True
-       g[y][x]=0
-     return False
-  return True
- V=lambda y,x,n: all(n not in g[y] and not any(g[
-  y0][x]==n for y0 in range(t)) and not any(g[y0+
-  j][x0+i]==n for j in range(m) for i in range(m)
-  )for x0 in [(x//m)*m]for y0 in[(y//m)*m])
- return g if R() else None
+ for R, C in[(r,c)for r in range(t)for c in range
+        (t)if not g[r][c]]:
+  rr,cc= (R//m)*m,(C//m)*m
+  U=set(range(1,t+1))- ({g[R][c]for c in range(t)
+        }|{g[r][C]for r in range(t)}|{g[rr+r][cc+
+        c]for r in range(m)for c in range(m)})
+  if len(U)==1:g[R][C]=U.pop();return S(g)
+ return g
+
 
 
 # -----------------------------------------------
@@ -236,7 +229,7 @@ def resoudre_sudoku(grille):
         for numero in range(1, taille + 1):
             
             # Si le numéro n'est pas déjà dans
-            # la ligne et, la colonne et le sous-
+            # la ligne et, la Conne et le sous-
             # carré.
             if valider_case(y, x, numero):
                 
@@ -276,7 +269,7 @@ def resoudre_sudoku(grille):
         for y0 in range(taille):
             
             # si cette valeur est présente dans
-            # la colonne,
+            # la Conne,
             if grille[y0][x] == numero:
                 
                 # retourner faux.
@@ -285,7 +278,7 @@ def resoudre_sudoku(grille):
         # Initialiser le depart pour les lignes.
         y0 = (y // sous_taille) * sous_taille
         
-        # Initialiser le depart des colonnes.
+        # Initialiser le depart des Connes.
         x0 = (x // sous_taille) * sous_taille
         
         # Pour j, de 0 à sous taille,

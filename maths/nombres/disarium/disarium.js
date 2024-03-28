@@ -32,15 +32,16 @@ function disarium(nombre) {
 // Application
 //-----------------------------------------------
 
-let nombre1 = 135;
-let res1 = disarium(nombre1);
-let chaine1 = res1 ? "est" : "n'est pas";
-console.log(`${nombre1} ${chaine1} disarium.`);
-
-let nombre2 = 133;
-let res2 = disarium(nombre2);
-let chaine2 = res2 ? "est" : "n'est pas";
-console.log(`${nombre2} ${chaine2} disarium.`);
+let nombres = [120, 133, 135, 145];
+for (let nb of nombres) {
+    let res = disarium(nb);
+    if (res) {
+        console.log(nb, "est disarium.");
+    }
+    else {
+        console.log(nb, "n'est pas disarium.");
+    }
+}
 
 
 

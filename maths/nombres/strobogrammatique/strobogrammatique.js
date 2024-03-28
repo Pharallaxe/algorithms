@@ -13,7 +13,7 @@
 // Cette version permet de comprendre le contexte
 // de la fonction et sa logique.
 
-function strobogrammatic(nombre) {
+function strobogrammatique(nombre) {
     const strobo = {
         "0": "0", "1": "1", "8": "8", "6": "9",
         "9": "6" };
@@ -43,14 +43,18 @@ function strobogrammatic(nombre) {
 // Application
 //-----------------------------------------------
 
-let nombres = [88, 133, 96, 101]
-for (let i = 0; i < nombres.length; i++) {
-    let nombre = nombres[i];
-    let res = strobogrammatic(nombre);
-    let chaine = res ? "est" : "n'est pas";
-    let strobo = "strobogrammatique.";
-    console.log(nombre, chaine, strobo);
+let nombres = [88, 133, 96, 101];
+for (let nb of nombres) {
+    let res = strobogrammatique(nb);
+    let strobo = "strobogrammatique"
+    if (res) {
+        console.log(`${nb} est ${strobo}`);
+    }
+    else {
+        console.log(`${nb} n'est pas ${strobo}`);
+    }
 }
+
 
 
 

@@ -29,10 +29,12 @@ def heureux(nombre):
 # Application
 # -----------------------------------------------
 
-nombre = 49
-res = heureux(nombre)
-chaine = ["n'est pas", "est"][res]
-print(f"{nombre} {chaine} heureux.")
+for nb in range(10,16):
+    res = heureux(nb)
+    if res:
+        print(f"{nb} est heureux.")
+    else:
+        print(f"{nb} n'est pas heureux.")
 
 
 

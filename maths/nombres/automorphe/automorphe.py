@@ -31,11 +31,14 @@ def automorphe(nombre):
 # Application
 # -----------------------------------------------
 
-nombre = 76
-res = automorphe(nombre)
-chaine = ["n'est pas", "est"][res]
-print(f"{nombre} {chaine} automorphe")
-
+nombres = [125, 76, 89, 5]
+for nb in nombres:
+    res = automorphe(nb)
+    if res:
+        print(f"{nb} est automorphe.")
+    else:
+        print(f"{nb} n'est pas automorphe.")
+        
 
 
 # -----------------------------------------------

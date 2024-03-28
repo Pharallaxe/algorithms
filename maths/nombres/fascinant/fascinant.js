@@ -41,11 +41,17 @@ function fascinant(nombre) {
 //-----------------------------------------------
 // Application
 //-----------------------------------------------
-const nombre_test = 192;
-const resultat_test = fascinant(nombre_test);
-console.log(resultat_test)
-const chaine = resultat_test ? "est" : "n'est pas";
-console.log(`${nombre_test} ${chaine} fascinant`);
+
+let nombres = [108, 133, 192, 5832];
+for (let nb of nombres) {
+    let res = fascinant(nb);
+    if (res) {
+        console.log(nb, "est fascinant.");
+    }
+    else {
+        console.log(nb, "n'est pas fascinant.");
+    }
+}
 
 
 
