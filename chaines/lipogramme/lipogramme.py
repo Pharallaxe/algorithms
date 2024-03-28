@@ -26,13 +26,18 @@ def lipogramme(chaine, lettre):
 # Application
 # -----------------------------------------------
 
-chaine = "Le ver de terre."
+ch = "Le ver de terre"
 lettre = "e"
-est_lipogramme = lipogramme(chaine, lettre)
-chaine = ["n'est pas", "est"][est_lipogramme]
-print(f'"{chaine}" est un \
-    lipogramme en "{lettre}".')
+est_lipogramme = lipogramme(ch, lettre)
 
+print(f'"{ch}"', end="")
+
+if est_lipogramme:
+    print(" est un", end="")
+else:
+    print(" n'est pas", end="")
+    
+print(f" un lipogramme en '{lettre}'.")
 
 
 # -----------------------------------------------

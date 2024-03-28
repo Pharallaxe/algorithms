@@ -17,12 +17,10 @@ function palindrome(chaine) {
     chaine = chaine
         .toLowerCase()
         .replace(" ", "");
-
-    for (let char of chaine) {
-        if (char.match(/[a-z0-9]/)) {
-            resultat += char;
-        }
-    }
+    
+    let resultat = [...chaine]
+        .filter(char => char.match(/[a-z0-9]/))
+        .join('');
 
     let chaineInverse = [...resultat]
         .reverse()
@@ -37,13 +35,15 @@ function palindrome(chaine) {
 // Application
 //-----------------------------------------------
 
-let chaine = "Esope reste ici et se repose";
-let est_Palindrome = palindrome(chaine);
-let estOuPas = est_Palindrome ?
-    "est" : "n'est pas";
-console.log(
-    `"${chaine}" ${estOuPas} un palindrome.`
-);
+let str = "Esope reste ici et se repose";
+let estPalindrome = P(str);
+let pal = "palindromme"
+
+if (estPalindrome) {
+    console.log(`"${str}" est un ${pal}.`);
+} else {
+    console.log(`"${str}" n'est pas un ${pal}.`);
+}
 
 
 

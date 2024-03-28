@@ -33,8 +33,8 @@ let str1 = "listen";
 let str2 = "silent";
 let sont_anag = anagramme(str1, str2);
 let chaine = sont_anag ? "sont" : "ne sont pas";
-console.log(`Les chaînes ${str1} et ${str2} ${
-    chaine} des anagrammes.`);
+console.log(`Les chaînes "${str1}" et "${str2}"
+${chaine} des anagrammes.`);
 
 
 

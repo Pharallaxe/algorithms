@@ -27,9 +27,11 @@ def pangramme(chaine):
 
 chaine = "Portez ce vieux whisky"
 chaine += "au juge blond qui fume"
-est_pangramme = pangramme(chaine)
-estOuPas = ["n'est pas", "est"][est_pangramme]
-print(f'"{chaine}" {estOuPas} un pangramme.')
+est_pangr = pangramme(chaine)
+if (est_pangr):
+    print(f'"{chaine}" est un pangramme.')
+else:
+    print(f'"{chaine}" n\'est pas un pangramme.')
 
 
 

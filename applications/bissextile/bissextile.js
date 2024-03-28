@@ -32,7 +32,7 @@ function bissextile(annee) {
 let texte = ["n'est pas", "est"];
 let annees = [1900, 2000, 2024];
 for (let annee of annees) {
-    let est_bis = B(annee);
+    let est_bis = bissextile(annee);
     let chaine = texte[est_bis ? 1 : 0];
     console.log(`${annee} ${chaine} bissextile.`);
 }

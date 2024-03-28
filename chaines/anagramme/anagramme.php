@@ -89,12 +89,23 @@ function anagramme_explication($str1, $str2) {
     $str_B = strtoupper($str2);
 
     // Trier les deux chaines.
+
+    // Spliter la premiere chaine.
     $A_sorted = str_split($str_A);
+
+    // Trier la premiere chaine.
     sort($A_sorted);
+
+    // Concatener la premiere chaine.
     $A_sorted = implode('', $A_sorted);
 
+    // Spliter la premiere chaine.
     $B_Sorted = str_split($str_B);
+
+    // Trier la premiere chaine.
     sort($B_Sorted);
+
+    // Concatener la premiere chaine.
     $B_Sorted = implode('', $B_Sorted);
 
     // Verifier l'equivalence des chaines.

@@ -36,11 +36,14 @@ def palindrome(chaine):
 # Application
 # -----------------------------------------------
 
+
 chaine = "Esope reste ici et se repose"
 est_palindrome = palindrome(chaine)
-chaine = ["n'est pas", "est"][est_palindrome]
-print(f'Le chaine "{chaine}" est un palindromme.')
 
+if est_palindrome:
+    print(f'"{chaine}" est un palindromme.')
+else:
+    print(f'"{chaine}" n\'est un palindromme.')
 
 
 # -----------------------------------------------

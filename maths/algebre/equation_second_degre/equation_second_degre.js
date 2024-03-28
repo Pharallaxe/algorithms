@@ -45,14 +45,15 @@ function solveur_reel(a, b, c) {
 
 // Equation a deux solutions.
 let equation_1 = [1, -3, 2];
-let solution_1 = solveur_reel(...equation_1);
-console.log(solution_1);
+let sol_1 = solveur_reel(...equation_1);
+sol_1 = sol_1.join(", ")
+console.log(`Les solutions sont {${sol_1}}`);
 
 // Equation a une solution.
 let equation_2 = [1, -2, 1];
-let solution_2 = solveur_reel(...equation_2);
-console.log(solution_2);
-
+let sol_2 = solveur_reel(...equation_2);
+sol_2 = sol_2.join(", ")
+console.log(`Les solutions sont {${sol_2}}`);
 
 
 //-----------------------------------------------
@@ -153,9 +154,10 @@ function solveur_complexe(a, b, c) {
 // Application pour les complexes
 //-----------------------------------------------
 
-var equation_3 = [1, 2, 5];
-var solution_3 = solveur_complexe(...equation_3);
-console.log(solution_3);
+let equation_3 = [1, 2, 5];
+let sol_3 = solveur_reel(...equation_3);
+sol_3 = sol_3.join(", ")
+console.log(`Les solutions sont {${sol_3}}`);
 
 
 
