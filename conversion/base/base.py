@@ -15,43 +15,41 @@
 
 def base(nombre, depart, fin):
     base = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    val = 0
-    
-    # Conversion du nombre en base 10
-    for chiffre in nombre[::-1]:
-        val = val * depart + base.index(chiffre)
-    
-    # Conversion de la base 10 à la base finale
-    convertis = []
-    while val > 0:
-        val, reste = divmod(val, fin)
-        convertis.append(base[reste])
-    
-    # Retourner le résultat
-    return ''.join(convertis[::-1] or '0')
 
+    # Conversion du nombre de la base de départ à
+    # la base décimale
+    decimal = 0
+    for chiffre in str(nombre):
+        decimal = decimal * depart + int(chiffre)
 
+    # Conversion du nombre à la base de fin
+    resultat = ""
+    
+    while decimal > 0:
+        reste = decimal % fin
+        resultat = base[reste] + resultat
+        decimal //= fin
+
+    return resultat
 
 # -----------------------------------------------
 # Application
 # -----------------------------------------------
 
-chaine1 = "1010"
-depart1 = 2
-arrivee1 = 10
-res_1 = base(chaine1, depart1, arrivee1)
-conv_1 = f"{depart1} vers {arrivee1}"
-print(f"{chaine1} de {conv_1} donne : {res_1}")
+conversions = [
+    ("1010", 2, 10),
+    ("48", 10, 3)
+]
 
-
-chaine2 = "48"
-depart2 = 10
-arrivee2 = 3
-res_2 = base(chaine2, depart2, arrivee2)
-conv_2 = f"{depart2} vers {arrivee2}"
-print(f"{chaine2} de {conv_2} donne : {res_2}")
-
-
+for conversion in conversions:
+    chaine = conversion[0]
+    depart = conversion[1]
+    arrivee = conversion[2]
+    res = base(chaine, depart, arrivee)
+    conv_1 = f"{depart} vers {arrivee}"
+    print(f"'{chaine}' de {conv_1} donne {res}")
+    
+    
 
 # -----------------------------------------------
 # Version golf
@@ -61,9 +59,7 @@ print(f"{chaine2} de {conv_2} donne : {res_2}")
 # certaines opérations pour réduire la taille du
 # code. Pour la beauté du geste !
 
-B=lambda n,d,f,b="0123456789ABCDEFGHIJKLMNOPQRST\
-UVWXYZ":''.join([b[v%f]for v in[sum([b.index(c)*d
-**i for i,c in enumerate(n[::-1])])]][::-1])or'0'
+# En reflexion d'une solution efficace.... 
 
 
 
@@ -84,20 +80,21 @@ def base_detaillee(nombre, depart, fin):
         base_index = base.index(nombre_inv[i])
         val +=  base_index * depart ** i
     
-    conv = []
+    convertis = []
     
     if val == 0:
         return "0"
     else:
         while val >= fin - 1:
             ch_base_fin  = val % fin
-            conv.append(base[ch_base_fin])
+            convertis.append(base[ch_base_fin])
             val = val // fin
         
         if val != 0:
-            conv.append(base[val])
-            
-        retour = ''.join(conv)
+            convertis.append(base[val])
+        
+        convertis.reverse()
+        retour = ''.join(convertis)
         
         return retour
 
@@ -110,7 +107,7 @@ def base_detaillee(nombre, depart, fin):
 # commentaires concis afin d'expliquer les étapes
 # principales de la fonction.
 
-def base(nombre, depart, fin):
+def base_commentee(nombre, depart, fin):
     
     # Définir les symboles des les bases.
     base = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -165,6 +162,9 @@ def base(nombre, depart, fin):
             
             # Ajouter le dernier chiffre.
             convertis.append(base[val])
+            
+        # Inverser la liste des chiffres.
+        convertis.reverse()
         
         # Concaténer tous les chiffres.
         retour = ''.join(convertis)

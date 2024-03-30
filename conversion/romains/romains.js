@@ -105,7 +105,6 @@ console.log(`3) ${nombre3} est egal ${rom_3}`);
 console.log(`4) ${rom_1} + ${rom_2} = ${res}`);
 
 
-
 //-----------------------------------------------
 // Version golf
 //-----------------------------------------------
@@ -114,25 +113,8 @@ console.log(`4) ${rom_1} + ${rom_2} = ${res}`);
 // certaines operations pour reduire la taille du
 // code. Pour la beaute du geste !
 
-const e=(ch="",d={"CM":900,"CD":400,"XC":90,"XL":
-40,"IX":9,"IV":4},u={"M":1e3,"D":500,"C":100,"L":
-50,"X":10,"V":5,"I":1})=>{let e=0,i=0;while(i<ch.
-length){e+=(i<ch.length-1&&ch.slice(i,i+2)in d)?
-d[ch.slice(i,i+2)]:u[ch[i]];i+=(i<ch.length-1&&
-    ch.slice(i,i+2)in d)?2:1;}return String(e);};
 
-
-const r=(n,i=[(1000,"M"),(900,"CM"),(500,"D"),
-(400,"CD"),(100,"C"),(90,"XC"),(50,"L"),(40,"XL")
-,(10,"X"),(9,"IX"),(5,"V"),(4,"IV"),(1,"I")])=>[
-...i].map(([e,r])=>{while(n>=e){n-=e;r.push(r)}})
-.join``;
-
-
-const C=(s,S,o,n=!1)=>(f={"+":(a,b)=>a+b,"-":(a,b
-)=>a-b,"*":(a,b)=>a*b,"/":(a,b)=>Math.floor(a/b),
-i:(str)=>parseInt(str)},n?r(f[o](f.i(s),f.i(S))):
-f[o](f.i(s),f.i(S)));
+/* En reflexion d'une solution efficace... */
 
 
 
@@ -143,8 +125,9 @@ f[o](f.i(s),f.i(S)));
 / commentaires concis pour expliquer les etapes
 / principales de la fonction. */
 
+
 // Convertit un nombre romain en entier.
-function vers_entier(chaine) {
+function vers_entier_commentee(chaine) {
     
     // Créer un dictionnaire de valeurs doubles.
     const double={"CM": 900, "CD": 400, "XC": 90,
@@ -188,8 +171,9 @@ function vers_entier(chaine) {
     return String(entier);
 }
 
+
 // Convertit une entier en nombre romain.
-function vers_romain(nombre) {
+function vers_romain_commentee(nombre) {
     // Lister des entiers et valeurs romaines.
     const int_rom = [
         [1000, "M"], [900, "CM"], [500,  "D"],
@@ -226,7 +210,9 @@ function vers_romain(nombre) {
 
 // Retourne le resultat de l'operation entre deux
 // nombres romains.
-function romain_op(str1, str2, op,nombre=false) {
+function romain_op_commentee(
+    str1, str2, op, nombre=false
+    ) {
     
     // Créer un dictionnaire des opérations.
     const ops = {

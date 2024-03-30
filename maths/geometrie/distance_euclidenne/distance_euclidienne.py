@@ -45,6 +45,8 @@ point2, point3, point4), 2)
 print("La distance entre les points est de :",
       dist_totale)
 
+
+
 # -----------------------------------------------
 # Version golf
 # -----------------------------------------------

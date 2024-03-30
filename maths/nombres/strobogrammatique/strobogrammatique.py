@@ -36,11 +36,10 @@ def strobogrammatique(nombre):
 # Application
 # -----------------------------------------------
 
-
 nombres = [88, 133, 96, 101]
 for nb in nombres:
     res = strobogrammatique(nb)
-    strobo = "strobogrammatique.";
+    strobo = "strobogrammatique";
     if res:
         print(f"{nb} est {strobo}.")
     else:
@@ -56,7 +55,7 @@ for nb in nombres:
 # certaines operations pour reduire la taille du
 # code. Pour la beaute du geste !
 
-T=lambda n:all(str(n)[i]in"01869"and"01896"["018\
+S=lambda n:all(str(n)[i]in"01869"and"01896"["018\
 69".index(str(n)[i])]==str(n)[~i]for i in range(\
 len(str(n))//2+1))
 
@@ -68,7 +67,7 @@ len(str(n))//2+1))
 # Cette version permet de suivre pas a pas l'exe-
 # cution de la fonction.
 
-def strobogrammatique(nombre):
+def strobogrammatique_detaillee(nombre):
     strobo = {
         "0" : "0",
         "1" : "1",
@@ -107,7 +106,7 @@ def strobogrammatique(nombre):
 # commentaires concis afin d'expliquer les etapes
 # principales de la fonction.
 
-def strobogrammatique_explication(nombre):
+def strobogrammatique_commentee(nombre):
     
     # Définir un dictionnaire de correspondance.
     strobo = {
@@ -118,32 +117,38 @@ def strobogrammatique_explication(nombre):
         "9" : "6"
         }
     
-    # Vérifier si le type du nombre est un entier.
+    # Vérifier si le type du nombre est entier.
     if type(nombre) is int:
         
-        # Convertir le nombre en chaîne de caractères.
+        # Convertir le nombre en chaîne.
         nombre = str(nombre)
     
     # Initialiser les index.
     gauche = 0
     droite = len(nombre) - 1
     
-    # Tant que la différence est supérieure ou égale à 0.
+    # Tant que la différence est supérieure ou
+    # égale à 0.
     while droite - gauche >= 0:
         
-        # Obtenir le premier et dernier chiffres.
+        # Obtenir le premier chiffre.
         premier = nombre[gauche]
+        
+        # Obtenir le dernier chiffre.
         dernier = nombre[droite]
         
         # Si,
         if (
-            # premier n'est pas dans le dictionnaire,
+            # le premier n'est pas dans le
+            # dictionnaire.
             not premier in strobo.keys() or
             
-            # dernier n'est pas dans le dictionnaire,
+            # le dernier n'est pas dans le
+            # dictionnaire.
             not dernier in strobo.keys() or
             
-            # si le premier est différent du dernier.
+            # si le premier et le dernier sont
+            # différents.
             premier != strobo[dernier]
             ):
             

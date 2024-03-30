@@ -14,7 +14,6 @@
 // Cette version permet de comprendre le contexte
 // de la fonction et sa logique.
 
-
 function disarium(nombre) {
     
     let somme = nombre
@@ -46,12 +45,25 @@ for (let nb of nombres) {
 
 
 //-----------------------------------------------
+// Version golf
+//-----------------------------------------------
+// Version condensee et optimisee du code, utili-
+// sant des noms de variables courts et combinant
+// certaines operations pour reduire la taille du
+// code. Pour la beaute du geste !
+
+
+/* En réflexion ;) */
+
+
+
+//-----------------------------------------------
 // Version detaillee
 /*-----------------------------------------------
 / Cette version permet de suivre pas a pas l'exe-
 / cution de la fonction. */
 
-function disarium_explication(nombre) {
+function disarium_detaillee(nombre) {
     let nombre_str = nombre.toString();
     let longueur = nombre_str.length;
     

@@ -21,11 +21,18 @@ function lipogramme($chaine, $lettre) {
 #  Application
 # -----------------------------------------------
 
-$ch = "Le ver de terre";
-$let = "e";
-$estLipogramme = lipogramme($ch, $let);
-$est = $estLipogramme ? "est" : "n'est pas";
-echo $ch." $est"." un lipogramme en '".$let."'.";
+$chaine = "Le ver de terre";
+$lettre = "e";
+$est_lipogramme = lipogramme($chaine, $lettre);
+echo '"' . $chaine . '"';
+if ($est_lipogramme) {
+    echo " est ";
+}
+else {
+    echo " n'est pas ";
+}
+
+echo "un lipogramme en '" . $lettre ."'.";
 
 
 
@@ -38,7 +45,7 @@ echo $ch." $est"." un lipogramme en '".$let."'.";
 #  code. Pour la beaute du geste !
 
 
-$l=function($c,$l){return strpos(str_replace(' ',
+$L=function($c,$l){return strpos(str_replace(' ',
 '',strtolower($c)),strtolower($l))===0;};
 
 
@@ -51,6 +58,7 @@ $l=function($c,$l){return strpos(str_replace(' ',
 #  principales de la fonction.
 
 function lipogramme_commentee($chaine, $lettre) {
+    
     // Convertir en minuscules
     $chaine = strtolower($chaine);
     $lettre = strtolower($lettre);

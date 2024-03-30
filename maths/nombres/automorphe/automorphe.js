@@ -33,9 +33,7 @@ function automorphe(nombre) {
 
 let nombres = [125, 76, 89, 5];
 for (let nb of nombres) {
-    console.log(nb)
     let res = automorphe(nb);
-    console.log(res)
     if (res) {
         console.log(nb, "est automorphe.");
     }
@@ -43,6 +41,7 @@ for (let nb of nombres) {
         console.log(nb, "n'est pas automorphe.");
     }
 }
+
 
 
 //-----------------------------------------------
@@ -64,7 +63,6 @@ let A=n=>(c=n**2,c.toString().endsWith(n));
 // commentaires concis pour expliquer les etapes
 // principales de la fonction.
 
-
 function automorphe_explication(nombre) {
     // Récupérer la longueur du nombre.
     var longueur = nombre.toString().length;
@@ -84,3 +82,13 @@ function automorphe_explication(nombre) {
     // Retourner la solution.
     return carre_fin_nombre == nombre;
 }
+
+
+
+
+
+
+
+
+
+//

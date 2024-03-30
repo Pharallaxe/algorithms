@@ -13,7 +13,6 @@
 # Cette version permet de comprendre le contexte
 # de la fonction et sa logique.
 
-
 def automorphe(nombre):
     longueur = len(str(nombre))
 
@@ -60,7 +59,7 @@ A=lambda n:str(n**2)[-len(str(n)):]==str(n)
 # commentaires concis pour expliquer les etapes
 # principales de la fonction.
 
-def automorphe(nombre):
+def automorphe_commentee(nombre):
     # Récupérer la longueur du nombre.
     longueur = len(str(nombre))
 

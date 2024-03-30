@@ -104,27 +104,8 @@ print(f"4) {romain_1} + {romain_2} = {resultat}")
 # certaines operations pour reduire la taille du
 # code. Pour la beaute du geste !
 
-def e(ch="",d={"CM":900,"CD":400,"XC":90,"XL":40,
-  "IX":9,"IV":4},u={"M":1000,"D":500,"C":100,"L":
-  50,"X":10,"V":5,"I":1}):
- e,i=0,0
- while i<len(ch):
-  e+=d[ch[i:i+2]]if i<len(ch)-1 and ch[i:i+2
-  ]in d else u[ch[i]];i+=2 if i<len(ch)-1 and ch[
-  i:i+2]in d else 1
- return str(e)
 
-def r(n=0,ir = [(1000,"M"),(900,"CM"),(500,"D"),(
- 400,"CD"), (100,"C"), (90,"XC"), (50,"L"), (40,
- "XL"), (10,"X"), (9,"IX"), (5,"V"), (4,"IV"),(1,
- "I")]):
- return"".join(r*(n:=n-i) for i,r in ir)
-
-def C(s,S,o,n=False):
- f={"+":lambda a,b:a+b,"-":lambda a,b:a-b,"*":
- lambda a,b:a*b,"/":lambda a,b:a//b}
- return r(f[o](int(e(s)),int(e(S)))) if n else f[
-     o](int(e(s)),int(e(S)))
+# En reflexion d'une solution efficace....
 
 
 

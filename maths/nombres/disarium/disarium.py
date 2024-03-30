@@ -29,6 +29,7 @@ def disarium(nombre):
 # Application
 # -----------------------------------------------
 
+
 nombres = [120, 133, 135, 145]
 for nb in nombres:
     res = disarium(nb)
@@ -58,7 +59,7 @@ range(len(str(n))))==n
 # Cette version permet de suivre pas a pas l'exe-
 # cution de la fonction.
 
-def disarium_explication(nombre): #
+def disarium_detaillee(nombre): #
     nombre_str = str(nombre)
     longueur = len(nombre_str)
 

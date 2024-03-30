@@ -49,7 +49,11 @@ print(f"Le pgcd de {nbr_1} et {nbr_2} est {res}")
 
 P=lambda n,N:n if not N else P(N,n%N)
 
+nbr_1 = 18
+nbr_2 = 24
+res = P(nbr_1, nbr_2)
 
+print(f"Le pgcd de {nbr_1} et {nbr_2} est {res}")
 
 # -----------------------------------------------
 # Version detaillee

@@ -118,7 +118,7 @@ print("\n")
 # XD Plus compliqué ici avec la récursion, si une
 # idée vous vient...
 
-def S(g):
+def RS(g):
  t=len(g);m=int(t**0.5)
  for R, C in[(r,c)for r in range(t)for c in range
         (t)if not g[r][c]]:
@@ -126,7 +126,7 @@ def S(g):
   U=set(range(1,t+1))- ({g[R][c]for c in range(t)
         }|{g[r][C]for r in range(t)}|{g[rr+r][cc+
         c]for r in range(m)for c in range(m)})
-  if len(U)==1:g[R][C]=U.pop();return S(g)
+  if len(U)==1:g[R][C]=U.pop();return RS(g)
  return g
 
 
@@ -137,7 +137,7 @@ def S(g):
 # Cette version permet de suivre pas a pas l'exe-
 # cution de la fonction.
 
-def resoudre_sudoku(grille):
+def resoudre_sudoku_detaillee(grille):
     taille = len(grille)
     sous_taille = int(taille**0.5)
     
@@ -195,7 +195,7 @@ def resoudre_sudoku(grille):
 # commentaires concis afin d'expliquer les etapes
 # principales de la fonction.
 
-def resoudre_sudoku(grille):
+def resoudre_sudoku_commentee(grille):
     # Déterminer la taille du côté de la grille.
     taille = len(grille)
     

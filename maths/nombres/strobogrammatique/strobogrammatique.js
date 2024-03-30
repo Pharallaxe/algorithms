@@ -57,7 +57,6 @@ for (let nb of nombres) {
 
 
 
-
 //-----------------------------------------------
 // Version golf
 //-----------------------------------------------
@@ -71,13 +70,14 @@ const S=n=>{const s={"0":"0","1":"1","8":"8","6":
 (c,i)=>c in s&&s[c]===n[n.length-1-i])))};
 
 
+
 //-----------------------------------------------
 // Version detaillee
 /*-----------------------------------------------
 / Cette version permet de suivre pas a pas l'exe-
 / cution de la fonction. */
 
-function strobogrammatique_explication(nombre) {
+function strobogrammatique_detaillee(nombre) {
 
     const strobo = {
         "0": "0",
@@ -121,7 +121,7 @@ function strobogrammatique_explication(nombre) {
 / commentaires concis afin d'expliquer les etapes
 / principales de la fonction. */
 
-function strobogrammatique_explication(nombre) {
+function strobogrammatique_commentee(nombre) {
 
     // Définir un dictionnaire de correspondance.
     const strobo = {

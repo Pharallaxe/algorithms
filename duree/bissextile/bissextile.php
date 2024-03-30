@@ -34,9 +34,18 @@ function bissextile($annee) {
 $texte = ["n'est pas", "est"];
 $annees = [1900, 2000, 2024];
 foreach ($annees as $annee) {
+
     $est_bis = bissextile($annee);
-    $chaine = $texte[$est_bis ? 1 : 0];
-    echo "{$annee} {$chaine} bissextile.\n";
+
+    echo $annee . " ";
+
+    if ($est_bis) {
+        echo "n'est pas";
+    } else {
+        echo "est";
+    }
+
+    echo " bissextile.\n";
 }
 
 
@@ -63,7 +72,7 @@ $B=function($a){return $a%400==0||($a%100!=0&&$a%
 
 # On va du plus large vers le plus court.
 
-function bissextile_detaillee($annee) {
+function bissextile_commentee($annee) {
     // Si une année est divisible par 400, elle
     // est bissextile.
     if ($annee % 400 === 0) {

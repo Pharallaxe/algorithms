@@ -39,9 +39,17 @@ function palindrome($chaine) {
 # -----------------------------------------------
 
 $chaine = "Esope reste ici et se repose";
-$estPalindrome = palindrome($chaine);
-$estOuPas = $estPalindrome ? "est" : "n'est pas";
-echo "La chaîne \"$chaine\" $estOuPas un palindrome.";
+
+$est_palindrome = palindrome_commentee($chaine);
+echo '"' . $chaine . '"';
+if ($est_palindrome) {
+    echo " est ";
+}
+else {
+    echo " n'est pas ";
+}
+
+echo "un palindrome.";
 
 
 
@@ -53,9 +61,9 @@ echo "La chaîne \"$chaine\" $estOuPas un palindrome.";
 # certaines operations pour reduire la taille du
 # code. Pour la beaute du geste !
 
-$P=function($c){$r=implode(array_filter(str_split
-(strtolower(str_replace(" ","",$c))),'ctype_alnum
-'));return$r==strrev($r);};
+$P=fn($c)=>preg_replace('/[^a-z0-9]/','',
+strtolower($c))===strrev(preg_replace(
+'/[^a-z0-9]/','',strtolower($c)));
 
 
 

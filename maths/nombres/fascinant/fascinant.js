@@ -42,16 +42,7 @@ function fascinant(nombre) {
 // Application
 //-----------------------------------------------
 
-let nombres = [108, 133, 192, 5832];
-for (let nb of nombres) {
-    let res = fascinant(nb);
-    if (res) {
-        console.log(nb, "est fascinant.");
-    }
-    else {
-        console.log(nb, "n'est pas fascinant.");
-    }
-}
+
 
 
 
@@ -65,7 +56,7 @@ for (let nb of nombres) {
 
 const F=n=>{let r=String(n)+String(2*n)+String(3*
 n);return[...Array(9).keys()].every(i=>r.includes
-(String(i+1)))&& String(n).length>3;};
+(String(i+1)))&& String(n).length>2;};
 
 
 

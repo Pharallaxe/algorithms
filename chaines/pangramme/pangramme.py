@@ -43,13 +43,13 @@ else:
 # certaines operations pour reduire la taille du
 # code. Pour la beaute du geste !
 
-def p2(ch):return len(set(c.lower()for c in ch if
+def P0(ch):return len(set(c.lower()for c in ch if
 c.isalnum())) == 26
 
-def p1(chaine):return len(set(filter(str.isalpha,
+def P1(chaine):return len(set(filter(str.isalpha,
 chaine.lower()))) == 26
 
-p=lambda C:len(
+P2=lambda C:len(
     {c for c in C.lower() if c.isalpha()})==26
 
 
@@ -87,16 +87,16 @@ def pangramme_commentee(chaine):
     # Convertir en minuscule.
     chaine = chaine.lower()
 
-    # Créer une liste vide.
+    # Creer une liste vide.
     liste = []
     
-    # Boucler sur chaque caractère.
+    # Pour chaque caractere dans la chaine,
     for ch in chaine:
         
-        # Si la le caractère est alphanumérique.
+        # si le caractere est alphanumerique,
         if ch.isalnum():
             
-            # Ajouter le caractère à la liste.
+            # ajouter celui-ci à la liste.
             liste.append(ch)
 
     # Convertir la liste en un ensemble.
@@ -105,7 +105,7 @@ def pangramme_commentee(chaine):
     # Verifier s'il y a 26 lettres.
     alpha = len(lettres) == 26
     
-    # Retourner la réponse.
+    # Retourner la reponse.
     return alpha
 
 

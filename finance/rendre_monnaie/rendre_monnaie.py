@@ -58,7 +58,7 @@ print("1 euro   :", monnaie_rendue[4])
 # certaines operations pour reduire la taille du
 # code. Pour la beaute du geste !
 
-def rendre_monnaie(p,a,b,c,d,e):
+def RM(p,a,b,c,d,e):
     s,R=a*20+b*10+c*5+d*2+e-p,[]
     for m in[20,10,5,2,1]:r,s=divmod(s,m);R+=[r]
     return R if s>=0 else[0,0,0,0,0]

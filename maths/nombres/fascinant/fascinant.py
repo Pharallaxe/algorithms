@@ -18,7 +18,7 @@
 def fascinant(nombre):
     chaine_1 = str(nombre)
     
-    if not len(chaine_1) > 3:
+    if not len(chaine_1) > 2:
         return False
     
     chaine_2 = str(nombre * 2)
@@ -57,7 +57,7 @@ for nb in nombres:
 # code. Pour la beaute du geste !
 
 F=lambda n:all(str(i)in str(n)+str(2*n)+str(3*n)
-for i in range(1,10))and len(str(n))>3
+for i in range(1,10))and len(str(n))>2
 
 
 
@@ -91,6 +91,7 @@ def fascinant_commentee(nombre):
             return False
         
     return True
+
 
 
 

@@ -58,20 +58,24 @@ $B),1)==count_chars(strtoupper($C),1);};
 # Cette version permet de suivre pas a pas l'exe-
 # cution de la fonction.
 
-function anagramme_detaillee($str1, $str2) {
+function anagramme_detaillee($str_1, $str_2) {
 
-    $str_A = strtoupper($str1);
-    $str_B = strtoupper($str2);
+    // TRAITER LA PREMIER CHAINE.
+    $str_1 = strtoupper($str_1);
+    $sorted_1 = str_split($str_1);
+    sort($sorted_1);
+    $chaine_fin_1 = implode('', $sorted_1);
 
-    $A_sorted = str_split($str_A);
-    sort($A_sorted);
-    $A_sorted = implode('', $A_sorted);
 
-    $B_Sorted = str_split($str_B);
-    sort($B_Sorted);
-    $B_Sorted = implode('', $B_Sorted);
+    // TRAITER LA DEUXIEME CHAINE.
+    $str_2 = strtoupper($str_2);
+    $sorted_2 = str_split($str_2);
+    sort($sorted_2);
+    $chaine_fin_2 = implode('', $sorted_2);
 
-    return $A_sorted === $B_Sorted;
+    $res = $chaine_fin_1 === $chaine_fin_2;
+
+    return $res;
 }
 
 
@@ -83,33 +87,40 @@ function anagramme_detaillee($str1, $str2) {
 # commentaires concis afin d'expliquer les etapes
 # principales de la fonction.
 
-function anagramme_explication($str1, $str2) {
-    // Convertir les chaînes en majuscules.
-    $str_A = strtoupper($str1);
-    $str_B = strtoupper($str2);
+function anagramme_commentee($str_1, $str_2) {
 
-    // Trier les deux chaines.
+    // TRAITER LA PREMIER CHAINE.
+    // La reduire en miniscule.
+    $str_1 = strtoupper($str_1);
 
-    // Spliter la premiere chaine.
-    $A_sorted = str_split($str_A);
+    // La decouper en tableau.
+    $sorted_1 = str_split($str_1);
 
-    // Trier la premiere chaine.
-    sort($A_sorted);
+    // Trier ce tableau par ordre alphabétique.
+    sort($sorted_1);
 
-    // Concatener la premiere chaine.
-    $A_sorted = implode('', $A_sorted);
+    // Le transformer en chaine.
+    $chaine_fin_1 = implode('', $sorted_1);
 
-    // Spliter la premiere chaine.
-    $B_Sorted = str_split($str_B);
 
-    // Trier la premiere chaine.
-    sort($B_Sorted);
+    // TRAITER LA DEUXIEME CHAINE.
+    // La reduire en miniscule.
+    $str_2 = strtoupper($str_2);
 
-    // Concatener la premiere chaine.
-    $B_Sorted = implode('', $B_Sorted);
+    // La decouper en tableau.
+    $sorted_2 = str_split($str_2);
 
-    // Verifier l'equivalence des chaines.
-    return $A_sorted === $B_Sorted;
+    // Trier ce tableau par ordre alphabétique.
+    sort($sorted_2);
+
+    // Le transformer en chaine.
+    $chaine_fin_2 = implode('', $sorted_2);
+
+    // Comparer les deux chaines.
+    $res = $chaine_fin_1 === $chaine_fin_2;
+
+    // Retourner le resultat.
+    return $res;
 }
 
 ?>

@@ -33,6 +33,8 @@ nombre2 = "12/3"
 res = sommer_fractions(nombre1, nombre2)
 print(res)
 
+
+
 # -----------------------------------------------
 # Version golf
 # -----------------------------------------------
@@ -41,9 +43,11 @@ print(res)
 # certaines operations pour reduire la taille du
 # code. Pour la beaute du geste !
 
-def F(n,N):n,e,m,f=map(int,n.split("/")),map(int,
-N.split("/"));d=e if e==f else e*f;n,m=n*f,m*e;\
-return f"{n + m}/{d}"
+F=lambda n1,n2:str(int(n1.split('/')[0])*int(n2
+.split('/')[1])+int(n2.split('/')[0])*int(n1
+.split('/')[1]))+"/"+str(int(n1.split('/')[1])*
+int(n2.split('/')[1]))
+
 
 
 # -----------------------------------------------

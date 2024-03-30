@@ -29,12 +29,13 @@ def bissextile(annee):
 # Application
 # -----------------------------------------------
 
-texte = ["n'est pas", "est"]
 annees = [1900, 2000, 2024]
 for annee in annees:
     est_bis = bissextile(annee)
-    chaine = texte[est_bis]
-    print(f"{annee} {chaine} bissextile.")
+    if est_bis:
+        print(f"{annee} est bissextile.")
+    else:
+        print(f"{annee} n'est pas bissextile.")
 
 
 
@@ -59,7 +60,7 @@ B=lambda a:a%400==0 or(a%100!=0 and a%4==0)
 
 # On va du plus large vers le plus court.
 
-def bissextile(annee):
+def bissextile_commentee(annee):
     # Si une année est divisible par 400, elle
     # est bissextile.
     if annee % 400 == 0:

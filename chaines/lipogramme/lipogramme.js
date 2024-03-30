@@ -27,16 +27,19 @@ function lipogramme(chaine, lettre) {
 // Application
 //-----------------------------------------------
 
-let chaine = "Le ver de terre.";
+
+let chaine = "Le ver de terre";
 let lettre = "e";
-let estLipogramme = lipogramme(chaine, lettre);
-let estOuPas =
-    estLipogramme ? "est" : "n'est pas";
-console.log(
-    `"${estOuPas}" un
-    lipogramme en "${lettre}".`
-);
+let est_lipogramme = lipogramme(chaine, lettre);
+
+let res = "";
+res += `"${chaine}" `;
+res += est_lipogramme ? "est" : "n'est pas";
+res += ` un lipogramme en '${lettre}'.`;
+console.log(res);
     
+// Note : j'utilise une condition ternaire :
+// res = bool ? valeur_si_vraie : valeur_si_faux
 
 
 //-----------------------------------------------
@@ -59,7 +62,7 @@ indexOf(l.toLowerCase())==-1
 / commentaires concis pour expliquer les etapes
 / principales de la fonction. */
 
-function lipogramme(chaine, lettre) {
+function lipogramme_commentee(chaine, lettre) {
 
     // Convertir en minuscules
     chaine = chaine.toLowerCase();

@@ -31,7 +31,7 @@ function factorielle($nombre) {
 # -----------------------------------------------
 
 $resultat = factorielle(6);
-echo "La factorielle de 6 est : $resultat";
+echo "La factorielle de 6 est $resultat";
 
 
 
@@ -73,6 +73,8 @@ function factorielle_commentee($nombre) {
 
 
 
+
+   
 
 
 

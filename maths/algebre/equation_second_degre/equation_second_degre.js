@@ -8,6 +8,7 @@
 / me d'algorithme. 
 //---------------------------------------------*/
 
+
 //-----------------------------------------------
 // Version courte
 //-----------------------------------------------
@@ -54,6 +55,7 @@ let equation_2 = [1, -2, 1];
 let sol_2 = solveur_reel(...equation_2);
 sol_2 = sol_2.join(", ")
 console.log(`Les solutions sont {${sol_2}}`);
+
 
 
 //-----------------------------------------------
@@ -155,7 +157,7 @@ function solveur_complexe(a, b, c) {
 //-----------------------------------------------
 
 let equation_3 = [1, 2, 5];
-let sol_3 = solveur_reel(...equation_3);
+let sol_3 = solveur_complexe(...equation_3);
 sol_3 = sol_3.join(", ")
 console.log(`Les solutions sont {${sol_3}}`);
 

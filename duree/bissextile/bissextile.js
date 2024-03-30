@@ -32,9 +32,19 @@ function bissextile(annee) {
 let texte = ["n'est pas", "est"];
 let annees = [1900, 2000, 2024];
 for (let annee of annees) {
+
     let est_bis = bissextile(annee);
-    let chaine = texte[est_bis ? 1 : 0];
-    console.log(`${annee} ${chaine} bissextile.`);
+
+    let res = annee + " ";
+
+    if (est_bis) {
+        res += "est";
+    } else {
+        res += "n'est pas";
+    }
+    res += " bissextile.";
+
+    console.log(res);
 }
 
 
@@ -60,7 +70,7 @@ let B=a=>a%400==0||(a%100!=0&&a%4==0)
 
 // On va du plus large vers le plus court.
 
-function bissextile(annee) {
+function bissextile_commentee(annee) {
     // Si une année est divisible par 400, elle
     // est bissextile.
     if (annee % 400 === 0) {

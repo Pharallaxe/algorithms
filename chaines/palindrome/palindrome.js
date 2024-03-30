@@ -35,16 +35,13 @@ function palindrome(chaine) {
 // Application
 //-----------------------------------------------
 
-let str = "Esope reste ici et se repose";
-let estPalindrome = P(str);
-let pal = "palindromme"
+let chaine = "Esope reste ici et se repose";
+let est_palindrome = palindrome(chaine);
 
-if (estPalindrome) {
-    console.log(`"${str}" est un ${pal}.`);
-} else {
-    console.log(`"${str}" n'est pas un ${pal}.`);
-}
-
+let res = `"${chaine}" `;
+res += est_palindrome ? "est" : "n'est pas";
+res += ` un palindrome.`;
+console.log(res);
 
 
 //-----------------------------------------------

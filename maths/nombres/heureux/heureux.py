@@ -39,13 +39,27 @@ for nb in range(10,16):
 
 
 # -----------------------------------------------
+# Version golf
+# -----------------------------------------------
+# Version condensee et optimisee du code, utili-
+# sant des noms de variables courts et combinant
+# certaines operations pour reduire la taille du
+# code. Pour la beaute du geste !
+
+
+H=lambda n:(lambda g:g(g,n)==1)(lambda s,k:k if k
+<10 else s(s,sum(int(x)**2 for x in str(k))))
+
+
+
+# -----------------------------------------------
 # Version commentee
 # -----------------------------------------------
 # Proche de la version raccourcie, mais avec des
 # commentaires concis pour expliquer les etapes
 # principales de la fonction.
 
-def heureux_explication(nombre):
+def heureux_commentee(nombre):
     
     # Si le nombre est inférieur à 10.
     if nombre < 10:

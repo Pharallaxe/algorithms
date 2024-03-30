@@ -29,7 +29,7 @@ function factorielle(nombre) {
 //-----------------------------------------------
 
 res = factorielle(6);
-console.log(`La factorielle de 6 est : ${res}`);
+console.log(`La factorielle de 6 est ${res}`);
 
 //-----------------------------------------------
 // Version golf

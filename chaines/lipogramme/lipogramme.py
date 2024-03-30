@@ -40,6 +40,7 @@ else:
 print(f" un lipogramme en '{lettre}'.")
 
 
+
 # -----------------------------------------------
 # Version golf
 # -----------------------------------------------
@@ -59,7 +60,7 @@ L=lambda s,l:l not in s.lower().replace(' ','')
 # commentaires concis pour expliquer les etapes
 # principales de la fonction.
 
-def lipogramme(chaine, lettre):
+def lipogramme_commentee(chaine, lettre):
     
     # Convertir en minuscules.
     chaine = chaine.lower()

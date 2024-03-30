@@ -40,6 +40,7 @@ function base(nb, depart, fin) {
 // Application
 //-----------------------------------------------
 
+
 let ch1 = "1010";
 let depart1 = 2;
 let arrivee1 = 10;
@@ -64,10 +65,7 @@ console.log(`${ch2} de ${conv2} = ${res2}`);
 // certaines operations pour reduire la taille du
 // code. Pour la beaute du geste !
 
-const B=(n,d,f)=>(e="ABCDEFGHIJKLMNOPQRSTUVWXYZ"+
-"0123456789",v=0,n.split``.map(c=>v=v*d+e.indexOf
-(c)),c=[],(g=(v=>v>0&&(r=v%f,c.unshift(e[r]),g(v/
-f))))(v),c.join``||'0')
+/* En reflexion d'une solution efficace.... */
 
 
 
@@ -80,33 +78,36 @@ f))))(v),c.join``||'0')
 function base_detaillee(nombre, depart, fin) {
     let base = "0123456789"
     base += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    let val = 0;
-    
+
+    let valeur = 0;
     let nombre_inv = nombre.split('').reverse();
-    let longueur = nombre_inv.length;
-    
-    for (let i = 0; i < longueur; i++) {
+
+    for (let i = 0; i < nombre_inv.length; i++) {
         let base_i = base.indexOf(nombre_inv[i]);
-        val += base_i * Math.pow(depart, i);
+        valeur += base_i * Math.pow(depart, i);
     }
-    
+
     let convertis = [];
-    
-    if (val === 0) {
+
+    // Si la valeur est 0.
+    if (valeur === 0) { 
         return "0";
+
     } else {
-        while (val >= fin - 1) {
-            let ch_base_fin = val % fin;
-            convertis.unshift(base[ch_base_fin]);
-            val = Math.floor(val / fin);
+        while (valeur >= fin - 1) {
+            let ch_base_fin = valeur % fin;
+            convertis.push(base[ch_base_fin]);
+            valeur = Math.floor(valeur / fin);
         }
-        
-        if (val !== 0) {
-            convertis.unshift(base[val]);
+
+        if (valeur !== 0) {
+            convertis.push(base[valeur]);
         }
-        
-        return convertis.reverse().join('');
     }
+
+    let res = convertis.reverse().join('');
+
+    return res;
 }
 
 
@@ -174,13 +175,14 @@ function base_commentee(nombre, depart, fin) {
             // Ajouter le dernier chiffre.
             convertis.push(base[valeur]);
         }
-
-        // Concatener tous les chiffres.
-        let res = convertis.reverse().join('');
-
-        // Retourn le resultat.
-        return res
     }
+
+    // Concatener tous les chiffres.
+    let res = convertis.reverse().join('');
+
+    // Retourn le resultat.
+    return res;
+
 }
 
 

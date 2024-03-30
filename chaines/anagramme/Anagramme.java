@@ -45,9 +45,9 @@ public class Anagramme {
         String chaine = est_ana ? "sont" :
             "ne sont pas";
 
-        System.out.println("Les chaînes ");
+        System.out.print("Les chaînes ");
         System.out.print(chaine);
-        System.out.println("des anagrammes.");
+        System.out.println(" des anagrammes.");
     }
 
 
@@ -60,14 +60,11 @@ public class Anagramme {
 // certaines operations pour reduire la taille du
 // code. Pour la beaute du geste !
 
-    static boolean anagramme_golf(
-        String s1, String s2) {
-        char[] a =s1.toUpperCase().toCharArray(),
-               b =s2.toUpperCase().toCharArray();
-        Arrays.sort(a);Arrays.sort(b);
-        return 
-            new String(a).equals(new String(b));
-    }
+static boolean A(String s1,String s2){char[] a=s1.
+toUpperCase().toCharArray(),b=s2.toUpperCase()
+.toCharArray();java.util.Arrays.sort(a);java.util
+.Arrays.sort(b);return new String(a).equals(new
+String(b));}
 
 
 //-----------------------------------------------

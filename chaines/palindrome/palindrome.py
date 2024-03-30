@@ -55,7 +55,7 @@ else:
 # code. Pour la beauté du geste !
 
 P=lambda c:(c:=''.join(x.lower()for x in c if
-                       x.isalnum()))==c[::-1]
+x.isalnum()))==c[::-1]
 
 
 
