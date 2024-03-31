@@ -1,8 +1,8 @@
 # -----------------------------------------------
 # sudoku_solveur
 # -----------------------------------------------
-# Fonction pour résoudre un sudoku de taille 4 ou
-# 9 et qui n'es pas un sudoku très complexe à ré-
+# Fonction pour resoudre un sudoku de taille 4 ou
+# 9 et qui n'es pas un sudoku tres complexe a re-
 # soudre.
 # -----------------------------------------------
 
@@ -13,11 +13,11 @@
 # Cette version permet de comprendre le contexte
 # de la fonction et sa logique.
 
-def resoudre_sudoku(grille):
+def sudoku_solveur(grille):
     taille = len(grille)
     mini = int(taille**0.5)
     
-    # Résoud la grille.
+    # Resoud la grille.
     def resoudre():
         for y in range(taille):
             for x in range(taille):
@@ -32,19 +32,19 @@ def resoudre_sudoku(grille):
         return True
 
 
-    # Détermine si une case est valide.
+    # Determine si une case est valide.
     def valider_case(y, x, num):
         
-        # Vérifier la ligne
+        # Verifier la ligne.
         if num in grille[y]:
             return False
         
-        # Vérifier la Conne
+        # Verifier la colonne.
         if any(grille[y0][x] == num for y0 in
                range(taille)):
             return False
         
-        # Vérifier la sous-grille
+        # Verifier la sous-grille.
         y0, x0 = (y//mini)*mini, (x//mini)*mini
         
         for j in range(0, mini):
@@ -61,33 +61,33 @@ def resoudre_sudoku(grille):
 # Application
 # -----------------------------------------------
 
-# Créer une grille de taille 9
+# Creer une grille de taille 9
 sudoku_9 = [
-    [5, 3, 0, 0, 7, 0, 0, 0, 0],
-    [6, 0, 0, 1, 9, 5, 0, 0, 0],
-    [0, 9, 8, 0, 0, 0, 0, 6, 0],
-    [8, 0, 0, 0, 6, 0, 0, 0, 3],
-    [4, 0, 0, 8, 0, 3, 0, 0, 1],
-    [7, 0, 0, 0, 2, 0, 0, 0, 6],
-    [0, 6, 0, 0, 0, 0, 2, 8, 0],
-    [0, 0, 0, 4, 1, 9, 0, 0, 5],
-    [0, 0, 0, 0, 8, 0, 0, 7, 9]
+    [0, 0, 0, 2, 6, 0, 7, 0, 1],
+    [6, 8, 0, 0, 7, 0, 0, 9, 0],
+    [1, 9, 0, 0, 0, 4, 5, 0, 0],
+    [8, 2, 0, 1, 0, 0, 0, 4, 0],
+    [0, 0, 4, 6, 0, 2, 9, 0, 0],
+    [0, 5, 0, 0, 0, 3, 0, 2, 8],
+    [0, 0, 9, 3, 0, 0, 0, 7, 4],
+    [0, 4, 0, 0, 5, 0, 0, 3, 6],
+    [7, 0, 3, 0, 1, 8, 0, 0, 0]
 ]
 
-# Résoudre le Sudoku
-resultat_9 = resoudre_sudoku(sudoku_9)
+# Resoudre le Sudoku
+resultat_9 = sudoku_solveur(sudoku_9)
 print("\n")
-print("Résolution du sudoku de taille 9")
+print("Resolution du sudoku de taille 9")
 if resultat_9:
     for ligne in resultat_9:
         print("".join([str(i) for i in ligne]))
 else:
-    print("Aucune solution trouvée.")
+    print("Aucune solution trouvee.")
 
 print("\n")
 print("\n")
 
-# Créer une grille de taille 4
+# Creer une grille de taille 4
 sudoku_4 = [
     [4, 0, 0, 3],
     [0, 1, 0, 0],
@@ -95,14 +95,14 @@ sudoku_4 = [
     [2, 0, 4, 0]
 ]
 
-# Résoudre le Sudoku
-resultat_4 = resoudre_sudoku(sudoku_4)
-print("Résolution du sudoku de taille 4")
+# Resoudre le Sudoku
+resultat_4 = sudoku_solveur(sudoku_4)
+print("Resolution du sudoku de taille 4")
 if resultat_4:
     for ligne in resultat_4:
         print("".join([str(i) for i in ligne]))
 else:
-    print("Aucune solution trouvée.")
+    print("Aucune solution trouvee.")
 
 print("\n")
 print("\n")
@@ -115,10 +115,10 @@ print("\n")
 # certaines operations pour reduire la taille du
 # code. Pour la beaute du geste !
 
-# XD Plus compliqué ici avec la récursion, si une
-# idée vous vient...
+# XD Plus complique ici avec la recursion, si une
+# idee vous vient...
 
-def RS(g):
+def SR(g):
  t=len(g);m=int(t**0.5)
  for R, C in[(r,c)for r in range(t)for c in range
         (t)if not g[r][c]]:
@@ -126,7 +126,7 @@ def RS(g):
   U=set(range(1,t+1))- ({g[R][c]for c in range(t)
         }|{g[r][C]for r in range(t)}|{g[rr+r][cc+
         c]for r in range(m)for c in range(m)})
-  if len(U)==1:g[R][C]=U.pop();return RS(g)
+  if len(U)==1:g[R][C]=U.pop();return SR(g)
  return g
 
 
@@ -137,11 +137,11 @@ def RS(g):
 # Cette version permet de suivre pas a pas l'exe-
 # cution de la fonction.
 
-def resoudre_sudoku_detaillee(grille):
+def sudoku_solveur_detaillee(grille):
     taille = len(grille)
     sous_taille = int(taille**0.5)
     
-    # Résoud la grille.
+    # Resoud la grille.
     def resoudre():
         for y in range(taille):
             for x in range(taille):
@@ -161,7 +161,7 @@ def resoudre_sudoku_detaillee(grille):
         return False
 
 
-    # Détermine si une case est valide.
+    # Determine si une case est valide.
     def valider_case(y, x, numero):
         
         for x0 in range(taille):
@@ -178,10 +178,11 @@ def resoudre_sudoku_detaillee(grille):
         for j in range(0, sous_taille):
             for i in range(0, sous_taille):
                 if grille[y0 + j][x0 + i] == numero:
-                    return False  
+                    return False
                 
         return True
 
+    # Principal
     if resoudre():
         return grille
     else:
@@ -195,28 +196,28 @@ def resoudre_sudoku_detaillee(grille):
 # commentaires concis afin d'expliquer les etapes
 # principales de la fonction.
 
-def resoudre_sudoku_commentee(grille):
-    # Déterminer la taille du côté de la grille.
+def sudoku_solveur_commentee(grille):
+    # Determiner la taille du côte de la grille.
     taille = len(grille)
     
-    # Déterminer celle du sous-carré.
+    # Determiner celle du sous-carre.
     sous_taille = int(taille**0.5)
     
     
-    # Résoud la grille.
+    # Resoud la grille.
     def resoudre():
         
-        # Pour y, de 0 à taille,
+        # Pour y, de 0 a taille,
         for y in range(taille):
             
-            # et pour chaque x, de 0 à taille
+            # et pour chaque x, de 0 a taille
             for x in range(taille):
                 
                 # si la case en y et x est vide,
                 if grille[y][x] == 0:
                     
                     # tenter de remplir la case,
-                    # et retourner le numéro.
+                    # et retourner le numero.
                     return remplir_case(y, x)
         
         # Retourner vrai pour avancer.
@@ -225,51 +226,51 @@ def resoudre_sudoku_commentee(grille):
     # Tente de remplir une case de la grille.
     def remplir_case(y, x):
         
-        # Parcourir tous les numéro possibles.
+        # Parcourir tous les numero possibles.
         for numero in range(1, taille + 1):
             
-            # Si le numéro n'est pas déjà dans
-            # la ligne et, la Conne et le sous-
-            # carré.
+            # Si le numero n'est pas deja dans
+            # la ligne et, la col et le sous-
+            # carre.
             if valider_case(y, x, numero):
                 
-                # Remplir la case avec le numéro.
+                # Remplir la case avec le numero.
                 grille[y][x] = numero
                 
-                # Apeller récursivement la fonc-
+                # Apeller recursivement la fonc-
                 # tion pour continuer.
                 if resoudre():
                     
                     # Retourner vrai.
                     return True
                 
-                # Annuler la dernière modifica-
+                # Annuler la derniere modifica-
                 # tion, si la solution n'est pas
-                # trouvée
+                # trouvee
                 grille[y][x] = 0
         
         # Et donc retourner faux !
         return False
 
 
-    # Détermine si une case est valide.
+    # Determine si une case est valide.
     def valider_case(y, x, numero):
         
-        # Pour chaque valeur de 0 à taille,
+        # Pour chaque valeur de 0 a taille,
         for x0 in range(taille):
             
-            # si cette valeur est présente dans
+            # si cette valeur est presente dans
             # la ligne,
             if grille[y][x0] == numero:
                 
                 # retourner faux.
                 return False
             
-        # Pour chaque valeur de 0 à taille,
+        # Pour chaque valeur de 0 a taille,
         for y0 in range(taille):
             
-            # si cette valeur est présente dans
-            # la Conne,
+            # si cette valeur est presente dans
+            # la colonne,
             if grille[y0][x] == numero:
                 
                 # retourner faux.
@@ -278,17 +279,17 @@ def resoudre_sudoku_commentee(grille):
         # Initialiser le depart pour les lignes.
         y0 = (y // sous_taille) * sous_taille
         
-        # Initialiser le depart des Connes.
+        # Initialiser le depart des colonne.
         x0 = (x // sous_taille) * sous_taille
         
-        # Pour j, de 0 à sous taille,
+        # Pour j, de 0 a sous taille,
         for j in range(0, sous_taille):
             
-            # Pour i, de 0 à sous-taille,
+            # Pour i, de 0 a sous-taille,
             for i in range(0, sous_taille):
                 
                 # di la valeur de la case couran-
-                # te est égale à celle de numéro
+                # te est egale a celle de numero
                 if grille[y0 + j][x0 + i] == numero:
                     
                     # retourner faux.
@@ -301,7 +302,7 @@ def resoudre_sudoku_commentee(grille):
     # Si la fonction renvoie une solution,
     if resoudre():
         
-        # retourner la grille résolue.
+        # retourner la grille resolue.
         return grille
     
     # Sinon,
