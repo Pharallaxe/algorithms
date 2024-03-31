@@ -25,38 +25,45 @@ Les algorithmes sont disponibles dans une variété de langages de programmation
   * [puissance](algebre/puissance) => [Python](algebre/puissance/puissance.py)
   * [sommer_fractions](algebre/sommer_fractions) => [JS](algebre/sommer_fractions/sommer_fractions.js) - [Python](algebre/sommer_fractions/sommer_fractions.py)
 
+---
+
 2 - [ASCII](ascii)
 * [montagne](ascii/montagne) => [JS](ascii/montagne/montagne.js) - [Python](ascii/montagne/montagne.py)
 
+---
 
-2 - [CHAINE](chaine)
+3 - [CHAINE](chaine)
 * [anagramme](chaine/anagramme) => [JS](chaine/anagramme/anagramme.js) - [PHP](chaine/anagramme/anagramme.php) - [Python](chaine/anagramme/anagramme.py)
 * [deponctuation](chaine/deponctuation) => [JS](chaine/deponctuation/deponctuation.js) - [Python](chaine/deponctuation/deponctuation.py)
 * [lipogramme](chaine/lipogramme) => [JS](chaine/lipogramme/lipogramme.js) - [PHP](chaine/lipogramme/lipogramme.php) - [Python](chaine/lipogramme/lipogramme.py)
 * [palindrome](chaine/palindrome) => [JS](chaine/palindrome/palindrome.js) - [PHP](chaine/palindrome/palindrome.php) - [Python](chaine/palindrome/palindrome.py)
 * [pangramme](chaine/pangramme) => [Python](chaine/pangramme/pangramme.py)
 
+---
 
-3 - [CONVERSION](conversion)
+4 - [CONVERSION](conversion)
 * [base](conversion/base) => [JS](conversion/base/base.js) - [Python](conversion/base/base.py)
 * [romain](conversion/romain) => [JS](conversion/romain/romain.js) - [Python](conversion/romain/romain.py)
 
+---
 
-
-4 - [GEOMETRIE](geometrie)
+5 - [GEOMETRIE](geometrie)
 * [distance_euclidienne](geometrie/distance_euclidienne) => [JS](geometrie/distance_euclidienne/distance_euclidienne.js)
 
+---
 
-5 - [FINANCE](finance)
+6 - [FINANCE](finance) 
 * [rendre_monnaie](finance/rendre_monnaie) => [JS](finance/rendre_monnaie/rendre_monnaie.js) - [Python](finance/rendre_monnaie/rendre_monnaie.py)
 
+---
 
-6 - [JEU](jeu)
+7 - [JEU](jeu)
 * [morpionX3](jeu/morpionX3) => [JS](jeu/morpionX3/morpionX3.js) - [Python](jeu/morpionX3/morpionX3.py)
 * [sudoku](jeu/sudoku) => [JS](jeu/sudoku/sudoku.js) - [Python](jeu/sudoku/sudoku.py)
 
+---
 
-7 - [NOMBRE]()
+8 - [NOMBRE](nombre)
 * [abondance](nombre/abondance) => [JS](nombre/abondance/abondance.js) - [PHP](nombre/abondance/abondance.php) - [Python](nombre/abondance/abondance.py)
 * [automorphe](nombre/automorphe) => [JS](nombre/automorphe/automorphe.js) - [Python](nombre/automorphe/automorphe.py)
 * [disarium](nombre/disarium) => [JS](nombre/disarium/disarium.js) - [Python](nombre/disarium/disarium.py)
@@ -66,14 +73,17 @@ Les algorithmes sont disponibles dans une variété de langages de programmation
 * [premier](nombre/premier) => [JS](nombre/premier/premier.js) - [PHP](nombre/premier/premier.php) - [Python](nombre/premier/premier.py)
 * [strobogrammatique](nombre/strobogrammatique) => [JS](nombre/strobogrammatique/strobogrammatique.js) - [Python](nombre/strobogrammatique/strobogrammatique.py)
 
-8 - [STATISTIQUE](statistique/)
-* [ecart-type](statistique/ecart-type) => [JS](statistique/ecart-type/ecart-type.js) - [PHP](statistique/ecart-type/ecart-type.php) - [Python](statistique/ecart-type/ecart-type.py)
-* [Moyenne](statistique/moyenne)
-    * [arithmetique](statistique/moyenne/arithmetique) => [Java](statistique/moyenne/arithmetique/MoyenneArithmetique.java) - [JS](statistique/moyenne/arithmetique/arithmetique.js) - [PHP](statistique/moyenne/arithmetique/arithmetique.php) - [Python](statistique/moyenne/arithmetique/arithmetique.py)
-    * [geometrique](statistique/moyenne/geometrique) => [Java](statistique/moyenne/geometrique/MoyenneGeometrique.java) - [JS](statistique/moyenne/geometrique/geometrique.js) - [PHP](statistique/moyenne/geometrique/geometrique.php) - [Python](statistique/moyenne/geometrique/geometrique.py)
-    * [harmonique](statistique/moyenne/harmonique) => [Java](statistique/moyenne/harmonique/MoyenneHarmonique.java) - [JS](statistique/moyenne/harmonique/harmonique.js) - [PHP](statistique/moyenne/harmonique/harmonique.php) - [Python](statistique/moyenne/harmonique/harmonique.py)
-    * [quadratique](statistique/moyenne/quadratique) => [JS](statistique/moyenne/quadratique/quadratique.js) - [Python](statistique/moyenne/quadratique/quadratique.py)
+---
 
-9 - [TEMPS](temps)
+9 - [STATISTIQUE](statistique)
+* [ecart-type](statistique/ecart-type) => [JS](statistique/ecart-type/ecart-type.js) - [PHP](statistique/ecart-type/ecart-type.php) - [Python](statistique/ecart-type/ecart-type.py)
+* [arithmetique](statistique/arithmetique) => [Java](statistique/arithmetique/MoyenneArithmetique.java) - [JS](statistique/arithmetique/arithmetique.js) - [PHP](statistique/arithmetique/arithmetique.php) - [Python](statistique/arithmetique/arithmetique.py)
+* [geometrique](statistique/geometrique) => [Java](statistique/geometrique/MoyenneGeometrique.java) - [JS](statistique/geometrique/geometrique.js) - [PHP](statistique/geometrique/geometrique.php) - [Python](statistique/geometrique/geometrique.py)
+* [harmonique](statistique/harmonique) => [Java](statistique/harmonique/MoyenneHarmonique.java) - [JS](statistique/harmonique/harmonique.js) - [PHP](statistique/harmonique/harmonique.php) - [Python](statistique/harmonique/harmonique.py)
+* [quadratique](statistique/quadratique) => [JS](statistique/quadratique/quadratique.js) - [Python](statistique/quadratique/quadratique.py)
+
+---
+
+10 - [TEMPS](temps)
 * [bissextile](temps/bissextile) => [JS](temps/bissextile/bissextile.js) - [PHP](temps/bissextile/bissextile.php) - [Python](temps/bissextile/bissextile.py)
 * [conversion_seconde](temps/conversion_seconde) => [JS](temps/conversion_seconde/conversion_seconde.js)
