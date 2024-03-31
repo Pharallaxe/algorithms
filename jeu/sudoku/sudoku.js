@@ -20,8 +20,8 @@ function sudoku_solveur(grille) {
         for (let y = 0; y < taille; y++) {
             for (let x = 0; x < taille; x++) {
                 if (grille[y][x] == 0) {
-                    for (let n = 1; n <= taille; n++) {
-                        if (valider_case(y, x, n)) {
+                    for (let n=1;n<=taille; n++){
+                        if (valider_case(y,x,n)){
                             grille[y][x] = n;
                             if (resoudre()) {
                                 return true;
@@ -57,7 +57,7 @@ function sudoku_solveur(grille) {
 
         for (let j = 0; j < mini; j++) {
             for (let i = 0; i < mini; i++) {
-                if (grille[y0 + j][x0 + i] == num) {
+                if (grille[y0 + j][x0 + i]==num){
                     return false;
                 }
             }

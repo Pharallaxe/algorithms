@@ -136,4 +136,12 @@ function abondance_commentee($nombre) {
     return $abondance;
 }
 
+
+
+
+
+
+
+
+
 ?>
