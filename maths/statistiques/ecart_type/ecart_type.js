@@ -114,17 +114,18 @@ function ecart_type_commentee(liste) {
     // Pour chaque terme de la liste à étudier.
     for (let courant of liste) {
 
-        // Calculer l'écart entre le nombre et la moyenne.
+        // Calculer l'écart entre le nombre et la
+        // moyenne.
         let ecart = courant - moyenne;
 
         // Calculer le carré de l'écart.
         let carre_ecart = Math.pow(ecart, 2);
 
-        // Ajouter le carré de l'écart à la somme.
+        // Ajouter le carré à la somme.
         somme_carres += carre_ecart;
     }
 
-    // Diviser la somme des carrés la longueur..
+    // Diviser la somme des carrés la longueur.
     let variance = somme_carres / longueur;
 
     // Calculer la racine carrée de la variance.

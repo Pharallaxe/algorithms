@@ -117,7 +117,8 @@ function ecart_type_commentee($liste) {
     // Pour chaque terme de la liste à étudier.
     foreach ($liste as $courant) {
 
-        // Calculer l'écart entre le nombre et la moyenne.
+        // Calculer l'écart entre le nombre et la
+        // moyenne.
         $ecart = $courant - $moyenne;
 
         // Calculer le carré de l'écart.
@@ -125,11 +126,11 @@ function ecart_type_commentee($liste) {
             2
         );
 
-        // Ajouter le carré de l'écart à la somme.
+        // Ajouter le carré à la somme.
         $somme_carres += $carre_ecart;
     }
 
-    // Diviser la somme des carrés la longueur..
+    // Diviser la somme des carrés la longueur.
     $variance = $somme_carres / $longueur;
 
     // Calculer la racine carrée de la variance.

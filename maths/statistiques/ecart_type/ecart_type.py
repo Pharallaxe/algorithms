@@ -107,7 +107,8 @@ def ecart_type_commentee(liste):
     # Pour chaque terme de la liste a etudier.
     for courant in liste:
 
-        # Calculer l'ecart entre le nombre et la moyenne.
+        # Calculer l'ecart entre le nombre et la
+        # moyenne.
         ecart = courant - moyenne
 
         # Calculer le carre de l'ecart.
