@@ -3,6 +3,16 @@
 /*-----------------------------------------------
 / Cette fonction permet de dessiner quelques mon-
 / tagnes sous forme ASCII.
+/ 
+/ Ex: 
+/                     /\
+/                    /  \
+/                   /    \
+/                  /      \              /\
+/     /\          /        \            /  \
+/    /  \        /          \    /\    /    \
+/   /    \  /\  /            \  /  \  /      \
+/  /      \/  \/              \/    \/        \
 /----------------------------------------------*/
 
 
@@ -37,7 +47,7 @@ function montagne(sommets) {
 // Application
 //-----------------------------------------------
 
-let sommets = [5, 3, 10, 3, 7,];
+let sommets = [4, 2, 8, 3, 5];
 let montagnes = montagne(sommets);
 console.log(montagnes);
 

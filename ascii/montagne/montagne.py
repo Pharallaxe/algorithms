@@ -3,6 +3,16 @@
 # -----------------------------------------------
 # Cette fonction permet de dessiner quelques mon-
 # tagnes sous forme ASCII.
+
+# Ex: 
+#                     /\
+#                    /  \
+#                   /    \
+#                  /      \              /\
+#     /\          /        \            /  \
+#    /  \        /          \    /\    /    \
+#   /    \  /\  /            \  /  \  /      \
+#  /      \/  \/              \/    \/        \
 # -----------------------------------------------
 
 
@@ -32,7 +42,7 @@ def montagne(sommets):
 # Application
 # -----------------------------------------------
 
-sommets = [5, 3, 10, 3, 7]
+sommets = [4, 2, 8, 3, 5]
 montagnes = montagne(sommets)
 print(montagnes)
 

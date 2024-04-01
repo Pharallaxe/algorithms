@@ -34,6 +34,8 @@ Les algorithmes sont disponibles dans une variété de langages de programmation
 
 2 - [ASCII](ascii)
 * [montagne](ascii/montagne) => [JS](ascii/montagne/montagne.js) - [Python](ascii/montagne/montagne.py)
+* [spirale](ascii/spirale) => [Python](ascii/spirale/spirale.py)
+* [spirale_ulam](ascii/spirale_ulam) => [Python](ascii/spirale_ulam/spirale_ulam.py)
 
 ---
 
