@@ -3,8 +3,8 @@
 # -----------------------------------------------
 # Cette spirale est une methode simple qui permet
 # de representer les nombres premiers. Ainsi, ils
-# forment des motifs qui n'ont jamais etait reel-
-# lement expliques.
+# forment des motifs qui n'ont jamais ete expli-
+# ques.
 #
 # Ex : de 0 a 576
 # __________@___@___________@___________@________
