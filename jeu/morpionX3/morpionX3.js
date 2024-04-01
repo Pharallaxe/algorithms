@@ -3,7 +3,9 @@
 //-----------------------------------------------
 // Identifie si une grille de morpion 3 x 3 con-
 // tient une combinaison gagnante et retourne le
-// gagnant.
+// gagnant. C'est une version non dynamique, elle
+// ne prend en compte qu'une grille de morpion de
+// 3 de côté.
 //-----------------------------------------------
 
 
@@ -12,6 +14,110 @@
 //-----------------------------------------------
 
 function morpion(grille, vide) {
+    
+    // Aplatir la grille.
+    let table = grille.reduce((a, b) => a.concat(
+        b), []);
+
+    // Définir toutes les solutions
+    let lignes = [
+        [0,1,2],[3,4,5],[6,7,8],
+        [0,3,6],[1,4,7],[2,5,8],
+        [0,4,8],[2,4,6]
+    ];
+
+    // Pour chaque combinaison,
+    for (let i = 0; i < lignes.length; i++) {
+        let [a, b, c] = lignes[i];
+        if (table[a] === table[b] &&
+            table[b] === table[c] &&
+            table[a] !== vide) {
+            return table[a]; 
+        }
+    }
+
+    return null; 
+}
+
+
+
+//-----------------------------------------------
+// Application
+//-----------------------------------------------
+
+let grille = [
+    ["X", "O", "X"],
+    [" ", "X", "O"],
+    ["O", " ", "X"]
+];
+
+let gagnant = morpion(grille, " ");
+if (gagnant !== " ") {
+    console.log("Le gagnant est :", gagnant);
+} else {
+    console.log("Aucun gagnant pour le moment.");
+}
+
+
+
+//-----------------------------------------------
+// Version golf
+//-----------------------------------------------
+
+let M=(g,v)=>(g.map((_,i)=>(g[i][0]==g[i][1]&&g[i
+][1]==g[i][2]&& g[i][2]!=v)||(g[0][i]==g[1][i]&&g
+[1][i]==g[2][i]&&g[2][i]!=v)?g[i][0]:"")[0])||(g[
+1][1]!=v&&((g[0][0]==g[1][1]&&g[1][1]==g[2][2]&&g
+[2][2]!=v)||(g[0][2]==g[1][1]&&g[1][1]==g[2][0]&&
+g[2][0]!=v))?g[1][1]:v);
+
+
+
+//-----------------------------------------------
+// Version commentee
+//-----------------------------------------------
+
+function morpion_commentee(grille, vide) {
+    
+    // Aplatir la grille en un tableau à une
+    // dimension
+    let table = grille
+        .reduce((a, b) => a.concat(b), []);
+
+    // Définir toutes les solutions
+    let lignes = [
+        [0,1,2],[3,4,5],[6,7,8],// en lignes,
+        [0,3,6],[1,4,7],[2,5,8],// en colonne, et
+        [0,4,8],[2,4,6]         // en diagonales.
+    ];
+
+    // Pour chaque combinaison,
+    for (let i = 0; i < lignes.length; i++) {
+
+        // identifier les trois emplacements,
+        let [a, b, c] = lignes[i];
+
+        // Si les valeurs sont égales et diffé-
+        // rentes de vide,
+        if (table[a] === table[b] &&
+            table[b] === table[c] &&
+            table[a] !== vide) {
+
+            // retourner la valeur courante.
+            return table[a]; 
+        }
+    }
+
+    // Retourner null s'il n'y a pas de gagnant.
+    return null; 
+}
+
+
+//-----------------------------------------------
+// Version alpha
+//-----------------------------------------------
+
+function morpion_alpha(grille, vide) {
 
     // Vérification des lignes et colonnes
     for (let i = 0; i < 3; i++) {
@@ -40,45 +146,11 @@ function morpion(grille, vide) {
     return vide;
 }
 
-
-
 //-----------------------------------------------
-// Application
+// Version beta
 //-----------------------------------------------
 
-const grille = [
-    ["X", "O", "X"],
-    [" ", "X", "O"],
-    ["O", " ", "X"]
-];
-
-const gagnant = morpion(grille, " ");
-if (gagnant !== " ") {
-    console.log("Le gagnant est :", gagnant);
-} else {
-    console.log("Aucun gagnant pour le moment.");
-}
-
-
-
-//-----------------------------------------------
-// Version golf
-//-----------------------------------------------
-
-let M=(g,v)=>(g.map((_,i)=>(g[i][0]==g[i][1]&&g[i
-][1]==g[i][2]&& g[i][2]!=v)||(g[0][i]==g[1][i]&&g
-[1][i]==g[2][i]&& g[2][i]!=v)?g[i][0]:"")[0])||(g
-[1][1]!=v&&((g[0][0]==g[1][1]&&g[1][1]==g[2][2]&&
-g[2][2]!=v)||(g[0][2]==g[1][1]&&g[1][1]==g[2][0]
-&&g[2][0]!=v))?g[1][1]:v);
-
-
-
-//-----------------------------------------------
-// Version detaillee
-//-----------------------------------------------
-
-function morpion_detaillee(grille, vide) {
+function morpion_beta(grille, vide) {
 
     for (let i = 0; i < 3; i++) {
         if (grille[i][0] === grille[i][1] &&
@@ -119,7 +191,7 @@ function morpion_detaillee(grille, vide) {
 // Version commentee
 //-----------------------------------------------
 
-function morpion_commentee(grille, vide) {
+function morpion_beta_commentee(grille, vide) {
 
     //-------------------------------------------
     // Vérifier lignes.

@@ -9,8 +9,6 @@
 # -----------------------------------------------
 # Version courte
 # -----------------------------------------------
-# Cette version permet de comprendre le contexte
-# de la fonction et sa logique.
 
 def lipogramme(chaine, lettre):
     chaine = chaine.lower()
@@ -44,10 +42,6 @@ print(f" un lipogramme en '{lettre}'.")
 # -----------------------------------------------
 # Version golf
 # -----------------------------------------------
-# Version condensee et optimisee du code, utili-
-# sant des noms de variables courts et combinant
-# certaines operations pour reduire la taille du
-# code. Pour la beaute du geste !
 
 L=lambda s,l:l not in s.lower().replace(' ','')
 
@@ -56,9 +50,6 @@ L=lambda s,l:l not in s.lower().replace(' ','')
 # -----------------------------------------------
 # Version commentee
 # -----------------------------------------------
-# Proche de la version raccourcie, mais avec des
-# commentaires concis pour expliquer les etapes
-# principales de la fonction.
 
 def lipogramme_commentee(chaine, lettre):
     

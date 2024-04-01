@@ -104,7 +104,7 @@ def montagne_commentee(sommets):
     # Identifier le nombre de sommets.
     longueur = len(sommets)
 
-    # De 0 à max,
+    # De 0 a max,
     # ou du sol au plus haut des sommets,
     for j in range(max_el + 1):
 
@@ -115,43 +115,43 @@ def montagne_commentee(sommets):
         # ou pour chaque sommet,
         for i in range(0, longueur):
             
-            # récupérer le sommet courant.
+            # recuperer le sommet courant.
             el = sommets[i]
 
             # Si le sommet en cours est plus
             # petit que le plus hauts des sommets
             if el < j + 1:
                 
-                # Ajouter 2 * el " " à ligne.
+                # Ajouter 2 * el " " a ligne.
                 ligne += " " * (2 * el)
             
             # Sinon
             else:
                 
-                # Ajouter j espaces à la ligne.
+                # Ajouter j espaces a la ligne.
                 ligne += " " * j
                 
-                # Ajouter "/" à la ligne.
+                # Ajouter "/" a la ligne.
                 ligne += "/"
                 
-                # Ajouter 2*(el-j-1) espaces à
+                # Ajouter 2*(el-j-1) espaces a
                 # la ligne.
                 ligne += " " * (2 * (el - j - 1))
                 
-                # Ajouter "\" à la ligne.
+                # Ajouter "\" a la ligne.
                 ligne += "\\"
                 
-                # Ajouter j espaces à la ligne.
+                # Ajouter j espaces a la ligne.
                 ligne += " " * j
                 
-        # Ajouter la ligne sans espaces à la fin
+        # Ajouter la ligne sans espaces a la fin
         # au paysage.
         paysage.append(ligne.rstrip())
 
     # Renverser l'ensemble du paysage.
     paysage = reversed(paysage)
 
-    # Ajouter un saut à la ligne à chaque ligne.
+    # Ajouter un saut a la ligne a chaque ligne.
     paysage = "\n".join(paysage)
 
     # Retourner le paysage.

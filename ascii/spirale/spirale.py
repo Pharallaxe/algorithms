@@ -1,8 +1,8 @@
 # -----------------------------------------------
 # spirale
 # -----------------------------------------------
-# Permet de réaliser une spirale partant de haut
-# à gauche.
+# Permet de realiser une spirale partant de haut
+# a gauche.
 #
 # Ex :
 #
@@ -65,19 +65,19 @@ def spirale(T, plein, vide):
     # Boucler pour effectuer la spirale.
     while True:
         
-        # Obtenir les coordonnées actuelles.
+        # Obtenir les coordonnees actuelles.
         j, i = courant
         dj, di = voisins[index]
         Lj, Li = voisins_diag[(index) % 4]
         
-        # Vérifier les conditions de terminaison
+        # Verifier les conditions de terminaison
         # de la spirale.
         if (compteur > 3 or
            (not hors_grille(T, j + Lj, i +Li) and
             grille[j + Lj][i + Li] == plein)):
             return grille
         
-        # Vérifier les conditions pour changer de
+        # Verifier les conditions pour changer de
         # direction ou continuer.
         if (
             hors_grille(T, j + dj, i + di) or
@@ -115,7 +115,7 @@ for ligne in grille:
 # -----------------------------------------------
 
 # Retourne vrai si la case est en dehors de la
-# grille. Preferez l'écriture de la fonction
+# grille. Preferez l'ecriture de la fonction
 # hors_grille.
 def hors_grille_det(T, dj, di):
 
@@ -156,7 +156,7 @@ def spirale_detaillee(T, plein, vide):
     # Boucler pour effectuer la spirale.
     while True:
         
-        # Obtenir les coordonnées actuelles.
+        # Obtenir les coordonnees actuelles.
         j = courant[0]
         i = courant[1]
         
@@ -166,7 +166,7 @@ def spirale_detaillee(T, plein, vide):
         Lj = voisins_diag[(index) % 4][0]
         Li = voisins_diag[(index) % 4][1]
         
-        # Vérifier les conditions de terminaison
+        # Verifier les conditions de terminaison
         # de la spirale.
         if (compteur > 3 or (not hors_grille_com(
             T,j+Lj,i+Li) and grille[j + Lj][i +
@@ -175,7 +175,7 @@ def spirale_detaillee(T, plein, vide):
             return grille
         
         
-        # Vérifier les conditions pour changer de
+        # Verifier les conditions pour changer de
         # direction ou continuer.
         if (hors_grille_det(T, j + dj, i + di)
             or si_coche_det(grille, T, j + 2 *
@@ -196,21 +196,21 @@ def spirale_detaillee(T, plein, vide):
 # -----------------------------------------------
    
 # Retourne vrai si la case est en dehors de la
-# grille. Preferez l'écriture de la fonction
+# grille. Preferez l'ecriture de la fonction
 # hors_grille.
 def hors_grille_com(T, dj, di):
-    # Si
+    # Si,
     if (
         # dj est plus petit que 0, ou
         dj < 0 or
         
-        # dj plus grand ou égal à T, ou
+        # dj plus grand ou egal a T, ou
         dj >= T or
         
         # di est plus petit que 0, ou
         di < 0 or
         
-        # di plus grand ou égal à T,
+        # di plus grand ou egal a T,
         di >= T):
         
         # Retourner vrai.
@@ -219,7 +219,7 @@ def hors_grille_com(T, dj, di):
     # Sinon,
     else :
         
-        # Retourner faux
+        # retourner faux.
         return False
 
 
@@ -231,30 +231,30 @@ def si_coche_com(grille, T, dj, di, plein):
     if hors_grille_com(T, dj, di): 
         return False
     
-    # Vérifier si la valeur de la case courante
-    # est egal à plein.
+    # Verifier si la valeur de la case courante
+    # est egal a plein.
     return grille[dj][di] == plein
 
 
 # Construit la spirale.
 def spirale_commentee(T, plein, vide):
     
-    # Créer une grille vide.
+    # Creer une grille vide.
     grille = []
     
-    # De 0 à T,
+    # De 0 a T,
     for j in range(T):
         
-        # créer une nouvelle ligne.
+        # creer une nouvelle ligne.
         ligne = []
         
-        # et de 0 à T,
+        # et de 0 a T,
         for i in range(T):
             
-            # ajouter "vide" à la ligne.
+            # ajouter "vide" a la ligne.
             ligne.append(vide)
         
-        # Ajouter cette ligne à la grille
+        # Ajouter cette ligne a la grille.
         grille.append(ligne)
     
     # Valoriser la case 0-0 du caractere plein.
@@ -275,30 +275,30 @@ def spirale_commentee(T, plein, vide):
     # Iniatialiser un compteurur a 1.
     compteur = 1
     
-    # Boucler pour effectuer la spirale
+    # Boucler pour effectuer la spirale.
     while True:
         
-        # Récupérer la ligne de la case courante.
+        # Recuperer la ligne de la case courante.
         j = courant[0]
         
-        # Récupérer la col de la case courante.
+        # Recuperer la col de la case courante.
         i = courant[1]
         
-        # Récupérer la ligne du prochain voisin.
+        # Recuperer la ligne du prochain voisin.
         dj = voisins[index][0]
         
-        # Récupérer la col du prochain voisin.
+        # Recuperer la col du prochain voisin.
         di = voisins[index][1]
         
-        # Récupérer la ligne du prochain voisin
+        # Recuperer la ligne du prochain voisin
         # diagonal.
         Lj = voisins_diag[(index) % 4][0]
         
-        # Récupérer la col du prochain voisin
+        # Recuperer la col du prochain voisin
         # diagonal.
         Li = voisins_diag[(index) % 4][1]
         
-        # Vérifier les conditions de terminaison
+        # Verifier les conditions de terminaison
         # de la spirale.
         # Si 
         if (
@@ -317,7 +317,7 @@ def spirale_commentee(T, plein, vide):
             # on est en dehors d ela grille,
             hors_grille_com(T, j + dj, i + di) or
             
-            # ou si la case est déja cochée.
+            # ou si la case est deja cochee.
             si_coche_com(grille, T, j + 2 * dj,
                 i + 2 * di, plein)
             ):
@@ -325,12 +325,12 @@ def spirale_commentee(T, plein, vide):
             # Changer de direction.
             index = (index + 1) % 4
             
-            # Incrémenter le compteur.
+            # Incrementer le compteur.
             compteur += 1
         
         # Sinon,
         else :
-            # valoriser à aux index requis, la
+            # valoriser a aux index requis, la
             # grille de "plein".
             grille[j + dj][i + di] = plein
             

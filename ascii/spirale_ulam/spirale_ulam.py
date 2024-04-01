@@ -1,12 +1,12 @@
 # -----------------------------------------------
 # spirale_ulam
 # -----------------------------------------------
-# Cette spirale est une méthode simple qui permet
-# de représenter les nombres premiers. Ainsi, ils
-# forment des motifs qui n'ont jamais était réel-
-# lement expliqués.
+# Cette spirale est une methode simple qui permet
+# de representer les nombres premiers. Ainsi, ils
+# forment des motifs qui n'ont jamais etait reel-
+# lement expliques.
 #
-# Ex : de 0 à 576
+# Ex : de 0 a 576
 # __________@___@___________@___________@________
 # ____________@_______________________@_______@__
 # __@_______@_______________@___________@________
@@ -84,7 +84,7 @@ def spirale_ulam(n):
 # Application
 # -----------------------------------------------
 
-# Fonction pour le nombre de caractère minimal.
+# Fonction pour le nombre de caractere minimal.
 # par case.
 def nombre_caracteres(grille):
     liste = [x for lig in grille for x in lig]
@@ -200,41 +200,41 @@ def spirale_ulam_detaillee(n):
 # -----------------------------------------------
 
 def spirale_ulam_commentee(n):
-    # Initialiser le premier carré de base.
+    # Initialiser le premier carre de base.
     grille = [[5, 4, 3], [6, 1, 2], [7, 8, 9]]
     
-    # Initialiser un increment à 6.
+    # Initialiser un increment a 6.
     inc = 6
     
-    # Récupérer la dernier valeur de la grille.
+    # Recuperer la dernier valeur de la grille.
     dernier = 9
     
     # Tant que increment est plus petit que 2n.
     while inc < n * 2:
         
-        # Récupérer l'index 0 de la grille.
+        # Recuperer l'index 0 de la grille.
         b0 = grille[0]
 
         # TRAITER LA LIGNE DU BAS.
         if inc % 4 == 2:
             
             # initialiser une liste vide pour
-            # stocker les résultats réalisés.
+            # stocker les resultats realises.
             n_grille = []
 
-            # Itérer sur les indices de grille.
+            # Iterer sur les indices de grille.
             for i in range(0, len(grille)):
                 
-                # Calculer le nouvel élément.
+                # Calculer le nouvel element.
                 el = len(grille[0]) - i + dernier
                 
-                # Ajouter le nouvel élément à la
+                # Ajouter le nouvel element a la
                 # liste correspondante dans la
                 # grille.
                 n_ligne = grille[i] + [el]
                 
-                # Ajouter la nouvelle liste à la
-                # liste des résultats réalisés.
+                # Ajouter la nouvelle liste a la
+                # liste des resultats realises.
                 n_grille.append(n_ligne)
                 
             # Remplacer grille par la n_grille.
@@ -244,37 +244,37 @@ def spirale_ulam_commentee(n):
         elif inc % 4 == 3:
             
             # initialiser une liste vide pour
-            # stocker les résultats réalisés.            
+            # stocker les resultats realises.            
             n_ligne = []
             
-            # De longueur de b0 à 0, avec une in-
-            # crémentation de -1.
+            # De longueur de b0 a 0, avec une in-
+            # crementation de -1.
             for i in range(len(b0), 0, -1):
                 
                 # Ajouter le prochain nombre.
                 n_ligne.append(dernier + i)
 
-            # Insérer la nouvelle ligne en haut
+            # Inserer la nouvelle ligne en haut
             # de la grille.
             grille.insert(0, n_ligne)
 
-            # Mettre à jour la valeur de dernier.
+            # Mettre a jour la valeur de dernier.
             dernier += len(b0) + 1
         
         # TRAITER LA COLONNE DE GAUCHE.
         elif inc % 4 == 0:
             
-            # Ajouter un nouvel élément en tête
+            # Ajouter un nouvel element en tête
             # de chaque ligne de la grille.
             
-            # De 0 à la hauteur de la grille,
+            # De 0 a la hauteur de la grille,
             for i in range(0, len(grille)):
 
                 # initialiser une liste vide pour
-                # stocker les résultats réalisés.                 
+                # stocker les resultats realises.                 
                 n_colonne = []
                 
-                # De 0 à la largeur de la grille,
+                # De 0 a la largeur de la grille,
                 for j in range(len(grille[i])):
                     
                     # ajouter le prochain nombre.
@@ -283,27 +283,27 @@ def spirale_ulam_commentee(n):
                 # Ajouter de la colonne.
                 grille[i]=[dernier+i] + grille[i]
 
-            # Mettre à jour la valeur de dernier.
+            # Mettre a jour la valeur de dernier.
             dernier += len(grille)
 
         # TRAITER LA COLONNE DE DROITE.
         elif inc % 4 == 1:
             
-            # créer une nouvelle ligne à ajouter
-            # à la fin de la grille.
+            # creer une nouvelle ligne a ajouter
+            # a la fin de la grille.
             n_colonne = []
             
-            # De 0 à longueur de b0,
+            # De 0 a longueur de b0,
             for i in range(0, len(b0)):
                 
                 # Ajouter le prochain nombre.
                 n_colonne.append(dernier + i)
 
-            # Ajouter la nouvelle ligne à la fin
+            # Ajouter la nouvelle ligne a la fin
             # de la grille.
             grille.append(n_colonne)
 
-            # Mettre à jour la valeur de dernier.
+            # Mettre a jour la valeur de dernier.
             dernier += len(b0) - 1
         
         # Incrementer inc.
