@@ -3,7 +3,15 @@
 # -----------------------------------------------
 # Fonction qui retourne l'abondance d'un nombre.
 # L'abondance c'est le rapport entre la somme des
-# diviseurs du nombre et le nombre lui-même.
+# diviseurs du nombre sauf lui même et le nombre
+# lui-même.
+
+# Ex : L'abondance de 28  est de 1. En effet, ses
+# diviseurs sont 1, 2, 4, 7, 14. Leur somme égale
+# 28. C'est un nombre parfait. Lorsque l'abondan-
+# ce est au dessus de 1, on dit que c'est un nom-
+# bre abondant. Si elle est en-deça de 1, on dira
+# qu'il est déficient.
 # -----------------------------------------------
 
 def abondance(nombre):
@@ -22,8 +30,6 @@ def abondance(nombre):
 # -----------------------------------------------
 # Version courte
 # -----------------------------------------------
-# Cette version permet de comprendre le contexte
-# de la fonction et sa logique.
 
 nombres = [2, 6, 28, 24, 120, 30240, 997920]
 
@@ -45,10 +51,6 @@ for nb in nombres:
 # -----------------------------------------------
 # Version golf
 # -----------------------------------------------
-# Version condensee et optimisee du code, utili-
-# sant des noms de variables courts et combinant
-# certaines operations pour reduire la taille du
-# code. Pour la beaute du geste !
 
 A=lambda n:(D:=sum(i for i in range(1, n)if n%i==
 0))/n if n>=1 else None
@@ -58,8 +60,6 @@ A=lambda n:(D:=sum(i for i in range(1, n)if n%i==
 # -----------------------------------------------
 # Version detaillee
 # -----------------------------------------------
-# Cette version permet de suivre pas a pas l'exe-
-# cution de la fonction.
 
 def abondance_detaillee(nombre):
     
@@ -81,9 +81,6 @@ def abondance_detaillee(nombre):
 # -----------------------------------------------
 # Version commentee
 # -----------------------------------------------
-# Similaire a la version detaillee, mais avec des
-# commentaires concis afin d'expliquer les etapes
-# principales de la fonction.
 
 def abondance_detaillee(nombre):
     

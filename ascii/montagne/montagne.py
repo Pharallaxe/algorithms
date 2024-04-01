@@ -9,8 +9,6 @@
 # -----------------------------------------------
 # Version courte
 # -----------------------------------------------
-# Cette version permet de comprendre le contexte
-# de la fonction et sa logique.
 
 def montagne(sommets):
     paysage = []
@@ -43,10 +41,6 @@ print(montagnes)
 # -----------------------------------------------
 # Version golf
 # -----------------------------------------------
-# Version condensee et optimisee du code, utili-
-# sant des noms de variables courts et combinant
-# certaines operations pour reduire la taille du
-# code. Pour la beaute du geste !
 
 M=lambda s:'\n'.join([''.join([' '*2*e if e<j+1
 else' '*j+'/'+' '*(2*(e-j-1))+'\\'+' '*j for e in
@@ -56,10 +50,7 @@ s])for j in range(max(s)+1)][::-1])
 
 # -----------------------------------------------
 # Version detaillee
-# /*-----------------------------------------------
-# / Cette version permet de suivre pas a pas l'exe-
-# / cution de la fonction.
-# /-----------------------------------------------*/
+# -----------------------------------------------
 
 def montagne_detaillee(sommets):
     
@@ -90,11 +81,7 @@ def montagne_detaillee(sommets):
 
 # -----------------------------------------------
 # Version commentee
-# /*-----------------------------------------------
-# / Similaire a la version detaillee, mais avec des
-# / commentaires concis afin d'expliquer les etapes
-# / principales de la fonction.
-# /-----------------------------------------------*/
+# -----------------------------------------------
 
 def montagne_commentee(sommets):
     

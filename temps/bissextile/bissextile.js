@@ -8,8 +8,6 @@
 //-----------------------------------------------
 // Version courte
 //-----------------------------------------------
-// Cette version permet de comprendre le contexte
-// de la fonction et sa logique.
 
 function bissextile(annee) {
     if (annee % 400 === 0) {
@@ -52,10 +50,6 @@ for (let annee of annees) {
 //-----------------------------------------------
 // Version golf
 //-----------------------------------------------
-// Version condensee et optimisee du code, utili-
-// sant des noms de variables courts et combinant
-// certaines operations pour reduire la taille du
-// code. Pour la beaute du geste !
 
 let B=a=>a%400==0||(a%100!=0&&a%4==0)
 
@@ -64,11 +58,6 @@ let B=a=>a%400==0||(a%100!=0&&a%4==0)
 //-----------------------------------------------
 // Version commentée
 //-----------------------------------------------
-// Similaire à la version détaillée, mais avec des
-// commentaires concis afin d'expliquer les étapes
-// principales de la fonction.
-
-// On va du plus large vers le plus court.
 
 function bissextile_commentee(annee) {
     // Si une année est divisible par 400, elle

@@ -9,8 +9,6 @@
 # -----------------------------------------------
 # Version courte
 # -----------------------------------------------
-# Cette version permet de comprendre le contexte
-# de la fonction et sa logique.
 
 def sommer_fractions(nombre1, nombre2):
     num1, den1 = map(int, nombre1.split("/"))
@@ -38,10 +36,6 @@ print(res)
 # -----------------------------------------------
 # Version golf
 # -----------------------------------------------
-# Version condensee et optimisee du code, utili-
-# sant des noms de variables courts et combinant
-# certaines operations pour reduire la taille du
-# code. Pour la beaute du geste !
 
 F=lambda n1,n2:str(int(n1.split('/')[0])*int(n2
 .split('/')[1])+int(n2.split('/')[0])*int(n1
@@ -53,8 +47,6 @@ int(n2.split('/')[1]))
 # -----------------------------------------------
 # Version detaillee
 # -----------------------------------------------
-# Cette version permet de suivre pas a pas l'exe-
-# cution de la fonction.
 
 def sommer_fractions_detaillee(nombre1, nombre2):
     num_den1 = nombre1.split("/")
@@ -82,9 +74,6 @@ def sommer_fractions_detaillee(nombre1, nombre2):
 # -----------------------------------------------
 # Version commentee
 # -----------------------------------------------
-# Similaire a la version detaillee, mais avec des
-# commentaires concis afin d'expliquer les etapes
-# principales de la fonction.
 
 def sommer_fractions_commentee(nombre1, nombre2):
     

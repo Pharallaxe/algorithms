@@ -10,8 +10,6 @@
 # -----------------------------------------------
 # Version Courte
 # -----------------------------------------------
-# Cette version permet de comprendre le contexte
-# de la fonction et sa logique.
 
 function bissextile($annee) {
     if ($annee % 400 === 0) {
@@ -53,10 +51,6 @@ foreach ($annees as $annee) {
 # -----------------------------------------------
 # Version Golf
 # -----------------------------------------------
-# Version condensée et optimisée du code, utili-
-# sant des noms de variables courts et combinant
-# certaines opérations pour réduire la taille du
-# code. Pour la beauté du geste !
 
 $B=function($a){return $a%400==0||($a%100!=0&&$a%
 4==0);};
@@ -66,11 +60,6 @@ $B=function($a){return $a%400==0||($a%100!=0&&$a%
 # -----------------------------------------------
 # Version Commentée
 # -----------------------------------------------
-# Similaire à la version détaillée, mais avec des
-# commentaires concis afin d'expliquer les étapes
-# principales de la fonction.
-
-# On va du plus large vers le plus court.
 
 function bissextile_commentee($annee) {
     // Si une année est divisible par 400, elle
@@ -97,5 +86,13 @@ function bissextile_commentee($annee) {
         return false;
     }
 }
+
+
+
+
+
+
+
+
 
 ?>

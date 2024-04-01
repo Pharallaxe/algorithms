@@ -14,8 +14,6 @@ public class Arithmetique {
 //-----------------------------------------------
 // Version courte
 //-----------------------------------------------
-// Cette version permet de comprendre le contexte
-// de la fonction et sa logique.
 
 public static double arithmetique(
         int[] tableau) {
@@ -30,6 +28,7 @@ public static double arithmetique(
 //-----------------------------------------------
 // Application
 //-----------------------------------------------
+
 public static void main(String[] args) {
     int[] tableau = { 12, 14, 16, 8, 6, 18 };
     double moyenne = arithmetique(tableau);
@@ -42,10 +41,6 @@ public static void main(String[] args) {
 //-----------------------------------------------
 // Version golf
 //-----------------------------------------------
-// Version condensee et optimisee du code, utili-
-// sant des noms de variables courts et combinant
-// certaines operations pour reduire la taille du
-// code. Pour la beaute du geste !
 
 public static double A(int[] t) {
     return Arrays.stream(t).average().orElse(0);
@@ -55,9 +50,7 @@ public static double A(int[] t) {
 
 //-----------------------------------------------
 // Version detaillee
-/*-----------------------------------------------
-/ Cette version permet de suivre pas a pas l'exe-
-/ cution de la fonction. */
+//-----------------------------------------------
 
 public static double arithmetique_detaillee(
         int[] tableau) {
@@ -79,11 +72,7 @@ public static double arithmetique_detaillee(
 
 //-----------------------------------------------
 // Version commentee
-/*-----------------------------------------------
-/ Similaire a la version detaillee, mais avec des
-/ commentaires concis afin d'expliquer les etapes
-/ principales de la fonction. */
-
+//-----------------------------------------------
 
 public static double arithmetique_commentee(
         int[] tableau) {

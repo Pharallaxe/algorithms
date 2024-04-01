@@ -10,8 +10,6 @@
 # -----------------------------------------------
 # Version courte
 # -----------------------------------------------
-# Cette version permet de comprendre le contexte
-# de la fonction et sa logique.
 
 def strobogrammatique(nombre):
     chifs = ["0", "1", "8", "6", "9"]
@@ -50,10 +48,6 @@ for nb in nombres:
 # -----------------------------------------------
 # Version golf
 # -----------------------------------------------
-# Version condensee et optimisee du code, utili-
-# sant des noms de variables courts et combinant
-# certaines operations pour reduire la taille du
-# code. Pour la beaute du geste !
 
 S=lambda n:all(str(n)[i]in"01869"and"01896"["018\
 69".index(str(n)[i])]==str(n)[~i]for i in range(\
@@ -64,8 +58,6 @@ len(str(n))//2+1))
 # -----------------------------------------------
 # Version detaillee
 # -----------------------------------------------
-# Cette version permet de suivre pas a pas l'exe-
-# cution de la fonction.
 
 def strobogrammatique_detaillee(nombre):
     strobo = {
@@ -102,9 +94,6 @@ def strobogrammatique_detaillee(nombre):
 # -----------------------------------------------
 # Version commentee
 # -----------------------------------------------
-# Similaire a la version detaillee, mais avec des
-# commentaires concis afin d'expliquer les etapes
-# principales de la fonction.
 
 def strobogrammatique_commentee(nombre):
     

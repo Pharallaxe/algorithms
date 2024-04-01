@@ -9,8 +9,6 @@
 # -----------------------------------------------
 # Version courte
 # -----------------------------------------------
-# Cette version permet de comprendre le contexte
-# de la fonction et sa logique.
 
 def arithmetique(liste):
 
@@ -31,18 +29,12 @@ print("La moyenne est", round(moyenne, 2))
 # -----------------------------------------------
 # Version golf
 # -----------------------------------------------
-# Version condensee et optimisee du code, utili-
-# sant des noms de variables courts et combinant
-# certaines operations pour reduire la taille du
-# code. Pour la beaute du geste !
 
 A=lambda l:sum(v for v in l)/len(l)
 
 # -----------------------------------------------
 # Version detaillee
 # -----------------------------------------------
-# Cette version permet de suivre pas a pas l'exe-
-# cution de la fonction.
 
 def arithmetique_detaillee(liste):
     nbr_valeurs = len(liste)
@@ -60,9 +52,6 @@ def arithmetique_detaillee(liste):
 # -----------------------------------------------
 # Version commentee
 # -----------------------------------------------
-# Similaire a la version detaillee, mais avec des
-# commentaires concis afin d'expliquer les etapes
-# principales de la fonction.
 
 def arithmetique_commentee(liste):
 

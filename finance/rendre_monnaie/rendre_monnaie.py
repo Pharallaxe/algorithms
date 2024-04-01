@@ -9,8 +9,6 @@
 # -----------------------------------------------
 # Version courte
 # -----------------------------------------------
-# Cette version permet de comprendre le contexte
-# de la fonction et sa logique.
 
 def rendre_monnaie(prix, x20, x10, x5, x2, x1):
     donne = ( x20 * 20 + x10 * 10 + x5 * 5
@@ -53,10 +51,6 @@ print("1 euro   :", monnaie_rendue[4])
 # -----------------------------------------------
 # Version golf
 # -----------------------------------------------
-# Version condensee et optimisee du code, utili-
-# sant des noms de variables courts et combinant
-# certaines operations pour reduire la taille du
-# code. Pour la beaute du geste !
 
 def RM(p,a,b,c,d,e):
     s,R=a*20+b*10+c*5+d*2+e-p,[]
@@ -68,8 +62,6 @@ def RM(p,a,b,c,d,e):
 # -----------------------------------------------
 # Version detaillee
 # -----------------------------------------------
-# Cette version permet de suivre pas a pas l'exe-
-# cution de la fonction.
 
 def rendre_monnaie(prix, x20, x10, x5, x2, x1):
     
@@ -98,9 +90,6 @@ def rendre_monnaie(prix, x20, x10, x5, x2, x1):
 # -----------------------------------------------
 # Version commentee
 # -----------------------------------------------
-# Similaire a la version detaillee, mais avec des
-# commentaires concis afin d'expliquer les etapes
-# principales de la fonction.
 
 def rendre_monnaie(prix, x20, x10, x5, x2, x1):
     # Calculer le montant total donne en monnaie.

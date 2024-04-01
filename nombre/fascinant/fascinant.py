@@ -12,8 +12,6 @@
 # -----------------------------------------------
 # Version courte
 # -----------------------------------------------
-# Cette version permet de comprendre le contexte
-# de la fonction et sa logique.
 
 def fascinant(nombre):
     chaine_1 = str(nombre)
@@ -51,10 +49,6 @@ for nb in nombres:
 # -----------------------------------------------
 # Version golf
 # -----------------------------------------------
-# Version condensee et optimisee du code, utili-
-# sant des noms de variables courts et combinant
-# certaines operations pour reduire la taille du
-# code. Pour la beaute du geste !
 
 F=lambda n:all(str(i)in str(n)+str(2*n)+str(3*n)
 for i in range(1,10))and len(str(n))>2
@@ -64,9 +58,6 @@ for i in range(1,10))and len(str(n))>2
 # -----------------------------------------------
 # Version commentee
 # -----------------------------------------------
-# Proche de la version raccourcie, mais avec des
-# commentaires concis pour expliquer les etapes
-# principales de la fonction.
 
 def fascinant_commentee(nombre):
     # Convertir le nombre en string.

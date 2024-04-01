@@ -10,8 +10,6 @@
 # -----------------------------------------------
 # Version courte
 # -----------------------------------------------
-# Cette version permet de comprendre le contexte
-# de la fonction et sa logique.
 
 def anagramme(chaine1, chaine2):
     
@@ -40,10 +38,6 @@ print(f"Les chaînes {chaine} des anagrammes.")
 # -----------------------------------------------
 # Version golf
 # -----------------------------------------------
-# Version condensée et optimisée du code, utili-
-# sant des noms de variables courts et combinant
-# certaines opérations pour réduire la taille du
-# code. Pour la beauté du geste !
 
 A=lambda s,S:sorted(s.upper())==sorted(S.upper())
 
@@ -52,9 +46,6 @@ A=lambda s,S:sorted(s.upper())==sorted(S.upper())
 # -----------------------------------------------
 # Version commentee
 # -----------------------------------------------
-# Proche de la version raccourcie, mais avec des
-# commentaires concis pour expliquer les etapes
-# principales de la fonction.
 
 def anagramme_commentee(chaine1, chaine2):
     

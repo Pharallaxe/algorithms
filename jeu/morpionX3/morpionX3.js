@@ -10,9 +10,6 @@
 //-----------------------------------------------
 // Version courte
 //-----------------------------------------------
-// Cette version permet de comprendre le contexte
-// de la fonction et sa logique.
-
 
 function morpion(grille, vide) {
 
@@ -67,10 +64,6 @@ if (gagnant !== " ") {
 //-----------------------------------------------
 // Version golf
 //-----------------------------------------------
-// Version condensee et optimisee du code, utili-
-// sant des noms de variables courts et combinant
-// certaines operations pour reduire la taille du
-// code. Pour la beaute du geste !
 
 let M=(g,v)=>(g.map((_,i)=>(g[i][0]==g[i][1]&&g[i
 ][1]==g[i][2]&& g[i][2]!=v)||(g[0][i]==g[1][i]&&g
@@ -84,8 +77,6 @@ g[2][2]!=v)||(g[0][2]==g[1][1]&&g[1][1]==g[2][0]
 //-----------------------------------------------
 // Version detaillee
 //-----------------------------------------------
-// Cette version permet de suivre pas a pas l'exe-
-// cution de la fonction.
 
 function morpion_detaillee(grille, vide) {
 
@@ -127,9 +118,6 @@ function morpion_detaillee(grille, vide) {
 //-----------------------------------------------
 // Version commentee
 //-----------------------------------------------
-// Similaire a la version detaillee, mais avec des
-// commentaires concis afin d'expliquer les etapes
-// principales de la fonction.
 
 function morpion_commentee(grille, vide) {
 

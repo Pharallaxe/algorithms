@@ -11,8 +11,6 @@
 //-----------------------------------------------
 // Version courte
 //-----------------------------------------------
-// Cette version permet de comprendre le contexte
-// de la fonction et sa logique.
 
 function disarium(nombre) {
     
@@ -31,7 +29,7 @@ function disarium(nombre) {
 // Application
 //-----------------------------------------------
 
-let nombres = [120, 133, 135, 145];
+let nombres = [120, 133, 135, 89];
 for (let nb of nombres) {
     let res = disarium(nb);
     if (res) {
@@ -47,21 +45,18 @@ for (let nb of nombres) {
 //-----------------------------------------------
 // Version golf
 //-----------------------------------------------
-// Version condensee et optimisee du code, utili-
-// sant des noms de variables courts et combinant
-// certaines operations pour reduire la taille du
-// code. Pour la beaute du geste !
-
 
 /* En réflexion ;) */
+
+let D=n=>n=== n.toString().split('').reduce((a,c,
+i)=>a+Math.pow(parseInt(c),i+1),0);
 
 
 
 //-----------------------------------------------
 // Version detaillee
-/*-----------------------------------------------
-/ Cette version permet de suivre pas a pas l'exe-
-/ cution de la fonction. */
+//-----------------------------------------------
+
 
 function disarium_detaillee(nombre) {
     let nombre_str = nombre.toString();
@@ -82,10 +77,7 @@ function disarium_detaillee(nombre) {
 
 //-----------------------------------------------
 // Version commentee
-/*-----------------------------------------------
-/ Similaire a la version detaillee, mais avec des
-/ commentaires concis afin d'expliquer les etapes
-/ principales de la fonction. */
+//-----------------------------------------------
 
 function disarium_commentee(nombre) {
     // Convertir le nombre en chaîne.

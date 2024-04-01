@@ -10,8 +10,6 @@
 //-----------------------------------------------
 // Version courte
 //-----------------------------------------------
-// Cette version permet de comprendre le contexte
-// de la fonction et sa logique.
 
 function anagramme(str1, str2) {
     let str_A = str1.toLowerCase();
@@ -41,10 +39,6 @@ console.log(`"${str1}" et "${str2}" ${chaine
 //-----------------------------------------------
 // Version golf
 //-----------------------------------------------
-// Version condensee et optimisee du code, utili-
-// sant des noms de variables courts et combinant
-// certaines operations pour reduire la taille du
-// code. Pour la beaute du geste !
 
 const A=(s1,s2)=>s1.toUpperCase().split``.sort()
 .join``==s2.toUpperCase().split``.sort().join``
@@ -53,9 +47,7 @@ const A=(s1,s2)=>s1.toUpperCase().split``.sort()
 
 //-----------------------------------------------
 // Version detaillee
-/*-----------------------------------------------
-/ Cette version permet de suivre pas a pas l'exe-
-/ cution de la fonction. */
+//-----------------------------------------------
 
 function anagramme_detaillee(chaine_1, chaine_2){
 
@@ -81,10 +73,7 @@ function anagramme_detaillee(chaine_1, chaine_2){
 
 //-----------------------------------------------
 // Version commentee
-/*-----------------------------------------------
-/ Similaire a la version detaillee, mais avec des
-/ commentaires concis afin d'expliquer les etapes
-/ principales de la fonction. */
+//-----------------------------------------------
 
 function anagramme_commentee(chaine_1, chaine_2){
 

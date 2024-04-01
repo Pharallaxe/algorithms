@@ -20,8 +20,6 @@
 # -----------------------------------------------
 # Version courte
 # -----------------------------------------------
-# Cette version permet de comprendre le contexte
-# de la fonction et sa logique.
 
 def diviseurs(nombre):
     return [i for i in range(1, nombre + 1) 
@@ -42,10 +40,6 @@ for nombre in nombres:
 # -----------------------------------------------
 # Version golf
 # -----------------------------------------------
-# Version condensee et optimisee du code, utili-
-# sant des noms de variables courts et combinant
-# certaines operations pour reduire la taille du
-# code. Pour la beaute du geste !
 
 D=lambda N:[i for i in range(1,N+1)if N%i==0]
 
@@ -54,8 +48,6 @@ D=lambda N:[i for i in range(1,N+1)if N%i==0]
 # -----------------------------------------------
 # Version detaillee
 # -----------------------------------------------
-# Cette version permet de suivre pas a pas l'exe-
-# cution de la fonction.
 
 def diviseurs_detaillee(nombre):
     diviseurs_liste = []
@@ -71,9 +63,6 @@ def diviseurs_detaillee(nombre):
 # -----------------------------------------------
 # Version commentee
 # -----------------------------------------------
-# Similaire a la version detaillee, mais avec des
-# commentaires concis afin d'expliquer les etapes
-# principales de la fonction.
 
 def diviseurs_commentee(nombre):
     # Initialiser une liste pour les diviseurs.

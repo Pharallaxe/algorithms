@@ -10,8 +10,6 @@
 # -----------------------------------------------
 # Version courte
 # -----------------------------------------------
-# Cette version permet de comprendre le contexte
-# de la fonction et sa logique.
 
 def bissextile(annee):
     if annee % 400 == 0:
@@ -42,10 +40,6 @@ for annee in annees:
 # -----------------------------------------------
 # Version golf
 # -----------------------------------------------
-# Version condensée et optimisée du code, utili-
-# sant des noms de variables courts et combinant
-# certaines opérations pour réduire la taille du
-# code. Pour la beauté du geste !
 
 B=lambda a:a%400==0 or(a%100!=0 and a%4==0)
 
@@ -54,11 +48,6 @@ B=lambda a:a%400==0 or(a%100!=0 and a%4==0)
 # -----------------------------------------------
 # Version commentée
 # -----------------------------------------------
-# Similaire à la version détaillée, mais avec des
-# commentaires concis afin d'expliquer les étapes
-# principales de la fonction.
-
-# On va du plus large vers le plus court.
 
 def bissextile_commentee(annee):
     # Si une année est divisible par 400, elle

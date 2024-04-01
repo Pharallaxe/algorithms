@@ -8,9 +8,6 @@
 //-----------------------------------------------
 // Version courte
 //-----------------------------------------------
-// Cette version permet de comprendre le contexte
-// de la fonction et sa logique.
-
 
 function premier(nombre) {
     if (nombre < 2) {
@@ -58,10 +55,6 @@ nombres.forEach(function(nb) {
 //-----------------------------------------------
 // Version golf
 //-----------------------------------------------
-// Version condensee et optimisee du code, utili-
-// sant des noms de variables courts et combinant
-// certaines operations pour reduire la taille du
-// code. Pour la beaute du geste !
 
 let P=n=>n>1 &&[...Array(Math.floor(Math.sqrt(n))
 +1).keys()].slice(2).every(i=>n%i);
@@ -70,9 +63,7 @@ let P=n=>n>1 &&[...Array(Math.floor(Math.sqrt(n))
 
 //-----------------------------------------------
 // Version detaillee
-/*-----------------------------------------------
-/ Cette version permet de suivre pas a pas l'exe-
-/ cution de la fonction. */
+//-----------------------------------------------
 
 function premier_detaillee(nombre) {
 
@@ -106,10 +97,7 @@ function premier_detaillee(nombre) {
 
 //-----------------------------------------------
 // Version commentee
-/*-----------------------------------------------
-/ Similaire a la version detaillee, mais avec des
-/ commentaires concis afin d'expliquer les etapes
-/ principales de la fonction. */
+//-----------------------------------------------
 
 function premier_commentee(nombre) {
 
@@ -118,7 +106,6 @@ function premier_commentee(nombre) {
 
         // renvoyer False.
         return false;
-
     }
 
     // Calculer la racine carrée du nombre.
@@ -140,7 +127,6 @@ function premier_commentee(nombre) {
             // c'est que le nombre est divisble
             // par l'entier : on retourne False.
             return false;
-
         }
     }
 
@@ -148,7 +134,6 @@ function premier_commentee(nombre) {
     // entre 2 et sa racine carrée, alors il est
     // premier : on retourne True.
     return true;
-
 }
 
 

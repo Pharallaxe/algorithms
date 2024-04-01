@@ -10,8 +10,6 @@
 # -----------------------------------------------
 # Version courte
 # -----------------------------------------------
-# Cette version permet de comprendre le contexte
-# de la fonction et sa logique.
 
 def morpion(grille, vide):
     # Vérification des lignes et colonnes
@@ -39,27 +37,23 @@ def morpion(grille, vide):
 # Application
 # -----------------------------------------------
 
-# grille = [
-#     ["X", "O", "X"],
-#     [" ", "X", "O"],
-#     ["O", " ", "X"]
-# ]
+grille = [
+    ["X", "O", "X"],
+    [" ", "X", "O"],
+    ["O", " ", "X"]
+]
 
-# gagnant = morpion(grille, " ")
-# if gagnant != " ":
-#     print("Le gagnant est :", gagnant)
-# else:
-#     print("Aucun gagnant pour le moment.")
+gagnant = morpion(grille, " ")
+if gagnant != " ":
+    print("Le gagnant est :", gagnant)
+else:
+    print("Aucun gagnant pour le moment.")
     
     
     
 # -----------------------------------------------
 # Version golf
 # -----------------------------------------------
-# Version condensee et optimisee du code, utili-
-# sant des noms de variables courts et combinant
-# certaines operations pour reduire la taille du
-# code. Pour la beaute du geste !
 
 M=lambda g,v:next((g[i][0]for i in range(3) if(g[
 i][0]==g[i][1]==g[i][2]!=v)or(g[0][i]==g[1][i]==g
@@ -72,8 +66,6 @@ i][0]==g[i][1]==g[i][2]!=v)or(g[0][i]==g[1][i]==g
 # -----------------------------------------------
 # Version detaillee
 # -----------------------------------------------
-# Cette version permet de suivre pas a pas l'exe-
-# cution de la fonction.
 
 def morpion_detaillee(grille, vide):
     
@@ -114,9 +106,6 @@ def morpion_detaillee(grille, vide):
 # -----------------------------------------------
 # Version commentee
 # -----------------------------------------------
-# Similaire a la version detaillee, mais avec des
-# commentaires concis afin d'expliquer les etapes
-# principales de la fonction.
 
 def morpion_commentee(grille, vide):
     # -------------------------------------------

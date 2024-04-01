@@ -13,8 +13,6 @@
 # -----------------------------------------------
 # Version courte
 # -----------------------------------------------
-# Cette version permet de comprendre le contexte
-# de la fonction et sa logique.
 
 function ecart_type($liste) {
     $longueur = count($liste);
@@ -44,10 +42,6 @@ echo "L'écart type est : " . round($resultat, 2);
 # -----------------------------------------------
 # Version golf
 # -----------------------------------------------
-# Version condensee et optimisee du code, utili-
-# sant des noms de variables courts et combinant
-# certaines operations pour reduire la taille du
-# code. Pour la beaute du geste !
 
 $ET=fn($l)=>sqrt(array_reduce($l,fn($a,$x)=>$a+(
 $x-($m=array_reduce($l,fn($s,$n)=>$s+$n,0)/count
@@ -57,8 +51,6 @@ $x-($m=array_reduce($l,fn($s,$n)=>$s+$n,0)/count
 # -----------------------------------------------
 # Version detaillee
 # -----------------------------------------------
-# Cette version permet de suivre pas a pas l'exe-
-# cution de la fonction.
 
 function ecart_type_detaillee($liste) {
 
@@ -90,9 +82,6 @@ function ecart_type_detaillee($liste) {
 # -----------------------------------------------
 # Version commentee
 # -----------------------------------------------
-# Similaire a la version detaillee, mais avec des
-# commentaires concis afin d'expliquer les etapes
-# principales de la fonction.
 
 function ecart_type_commentee($liste) {
     // Récupérer la longueur de la liste.

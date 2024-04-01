@@ -9,8 +9,6 @@
 //-----------------------------------------------
 // Version courte
 //-----------------------------------------------
-// Cette version permet de comprendre le contexte
-// de la fonction et sa logique.
 
 function sommer_fractions (nbr1, nbr2) {
     let [num1,den1]=nbr1.split("/").map(Number);
@@ -40,10 +38,6 @@ console.log(`${nombre1} + ${nombre2} = ${res}`);
 //-----------------------------------------------
 // Version golf
 //-----------------------------------------------
-// Version condensee et optimisee du code, utili-
-// sant des noms de variables courts et combinant
-// certaines operations pour reduire la taille du
-// code. Pour la beaute du geste !
 
 const F=(n,N)=>{let[a,b]=n.split("/").map(Number)
 ,[c,d]=N.split("/").map(Number),D=(b===d)?b:b*d,A
@@ -53,9 +47,7 @@ const F=(n,N)=>{let[a,b]=n.split("/").map(Number)
 
 //-----------------------------------------------
 // Version detaillee
-/*-----------------------------------------------
-/ Cette version permet de suivre pas a pas l'exe-
-/ cution de la fonction. */
+//-----------------------------------------------
 
 function sommer_fractions_detaillee(nbr_1, nbr_2)
 {
@@ -85,10 +77,7 @@ function sommer_fractions_detaillee(nbr_1, nbr_2)
 
 //-----------------------------------------------
 // Version commentee
-/*-----------------------------------------------
-/ Similaire a la version detaillee, mais avec des
-/ commentaires concis afin d'expliquer les etapes
-/ principales de la fonction. */
+//-----------------------------------------------
 
 function sommer_fractions_commentee(nbr_1, nbr_2)
 {

@@ -9,8 +9,6 @@
 # -----------------------------------------------
 # Version courte
 # -----------------------------------------------
-# Cette version permet de comprendre le contexte
-# de la fonction et sa logique.
 
 def puissances(nombre, puissance):
     liste = list()
@@ -39,10 +37,6 @@ print(f" {res}")
 # -----------------------------------------------
 # Version golf
 # -----------------------------------------------
-# Version condensee et optimisee du code, utili-
-# sant des noms de variables courts et combinant
-# certaines operations pour reduire la taille du
-# code. Pour la beaute du geste !
 
 P=lambda n,p:[*map(lambda i:n**i,range(1,p+1))]
 
@@ -51,8 +45,6 @@ P=lambda n,p:[*map(lambda i:n**i,range(1,p+1))]
 # -----------------------------------------------
 # Version detaillee
 # -----------------------------------------------
-# Cette version permet de suivre pas a pas l'exe-
-# cution de la fonction.
 
 def puissances(nombre, puissance):
     
@@ -69,9 +61,6 @@ def puissances(nombre, puissance):
 # -----------------------------------------------
 # Version commentee
 # -----------------------------------------------
-# Proche de la version raccourcie, mais avec des
-# commentaires concis pour expliquer les etapes
-# principales de la fonction.
 
 def puissances(nombre, puissance):
     

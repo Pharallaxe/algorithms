@@ -5,12 +5,9 @@
 /----------------------------------------------*/
 
 
-
 //-----------------------------------------------
 // Version courte
 //-----------------------------------------------
-// Cette version permet de comprendre le contexte
-// de la fonction et sa logique.
 
 let quadratique = (tableau) => {
     let somme = tableau.reduce((a,x)=>a+x**2,0);
@@ -32,10 +29,6 @@ console.log("La moyenne est",moyenne.toFixed(2));
 //-----------------------------------------------
 // Version golf
 //-----------------------------------------------
-// Version condensee et optimisee du code, utili-
-// sant des noms de variables courts et combinant
-// certaines operations pour reduire la taille du
-// code. Pour la beaute du geste !
 
 let Q=(l)=>Math.sqrt(l.reduce((a,x)=>a+x**2,0)/l
 .length);
@@ -44,9 +37,7 @@ let Q=(l)=>Math.sqrt(l.reduce((a,x)=>a+x**2,0)/l
 
 //-----------------------------------------------
 // Version detaillee
-/*-----------------------------------------------
-/ Cette version permet de suivre pas a pas l'exe-
-/ cution de la fonction. */
+//-----------------------------------------------
 
 function quadratique_detaillee(tableau) {
     let nbr_valeurs = tableau.length;
@@ -68,10 +59,7 @@ function quadratique_detaillee(tableau) {
 
 //-----------------------------------------------
 // Version commentee
-/*-----------------------------------------------
-/ Similaire a la version detaillee, mais avec des
-/ commentaires concis afin d'expliquer les etapes
-/ principales de la fonction. */
+//-----------------------------------------------
 
 function quadratique_commentee(tableau) {
     

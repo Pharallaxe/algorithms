@@ -9,8 +9,6 @@
 //-----------------------------------------------
 // Version courte
 //-----------------------------------------------
-// Cette version permet de comprendre le contextee
-// de la fonction et sa logique.
 
 function conversion(seconde) {
   if (seconde == 0) { return "0 seconde"; }
@@ -71,11 +69,6 @@ for (let seconde of secondes) {
 //-----------------------------------------------
 // Version golf
 //-----------------------------------------------
-// Version condensee et optimisee du code, utili-
-// sant des noms de variables courts et combinant
-// certaines operations pour reduire la taille du
-// code. Pour la beaute du geste !
-
 
 const C=s=>{ if (s==0) return"0 seconde"; let d=[
 31536e2,86400,3600,60],n=["annee","jour","heure",
@@ -90,9 +83,8 @@ j]+" "+n[j]+(r[j]>1?"s":"")+(c>=2?i==1?" et ":i>1
 
 //-----------------------------------------------
 // Version detaillee
-/*-----------------------------------------------
-/ Cette version permet de suivre pas a pas l'exe-
-/ cution de la fonction. */
+//-----------------------------------------------
+
 
 function conversion_detaillee(seconde) {
 
@@ -159,10 +151,7 @@ function conversion_detaillee(seconde) {
 
 //-----------------------------------------------
 // Version commentee
-/*-----------------------------------------------
-/ Similaire a la version detaillee, mais avec des
-/ commentaires concis afin d'expliquer les etapes
-/ principales de la fonction. */
+//-----------------------------------------------
 
 function conversion_commentee(seconde) {
 

@@ -11,8 +11,6 @@
 # -----------------------------------------------
 # Version courte
 # -----------------------------------------------
-# Cette version permet de comprendre le contexte
-# de la fonction et sa logique.
 
 function anagramme($str1, $str2) {
     $str_A = str_split(strtoupper($str1));
@@ -42,10 +40,6 @@ echo "Les chaînes $chaine des anagrammes.";
 # -----------------------------------------------
 # Version golf
 # -----------------------------------------------
-# Version condensee et optimisee du code, utili-
-# sant des noms de variables courts et combinant
-# certaines operations pour reduire la taille du
-# code. Pour la beaute du geste !
 
 $A=function($B,$C){return count_chars(strtoupper(
 $B),1)==count_chars(strtoupper($C),1);};
@@ -55,8 +49,6 @@ $B),1)==count_chars(strtoupper($C),1);};
 # -----------------------------------------------
 # Version detaillee
 # -----------------------------------------------
-# Cette version permet de suivre pas a pas l'exe-
-# cution de la fonction.
 
 function anagramme_detaillee($str_1, $str_2) {
 
@@ -83,9 +75,6 @@ function anagramme_detaillee($str_1, $str_2) {
 # -----------------------------------------------
 # Version commentee
 # -----------------------------------------------
-# Similaire a la version detaillee, mais avec des
-# commentaires concis afin d'expliquer les etapes
-# principales de la fonction.
 
 function anagramme_commentee($str_1, $str_2) {
 

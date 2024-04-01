@@ -21,8 +21,6 @@ public class Harmonique {
 //-----------------------------------------------
 // Version courte
 //-----------------------------------------------
-// Cette version permet de comprendre le contexte
-// de la fonction et sa logique.
 
 public static double harmonique(int[] tableau) {
 
@@ -52,10 +50,6 @@ public static void main(String[]args) {
 //-----------------------------------------------
 // Version golf
 //-----------------------------------------------
-// Version condensee et optimisee du code, utili-
-// sant des noms de variables courts et combinant
-// certaines operations pour reduire la taille du
-// code. Pour la beaute du geste !
 
 public static double H(int[] T) {
    return T.length/java.util.Arrays.stream(T)
@@ -66,9 +60,8 @@ public static double H(int[] T) {
 
 //-----------------------------------------------
 // Version detaillee
-/*-----------------------------------------------
-/ Cette version permet de suivre pas a pas l'exe-
-/ cution de la fonction. */
+//-----------------------------------------------
+
 
 public static double harmonique_detaillee(
         int[] tableau)
@@ -91,10 +84,8 @@ public static double harmonique_detaillee(
 
 //-----------------------------------------------
 // Version commentee
-/*-----------------------------------------------
-/ Similaire a la version detaillee, mais avec des
-/ commentaires concis afin d'expliquer les etapes
-/ principales de la fonction. */
+//-----------------------------------------------
+
 
 public static double harmonique_commentee(
         int[] tableau)
@@ -132,3 +123,4 @@ public static double harmonique_commentee(
 
 
 
+//

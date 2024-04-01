@@ -10,8 +10,6 @@
 # -----------------------------------------------
 # Version courte
 # -----------------------------------------------
-# Cette version permet de comprendre le contexte
-# de la fonction et sa logique.
 
 def distance_euclidienne(*points):
     
@@ -50,10 +48,6 @@ print("La distance entre les points est de :",
 # -----------------------------------------------
 # Version golf
 # -----------------------------------------------
-# Version condensee et optimisee du code, utili-
-# sant des noms de variables courts et combinant
-# certaines operations pour reduire la taille du
-# code. Pour la beaute du geste !
 
 D=lambda *points:sum(((x1-x2)**2+(y1-y2)**2)**0.5
 for (x1,y1),(x2,y2) in zip(points,points[1:]))
@@ -62,8 +56,6 @@ for (x1,y1),(x2,y2) in zip(points,points[1:]))
 # -----------------------------------------------
 # Version detaillee
 # -----------------------------------------------
-# Cette version permet de suivre pas a pas l'exe-
-# cution de la fonction.
 
 def distance_euclidienne_detaillee(*points):
     
@@ -90,9 +82,6 @@ def distance_euclidienne_detaillee(*points):
 # -----------------------------------------------
 # Version commentee
 # -----------------------------------------------
-# Similaire a la version detaillee, mais avec des
-# commentaires concis afin d'expliquer les etapes
-# principales de la fonction.
 
 def distance_euclidienne_commentee(*points):
     

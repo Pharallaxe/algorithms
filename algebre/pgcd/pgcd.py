@@ -13,8 +13,6 @@
 # -----------------------------------------------
 # Version courte
 # -----------------------------------------------
-# Cette version permet de comprendre le contexte
-# de la fonction et sa logique.
 
 def pgcd(nb1, nb2):
     if nb1 < nb2:
@@ -42,24 +40,14 @@ print(f"Le pgcd de {nbr_1} et {nbr_2} est {res}")
 # -----------------------------------------------
 # Version golf
 # -----------------------------------------------
-# Version condensee et optimisee du code, utili-
-# sant des noms de variables courts et combinant
-# certaines operations pour reduire la taille du
-# code. Pour la beaute du geste !
 
 P=lambda n,N:n if not N else P(N,n%N)
 
-nbr_1 = 18
-nbr_2 = 24
-res = P(nbr_1, nbr_2)
 
-print(f"Le pgcd de {nbr_1} et {nbr_2} est {res}")
 
 # -----------------------------------------------
 # Version detaillee
 # -----------------------------------------------
-# Cette version permet de suivre pas a pas l'exe-
-# cution de la fonction.
 
 def pgcd_detaillee(nombre_1, nombre_2):
     
@@ -80,9 +68,6 @@ def pgcd_detaillee(nombre_1, nombre_2):
 # -----------------------------------------------
 # Version commentee
 # -----------------------------------------------
-# Similaire a la version detaillee, mais avec des
-# commentaires concis afin d'expliquer les etapes
-# principales de la fonction.
 
 def pgcd_commentee(nombre_1, nombre_2):
     

@@ -9,8 +9,6 @@
 # -----------------------------------------------
 # Version courte
 # -----------------------------------------------
-# Cette version permet de comprendre le contexte
-# de la fonction et sa logique.
 
 def premier(nombre):
     if nombre < 2:
@@ -39,10 +37,6 @@ for nombre in nombres:
 # -----------------------------------------------
 # Version golf
 # -----------------------------------------------
-# Version condensee et optimisee du code, utili-
-# sant des noms de variables courts et combinant
-# certaines operations pour reduire la taille du
-# code. Pour la beaute du geste !
 
 P=lambda n:n>1 and all(n%i for i in range(2,int(n
 **0.5)+1))
@@ -52,8 +46,6 @@ P=lambda n:n>1 and all(n%i for i in range(2,int(n
 # -----------------------------------------------
 # Version detaillee
 # -----------------------------------------------
-# Cette version permet de suivre pas a pas l'exe-
-# cution de la fonction.
 
 def premier_detaillee(nombre):
     
@@ -74,9 +66,6 @@ def premier_detaillee(nombre):
 # -----------------------------------------------
 # Version commentee
 # -----------------------------------------------
-# Similaire a la version detaillee, mais avec des
-# commentaires concis afin d'expliquer les etapes
-# principales de la fonction.
 
 def premier_commentee(nombre):
     

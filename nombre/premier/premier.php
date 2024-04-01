@@ -1,16 +1,14 @@
 <?php
-// -----------------------------------------------
-// premier
-// -----------------------------------------------
-// Un nombre premier est un nombre qui n'est divi-
-// sible que par 1 ou par lui-même.
-// -----------------------------------------------
+# -----------------------------------------------
+# premier
+# -----------------------------------------------
+# Un nombre premier est un nombre qui n'est divi-
+# sible que par 1 ou par lui-même.
+# -----------------------------------------------
 
-// -----------------------------------------------
-// Version courte
-// -----------------------------------------------
-// Cette version permet de comprendre le contexte
-// de la fonction et sa logique.
+# -----------------------------------------------
+# Version courte
+# -----------------------------------------------
 
 function premier($nombre) {
     if ($nombre < 2) {
@@ -32,9 +30,9 @@ function premier($nombre) {
 
 
 
-// -----------------------------------------------
-// Application
-// -----------------------------------------------
+# -----------------------------------------------
+# Application
+# -----------------------------------------------
 
 $nombres = [76, 101, 17, 58];
 foreach ($nombres as $nombre) {
@@ -45,24 +43,18 @@ foreach ($nombres as $nombre) {
 
 
 
-// -----------------------------------------------
-// Version golf
-// -----------------------------------------------
-// Version condensee et optimisee du code, utili-
-// sant des noms de variables courts et combinant
-// certaines operations pour reduire la taille du
-// code. Pour la beaute du geste !
+# -----------------------------------------------
+# Version golf
+# -----------------------------------------------
 
 $P=fn($n)=>$n>1&&array_reduce(range(2,floor(sqrt(
 $n))),fn($C,$i)=>$C&&$n%$i,1);
 
 
 
-// -----------------------------------------------
-// Version detaillee
-// -----------------------------------------------
-// Cette version permet de suivre pas a pas l'exe-
-// cution de la fonction.
+# -----------------------------------------------
+# Version detaillee
+# -----------------------------------------------
 
 function premier_detaillee($nombre) {
     if ($nombre < 1) {
@@ -84,12 +76,9 @@ function premier_detaillee($nombre) {
 
 
 
-// -----------------------------------------------
-// Version commentee
-// -----------------------------------------------
-// Similaire a la version detaillee, mais avec des
-// commentaires concis afin d'expliquer les etapes
-// principales de la fonction.
+# -----------------------------------------------
+# Version commentee
+# -----------------------------------------------
 
 function premier_commentee($nombre) {
 

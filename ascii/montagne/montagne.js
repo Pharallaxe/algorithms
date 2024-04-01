@@ -9,8 +9,6 @@
 //-----------------------------------------------
 // Version courte
 //-----------------------------------------------
-// Cette version permet de comprendre le contexte
-// de la fonction et sa logique.
 
 function montagne(sommets) {
     let paysage = [];
@@ -48,10 +46,6 @@ console.log(montagnes);
 //-----------------------------------------------
 // Version golf
 //-----------------------------------------------
-// Version condensee et optimisee du code, utili-
-// sant des noms de variables courts et combinant
-// certaines operations pour reduire la taille du
-// code. Pour la beaute du geste !
 
 const M=s=>{let p=[],m=Math.max(...s);for(let j=0
 ;j<=m;j++){let l="";for(let e of s)l+=e<j+1?" "
@@ -63,9 +57,7 @@ return p.reverse().join("\n")}
 
 //-----------------------------------------------
 // Version detaillee
-/*-----------------------------------------------
-/ Cette version permet de suivre pas a pas l'exe-
-/ cution de la fonction. */
+//-----------------------------------------------
 
 function montagne_detaillee(sommets) {
 
@@ -106,10 +98,7 @@ function montagne_detaillee(sommets) {
 
 //-----------------------------------------------
 // Version commentee
-/*-----------------------------------------------
-/ Similaire a la version detaillee, mais avec des
-/ commentaires concis afin d'expliquer les etapes
-/ principales de la fonction. */
+//-----------------------------------------------
 
 function montagne_commentee(sommets) {
 

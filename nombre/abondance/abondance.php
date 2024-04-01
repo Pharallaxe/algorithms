@@ -5,15 +5,21 @@
 # -----------------------------------------------
 # Fonction qui retourne l'abondance d'un nombre.
 # L'abondance c'est le rapport entre la somme des
-# diviseurs du nombre et le nombre lui-même.
+# diviseurs du nombre sauf lui même et le nombre
+# lui-même.
+
+# Ex : L'abondance de 28  est de 1. En effet, ses
+# diviseurs sont 1, 2, 4, 7, 14. Leur somme égale
+# 28. C'est un nombre parfait. Lorsque l'abondan-
+# ce est au dessus de 1, on dit que c'est un nom-
+# bre abondant. Si elle est en-deça de 1, on dira
+# qu'il est déficient.
 # -----------------------------------------------
 
 
 # -----------------------------------------------
 # Version courte
 # -----------------------------------------------
-# Cette version permet de comprendre le contexte
-# de la fonction et sa logique.
 
 function abondance($nombre) {
     if ($nombre < 1) {
@@ -61,10 +67,6 @@ foreach ($nombres1 as $nb) {
 # -----------------------------------------------
 # Version golf
 # -----------------------------------------------
-# Version condensee et optimisee du code, utili-
-# sant des noms de variables courts et combinant
-# certaines operations pour reduire la taille du
-# code. Pour la beaute du geste !
 
 $A=function($n){return($D=array_sum(array_filter(
 range(1,$n-1),fn($i)=>$n%$i==0)))/$n>=1?$D/$n:
@@ -75,8 +77,6 @@ null;};
 # -----------------------------------------------
 # Version detaillee
 # -----------------------------------------------
-# Cette version permet de suivre pas a pas l'exe-
-# cution de la fonction.
 
 function abondance_detaillee($nombre) {
     if ($nombre < 1) {
@@ -101,9 +101,6 @@ function abondance_detaillee($nombre) {
 # -----------------------------------------------
 # Version commentee
 # -----------------------------------------------
-# Similaire a la version detaillee, mais avec des
-# commentaires concis afin d'expliquer les etapes
-# principales de la fonction.
 
 function abondance_commentee($nombre) {
 

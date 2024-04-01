@@ -12,8 +12,6 @@
 //-----------------------------------------------
 // Version courte
 //-----------------------------------------------
-// Cette version permet de comprendre le contexte
-// de la fonction et sa logique.
 
 // Resoud les equations dans l'ensemble des reels
 function solveur_reel(a, b, c) {
@@ -61,10 +59,6 @@ console.log(`Les solutions sont {${sol_2}}`);
 //-----------------------------------------------
 // Version golf
 //-----------------------------------------------
-// Version condensee et optimisee du code, utili-
-// sant des noms de variables courts et combinant
-// certaines operations pour reduire la taille du
-// code. Pour la beaute du geste !
 
 S=(a,b,c)=>(F=e=>e.toFixed(2),D=b**2-4*a*c,s=D===
 0?[-b/(2*a)]:D>0?(d=Math.sqrt(D),x1=(-b-d)/(2*a),
@@ -76,9 +70,6 @@ x2=(-b+d)/(2*a),[Math.min(x1,x2),Math.max(x1,x2)]
 //-----------------------------------------------
 // Version commentee
 //-----------------------------------------------
-// Proche de la version raccourcie, mais avec des
-// commentaires concis pour expliquer les etapes
-// principales de la fonction.
 
 function solveur_reel_commentee(a, b, c) {
 
@@ -119,9 +110,6 @@ function solveur_reel_commentee(a, b, c) {
 //-----------------------------------------------
 // Version courte pour les complexes
 //-----------------------------------------------
-// Cette version permet de comprendre le contexte
-// de la fonction et sa logique.
-
 
 // Resoud les equations dans les complexes.
 function solveur_complexe(a, b, c) {

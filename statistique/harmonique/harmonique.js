@@ -20,8 +20,6 @@
 //-----------------------------------------------
 // Version courte
 //-----------------------------------------------
-// Cette version permet de comprendre le contexte
-// de la fonction et sa logique.
 
 function harmonique(tableau) {
     let somme = tableau.reduce((a,b)=>a+(1/b),0);
@@ -38,20 +36,16 @@ function harmonique(tableau) {
 // pendant encore une heure 90 km/h, c'est comme
 // si vous aviez fait pendant deux heures....
 
-// let tableau = [50, 90]
-// let moyenne = harmonique(tableau);
-// moyenne = moyenne.toFixed(2)
-// console.log("La moyenne est", moyenne)
+let tableau = [50, 90]
+let moyenne = harmonique(tableau);
+moyenne = moyenne.toFixed(2)
+console.log("La moyenne est", moyenne)
 
 
 
 //-----------------------------------------------
 // Version golf
 //-----------------------------------------------
-// Version condensee et optimisee du code, utili-
-// sant des noms de variables courts et combinant
-// certaines operations pour reduire la taille du
-// code. Pour la beaute du geste !
 
 let H=l=>l.length/l.reduce((a,n)=>a+1/n,0);
 
@@ -59,9 +53,7 @@ let H=l=>l.length/l.reduce((a,n)=>a+1/n,0);
 
 //-----------------------------------------------
 // Version detaillee
-/*-----------------------------------------------
-/ Cette version permet de suivre pas a pas l'exe-
-/ cution de la fonction. */
+//-----------------------------------------------
 
 function harmonique_detaillee(tableau) {
     let longueur = tableau.length;
@@ -81,10 +73,7 @@ function harmonique_detaillee(tableau) {
 
 //-----------------------------------------------
 // Version commentee
-/*-----------------------------------------------
-/ Similaire a la version detaillee, mais avec des
-/ commentaires concis afin d'expliquer les etapes
-/ principales de la fonction. */
+//-----------------------------------------------
 
 function harmonique_commentee(tableau) {
     

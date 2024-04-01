@@ -13,8 +13,6 @@ public class Anagramme {
 //-----------------------------------------------
 // Version courte
 //-----------------------------------------------
-// Cette version permet de comprendre le contexte
-// de la fonction et sa logique.
 
     public static boolean anagramme(
             String str1, String str2) {
@@ -55,10 +53,6 @@ public class Anagramme {
 //-----------------------------------------------
 // Version golf
 //-----------------------------------------------
-// Version condensee et optimisee du code, utili-
-// sant des noms de variables courts et combinant
-// certaines operations pour reduire la taille du
-// code. Pour la beaute du geste !
 
 static boolean A(String s1,String s2){char[] a=s1.
 toUpperCase().toCharArray(),b=s2.toUpperCase()
@@ -70,10 +64,6 @@ String(b));}
 //-----------------------------------------------
 // Version commentee
 //-----------------------------------------------
-// Proche de la version raccourcie, mais avec des
-// commentaires concis pour expliquer les etapes
-// principales de la fonction.
-
 
     public static boolean anagramme_explication(
             String str1,

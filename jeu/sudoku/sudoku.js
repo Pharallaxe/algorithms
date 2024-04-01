@@ -1,15 +1,15 @@
 //-----------------------------------------------
 // sudoku_solveur 
 /*-----------------------------------------------
-/  Convertir entre differentes bases numeriques.
+/ Fonction pour resoudre un sudoku de taille 4 ou
+/ 9 et qui n'es pas un sudoku tres complexe a re-
+/ soudre.
 /----------------------------------------------*/
 
 
 //-----------------------------------------------
 // Version courte
 //-----------------------------------------------
-// Cette version permet de comprendre le contexte
-// de la fonction et sa logique.
 
 function sudoku_solveur(grille) {
     let taille = grille.length;
@@ -125,10 +125,6 @@ if (resultat_4) {
 //-----------------------------------------------
 // Version golf
 //-----------------------------------------------
-// Version condensee et optimisee du code, utili-
-// sant des noms de variables courts et combinant
-// certaines operations pour reduire la taille du
-// code. Pour la beaute du geste !
 
 let SR=g=>{let t=g.length,m=Math.sqrt(t);for(let
 R=0;R<t;R++){for(let C= 0;C<t;C++){if(!g[R][C]){
@@ -143,9 +139,7 @@ g[R][C]=[...U][0];return SR(g);}}}}return g;}
 
 //-----------------------------------------------
 // Version detaillee
-/*-----------------------------------------------
-/ Cette version permet de suivre pas a pas l'exe-
-/ cution de la fonction. */
+//-----------------------------------------------
 
 function sudoku_solveur_commentee(grille) {
 
@@ -217,10 +211,7 @@ function sudoku_solveur_commentee(grille) {
 
 //-----------------------------------------------
 // Version commentee
-/*-----------------------------------------------
-/ Similaire a la version detaillee, mais avec des
-/ commentaires concis afin d'expliquer les etapes
-/ principales de la fonction. */
+//-----------------------------------------------
 
 function sudoku_solveur_commentee(grille) {
 

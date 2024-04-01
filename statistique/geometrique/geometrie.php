@@ -1,28 +1,26 @@
 <?php
 
-// -----------------------------------------------
-// geometrique 
-// -----------------------------------------------
-// Permet de realiser une moyenne geometrique qui
-// est plus insensible aux valeurs elevees que la
-// moyenne arithmetique. Elle permet donc une es-
-// timation meilleure des tendances centrales.
+# -----------------------------------------------
+# geometrique 
+# -----------------------------------------------
+# Permet de realiser une moyenne geometrique qui
+# est plus insensible aux valeurs elevees que la
+# moyenne arithmetique. Elle permet donc une es-
+# timation meilleure des tendances centrales.
 
-// Cette moyenne de n nombres (x1, x2,..., xn) est
-// calculée en multipliant tous les nombres ensem-
-// ble, puis en prenant la racine enième de ce mê-
-// me produit.
+# Cette moyenne de n nombres (x1, x2,..., xn) est
+# calculée en multipliant tous les nombres ensem-
+# ble, puis en prenant la racine enième de ce mê-
+# me produit.
 
-// Formule : MG = (x1 * x2 * ... * xn) ** (1/n)
+# Formule : MG = (x1 * x2 * ... * xn) ** (1/n)
 
-//------------------------------------------------
+#------------------------------------------------
 
 
-// -----------------------------------------------
-// Version courte
-// -----------------------------------------------
-// Cette version permet de comprendre le contexte
-// de la fonction et sa logique.
+# -----------------------------------------------
+# Version courte
+# -----------------------------------------------
 
 function geometrique($tableau) {
     $produit = 1;
@@ -36,9 +34,9 @@ function geometrique($tableau) {
 
 
 
-// -----------------------------------------------
-// Application
-// -----------------------------------------------
+# -----------------------------------------------
+# Application
+# -----------------------------------------------
 
 $tableau = [12, 14, 16, 8, 6, 18];
 $moyenne = geometrique($tableau);
@@ -46,24 +44,18 @@ echo "La moyenne est " . round($moyenne, 2);
 
 
 
-// -----------------------------------------------
-// Version golf
-// -----------------------------------------------
-// Version condensee et optimisee du code, utili-
-// sant des noms de variables courts et combinant
-// certaines operations pour reduire la taille du
-// code. Pour la beaute du geste !
+# -----------------------------------------------
+# Version golf
+# -----------------------------------------------
 
 $G=function($l){return pow(array_product($l),1/
 count($l));};
 
 
 
-// -----------------------------------------------
-// Version detaillee
-// -----------------------------------------------
-// Cette version permet de suivre pas a pas l'exe-
-// cution de la fonction.
+# -----------------------------------------------
+# Version detaillee
+# -----------------------------------------------
 
 function geometrique_detaillee($tableau) {
     
@@ -84,12 +76,9 @@ function geometrique_detaillee($tableau) {
 
 
 
-// -----------------------------------------------
-// Version commentee
-// -----------------------------------------------
-// Similaire a la version detaillee, mais avec des
-// commentaires concis afin d'expliquer les etapes
-// principales de la fonction.
+# -----------------------------------------------
+# Version commentee
+# -----------------------------------------------
 
 function geometrique_commentee($tableau) {
     

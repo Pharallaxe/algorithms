@@ -5,6 +5,11 @@ Bienvenue dans la bibliothèque d'algorithmes ! Cette collection regroupe une va
 ## Contenu
 
 Vous trouverez des algorithmes de conversion, de manipulation de chaine, de mathématiques, de nombre, de statistiques, etc.
+Chaque algorithme est résolu, autant de fois que possible, en 4 versions :
+* En version normale, la plus courante,
+* En code golf, c'est-à-dire de manière condensee et optimisee du code, utilisant des noms de variables courts et combinant certaines operations pour reduire la taille du code. Pour la beaute du geste !
+* En version détaillée, chaque étape est détaillée,
+* En version commentée, en plus d'être détaillée, chaque étape est commentée.
 
 ## Langages de programmation
 
@@ -76,10 +81,10 @@ Les algorithmes sont disponibles dans une variété de langages de programmation
 ---
 
 9 - [STATISTIQUE](statistique)
-* [ecart-type](statistique/ecart-type) => [JS](statistique/ecart-type/ecart-type.js) - [PHP](statistique/ecart-type/ecart-type.php) - [Python](statistique/ecart-type/ecart-type.py)
-* [arithmetique](statistique/arithmetique) => [Java](statistique/arithmetique/MoyenneArithmetique.java) - [JS](statistique/arithmetique/arithmetique.js) - [PHP](statistique/arithmetique/arithmetique.php) - [Python](statistique/arithmetique/arithmetique.py)
-* [geometrique](statistique/geometrique) => [Java](statistique/geometrique/MoyenneGeometrique.java) - [JS](statistique/geometrique/geometrique.js) - [PHP](statistique/geometrique/geometrique.php) - [Python](statistique/geometrique/geometrique.py)
-* [harmonique](statistique/harmonique) => [Java](statistique/harmonique/MoyenneHarmonique.java) - [JS](statistique/harmonique/harmonique.js) - [PHP](statistique/harmonique/harmonique.php) - [Python](statistique/harmonique/harmonique.py)
+* [ecart_type](statistique/ecart_type) => [JS](statistique/ecart_type/ecart_type.js) - [PHP](statistique/ecart_type/ecart_type.php) - [Python](statistique/ecart_type/ecart_type.py)
+* [arithmetique](statistique/arithmetique) => [Java](statistique/arithmetique/Arithmetique.java) - [JS](statistique/arithmetique/arithmetique.js) - [PHP](statistique/arithmetique/arithmetique.php) - [Python](statistique/arithmetique/arithmetique.py)
+* [geometrique](statistique/geometrique) => [Java](statistique/geometrique/Geometrique.java) - [JS](statistique/geometrique/geometrique.js) - [PHP](statistique/geometrique/geometrique.php) - [Python](statistique/geometrique/geometrique.py)
+* [harmonique](statistique/harmonique) => [Java](statistique/harmonique/Harmonique.java) - [JS](statistique/harmonique/harmonique.js) - [PHP](statistique/harmonique/harmonique.php) - [Python](statistique/harmonique/harmonique.py)
 * [quadratique](statistique/quadratique) => [JS](statistique/quadratique/quadratique.js) - [Python](statistique/quadratique/quadratique.py)
 
 ---

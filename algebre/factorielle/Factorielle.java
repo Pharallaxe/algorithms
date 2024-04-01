@@ -10,8 +10,6 @@ public class Factorielle {
 // -----------------------------------------------
 // Version courte
 // -----------------------------------------------
-// Cette version permet de comprendre le contexte
-// de la fonction et sa logique.
 
 public static int factorielle(int nombre) {
     int produit = 1;
@@ -37,10 +35,6 @@ public static void main(String[] args) {
 // -----------------------------------------------
 // Version golf
 // -----------------------------------------------
-// Version condensee et optimisee du code, utili-
-// sant des noms de variables courts et combinant
-// certaines operations pour reduire la taille du
-// code. Pour la beaute du geste !
 
 public static int F(int n){
 int p=1;for(int i=1;i<=n;i++)p*=i;return p;}
@@ -48,9 +42,6 @@ int p=1;for(int i=1;i<=n;i++)p*=i;return p;}
 //-----------------------------------------------
 // Version commentee
 //-----------------------------------------------
-// Proche de la version raccourcie, mais avec des
-// commentaires concis pour expliquer les etapes
-// principales de la fonction.
 
 public static int factorielle_commentee(
     int nombre) {

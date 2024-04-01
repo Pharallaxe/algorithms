@@ -81,10 +81,7 @@ function diviseurs_detaillee(nombre){
 
 //-----------------------------------------------
 // Version commentee
-/*-----------------------------------------------
-/ Similaire a la version detaillee, mais avec des
-/ commentaires concis afin d'expliquer les etapes
-/ principales de la fonction. */
+//-----------------------------------------------
 
 function diviseurs_commentee(nombre) {
     // Initialiser une liste pour les diviseurs.

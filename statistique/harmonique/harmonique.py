@@ -20,8 +20,6 @@
 # -----------------------------------------------
 # Version courte
 # -----------------------------------------------
-# Cette version permet de comprendre le contexte
-# de la fonction et sa logique.
 
 def harmonique(liste):
     somme = sum(1 / n for n in liste)
@@ -33,10 +31,6 @@ def harmonique(liste):
 # Application
 # -----------------------------------------------
 
-# Si pendant une heure vous faites 50 km/h, puis
-# pendant encore une heure 90 km/h, c'est comme
-# si vous aviez fait pendant deux heures....
-
 liste = [50, 90]
 moyenne = harmonique(liste)
 print("La moyenne est", round(moyenne, 2))
@@ -45,10 +39,6 @@ print("La moyenne est", round(moyenne, 2))
 # -----------------------------------------------
 # Version golf
 # -----------------------------------------------
-# Version condensee et optimisee du code, utili-
-# sant des noms de variables courts et combinant
-# certaines operations pour reduire la taille du
-# code. Pour la beaute du geste !
 
 H=lambda l:len(l)/sum(1/n for n in l)
 
@@ -56,8 +46,6 @@ H=lambda l:len(l)/sum(1/n for n in l)
 # -----------------------------------------------
 # Version detaillee
 # -----------------------------------------------
-# Cette version permet de suivre pas a pas l'exe-
-# cution de la fonction.
 
 def harmonique_detaillee(liste):
     
@@ -75,9 +63,6 @@ def harmonique_detaillee(liste):
 # -----------------------------------------------
 # Version commentee
 # -----------------------------------------------
-# Similaire a la version detaillee, mais avec des
-# commentaires concis afin d'expliquer les etapes
-# principales de la fonction.
 
 def harmonique_commentee(liste):
     

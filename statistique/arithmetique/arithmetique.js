@@ -35,10 +35,6 @@ console.log("La moyenne est", moyenne);
 //-----------------------------------------------
 // Version golf
 //-----------------------------------------------
-// Version condensee et optimisee du code, utili-
-// sant des noms de variables courts et combinant
-// certaines operations pour reduire la taille du
-// code. Pour la beaute du geste !
 
 let A=(l)=>l.reduce((a,b)=>a+b)/l.length;
 
@@ -46,9 +42,7 @@ let A=(l)=>l.reduce((a,b)=>a+b)/l.length;
 
 //-----------------------------------------------
 // Version detaillee
-/*-----------------------------------------------
-/ Cette version permet de suivre pas a pas l'exe-
-/ cution de la fonction. */
+//-----------------------------------------------
 
 function arithmetique_detaillee(tableau) {
 
@@ -69,10 +63,7 @@ function arithmetique_detaillee(tableau) {
 
 //-----------------------------------------------
 // Version commentee
-/*-----------------------------------------------
-/ Similaire a la version detaillee, mais avec des
-/ commentaires concis afin d'expliquer les etapes
-/ principales de la fonction. */
+//-----------------------------------------------
 
 function arithmetique_commentee(tableau) {
 
@@ -97,7 +88,6 @@ function arithmetique_commentee(tableau) {
 
     // Retourner la moyenne arithmetique calculee.
     return moyenne;
-
 }
 
 

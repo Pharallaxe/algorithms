@@ -9,8 +9,6 @@
 //-----------------------------------------------
 // Version courte
 //-----------------------------------------------
-// Cette version permet de comprendre le contexte
-// de la fonction et sa logique.
 
 function factorielle(nombre) {
     let produit = 1;
@@ -31,13 +29,11 @@ function factorielle(nombre) {
 res = factorielle(6);
 console.log(`La factorielle de 6 est ${res}`);
 
+
+
 //-----------------------------------------------
 // Version golf
 //-----------------------------------------------
-// Version condensee et optimisee du code, utili-
-// sant des noms de variables courts et combinant
-// certaines operations pour reduire la taille du
-// code. Pour la beaute du geste !
 
 const F=n=>[...Array(n)].reduce((p,_,i)=>p*(i+1),
 1);
@@ -47,9 +43,6 @@ const F=n=>[...Array(n)].reduce((p,_,i)=>p*(i+1),
 //-----------------------------------------------
 // Version commentee
 //-----------------------------------------------
-// Proche de la version raccourcie, mais avec des
-// commentaires concis pour expliquer les etapes
-// principales de la fonction.
 
 function factorielle_commentee(nombre) {
 

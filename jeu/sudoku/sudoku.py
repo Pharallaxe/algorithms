@@ -10,8 +10,6 @@
 # -----------------------------------------------
 # Version courte
 # -----------------------------------------------
-# Cette version permet de comprendre le contexte
-# de la fonction et sa logique.
 
 def sudoku_solveur(grille):
     taille = len(grille)
@@ -55,6 +53,7 @@ def sudoku_solveur(grille):
         return True
 
     return grille if resoudre() else None
+
 
 
 # -----------------------------------------------
@@ -107,13 +106,11 @@ else:
 print("\n")
 print("\n")
 
+
+
 # -----------------------------------------------
 # Version golf
 # -----------------------------------------------
-# Version condensee et optimisee du code, utili-
-# sant des noms de variables courts et combinant
-# certaines operations pour reduire la taille du
-# code. Pour la beaute du geste !
 
 # XD Plus complique ici avec la recursion, si une
 # idee vous vient...
@@ -134,8 +131,6 @@ def SR(g):
 # -----------------------------------------------
 # Version detaillee
 # -----------------------------------------------
-# Cette version permet de suivre pas a pas l'exe-
-# cution de la fonction.
 
 def sudoku_solveur_detaillee(grille):
     taille = len(grille)
@@ -192,9 +187,6 @@ def sudoku_solveur_detaillee(grille):
 # -----------------------------------------------
 # Version commentee
 # -----------------------------------------------
-# Similaire a la version detaillee, mais avec des
-# commentaires concis afin d'expliquer les etapes
-# principales de la fonction.
 
 def sudoku_solveur_commentee(grille):
     # Determiner la taille du côte de la grille.

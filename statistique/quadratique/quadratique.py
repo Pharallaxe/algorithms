@@ -8,8 +8,6 @@
 # -----------------------------------------------
 # Version courte
 # -----------------------------------------------
-# Cette version permet de comprendre le contexte
-# de la fonction et sa logique.
 
 def quadratique(liste):
     somme_carres = sum(x ** 2 for x in liste)
@@ -26,10 +24,6 @@ print("La moyenne est", round(moyenne, 2))
 # -----------------------------------------------
 # Version golf
 # -----------------------------------------------
-# Version condensee et optimisee du code, utili-
-# sant des noms de variables courts et combinant
-# certaines operations pour reduire la taille du
-# code. Pour la beaute du geste !
 
 Q=lambda l:(sum(x**2 for x in l)/len(l))**0.5
 
@@ -38,8 +32,6 @@ Q=lambda l:(sum(x**2 for x in l)/len(l))**0.5
 # -----------------------------------------------
 # Version detaillee
 # -----------------------------------------------
-# Cette version permet de suivre pas a pas l'exe-
-# cution de la fonction.
 
 def quadratique_detaillee(liste):
     nbr_valeurs = len(liste)
@@ -58,10 +50,6 @@ def quadratique_detaillee(liste):
 # -----------------------------------------------
 # Version commentee
 # -----------------------------------------------
-# Similaire a la version detaillee, mais avec des
-# commentaires concis afin d'expliquer les etapes
-# principales de la fonction.
-
 
 def quadratique_commentee(liste):
     

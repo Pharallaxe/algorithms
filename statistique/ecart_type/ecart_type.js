@@ -11,8 +11,6 @@
 //-----------------------------------------------
 // Version courte
 //-----------------------------------------------
-// Cette version permet de comprendre le contexte
-// de la fonction et sa logique.
 
 function ecart_type(liste) {
 
@@ -39,10 +37,6 @@ console.log("L'écart-type est :", E_T.toFixed(2));
 //-----------------------------------------------
 // Version golf
 //-----------------------------------------------
-// Version condensee et optimisee du code, utili-
-// sant des noms de variables courts et combinant
-// certaines operations pour reduire la taille du
-// code. Pour la beaute du geste !
 
 const ET=l=>Math.sqrt(l.reduce((a,x)=>a+(x-(m=l.
 reduce((s,n)=>s+n,0)/l.length))**2,0)/l.length);
@@ -51,9 +45,7 @@ reduce((s,n)=>s+n,0)/l.length))**2,0)/l.length);
 
 //-----------------------------------------------
 // Version detaillee
-/*-----------------------------------------------
-/ Cette version permet de suivre pas a pas l'exe-
-/ cution de la fonction. */
+//-----------------------------------------------
 
 function ecart_type_detaillee(liste) {
 
@@ -84,11 +76,7 @@ function ecart_type_detaillee(liste) {
 
 //-----------------------------------------------
 // Version commentee
-/*-----------------------------------------------
-/ Similaire a la version detaillee, mais avec des
-/ commentaires concis afin d'expliquer les etapes
-/ principales de la fonction. */
-
+//-----------------------------------------------
 
 function ecart_type_commentee(liste) {
 

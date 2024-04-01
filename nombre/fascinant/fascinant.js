@@ -12,8 +12,6 @@
 //-----------------------------------------------
 // Version courte
 //-----------------------------------------------
-// Cette version permet de comprendre le contexte
-// de la fonction et sa logique.
 
 function fascinant(nombre) {
     const chaine_1 = String(nombre);
@@ -42,17 +40,22 @@ function fascinant(nombre) {
 // Application
 //-----------------------------------------------
 
-
+let nombres = [108, 133, 192, 5832];
+nombres.forEach(nb => {
+    let res = fascinant(nb);
+    if (res) {
+        console.log(nb, "est fascinant.");
+    }
+    else {
+        console.log(nb, "n'est pas fascinant.");
+    }
+})
 
 
 
 //-----------------------------------------------
 // Version golf
 //-----------------------------------------------
-// Version condensee et optimisee du code, utili-
-// sant des noms de variables courts et combinant
-// certaines operations pour reduire la taille du
-// code. Pour la beaute du geste !
 
 const F=n=>{let r=String(n)+String(2*n)+String(3*
 n);return[...Array(9).keys()].every(i=>r.includes
@@ -63,9 +66,6 @@ n);return[...Array(9).keys()].every(i=>r.includes
 //-----------------------------------------------
 // Version commentée
 //-----------------------------------------------
-// Proche de la version raccourcie, mais avec des
-// commentaires concis pour expliquer les étapes
-// principales de la fonction.
 
 function fascinant_commentee(nombre) {
     // Convertir le nombre en string.
