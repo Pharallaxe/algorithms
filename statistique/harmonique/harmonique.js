@@ -32,10 +32,6 @@ function harmonique(tableau) {
 // Application
 //-----------------------------------------------
 
-// Si pendant une heure vous faites 50 km/h, puis
-// pendant encore une heure 90 km/h, c'est comme
-// si vous aviez fait pendant deux heures....
-
 let tableau = [50, 90]
 let moyenne = harmonique(tableau);
 moyenne = moyenne.toFixed(2)

@@ -37,10 +37,6 @@ function harmonique($tableau) {
 #  Application
 # -----------------------------------------------
 
-# Si pendant une heure vous faites 50 km/h, puis
-# pendant encore une heure 90 km/h, c'est comme
-# si vous aviez fait pendant deux heures....
-
 $tableau = array(50, 90);
 $moyenne = harmonique($tableau);
 $moyenne = number_format($moyenne, 2);

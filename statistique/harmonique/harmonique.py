@@ -36,11 +36,13 @@ moyenne = harmonique(liste)
 print("La moyenne est", round(moyenne, 2))
 
 
+
 # -----------------------------------------------
 # Version golf
 # -----------------------------------------------
 
 H=lambda l:len(l)/sum(1/n for n in l)
+
 
 
 # -----------------------------------------------
@@ -59,6 +61,8 @@ def harmonique_detaillee(liste):
     moyenne = nbr_valeurs / somme
     
     return moyenne
+
+
 
 # -----------------------------------------------
 # Version commentee

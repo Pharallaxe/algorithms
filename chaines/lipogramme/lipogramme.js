@@ -36,8 +36,7 @@ res += est_lipogramme ? "est" : "n'est pas";
 res += ` un lipogramme en '${lettre}'.`;
 console.log(res);
     
-// Note : j'utilise une condition ternaire :
-// res = bool ? valeur_si_vraie : valeur_si_faux
+
 
 
 //-----------------------------------------------
