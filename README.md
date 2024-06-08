@@ -1,6 +1,13 @@
 # Bibliothèque d'algorithmes
 
+![Illustration de l'auteur](./img/pharallaxe.png)
+
+
 Bienvenue dans la bibliothèque d'algorithmes ! Cette collection regroupe une variété d'algorithmes utiles dans divers domaines informatiques. Que vous soyez débutant ou expérimenté, vous trouverez ici des implémentations en plusieurs langages de programmation.
+
+## Licence
+Ce projet est sous licence [Apache](./LICENSE).
+
 
 ## Contenu
 
@@ -10,8 +17,6 @@ Chaque algorithme est résolu, autant de fois que possible, en 4 versions :
 * En code golf, c'est-à-dire de manière condensee et optimisee du code, utilisant des noms de variables courts et combinant certaines operations pour reduire la taille du code. Pour la beaute du geste !
 * En version détaillée, chaque étape est détaillée,
 * En version commentée, en plus d'être détaillée, chaque étape est commentée.
-
-## Langages de programmation
 
 Les algorithmes sont disponibles dans une variété de langages de programmation qui sont, selon les algorithmes :
 
