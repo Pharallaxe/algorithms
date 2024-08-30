@@ -44,12 +44,12 @@ Les algorithmes sont disponibles dans une variété de langages de programmation
 
 ---
 
-3 - [CHAINE](chaine)
-* [anagramme](chaine/anagramme) => [JS](chaine/anagramme/anagramme.js) - [PHP](chaine/anagramme/anagramme.php) - [Python](chaine/anagramme/anagramme.py)
-* [deponctuation](chaine/deponctuation) => [JS](chaine/deponctuation/deponctuation.js) - [Python](chaine/deponctuation/deponctuation.py)
-* [lipogramme](chaine/lipogramme) => [JS](chaine/lipogramme/lipogramme.js) - [PHP](chaine/lipogramme/lipogramme.php) - [Python](chaine/lipogramme/lipogramme.py)
-* [palindrome](chaine/palindrome) => [JS](chaine/palindrome/palindrome.js) - [PHP](chaine/palindrome/palindrome.php) - [Python](chaine/palindrome/palindrome.py)
-* [pangramme](chaine/pangramme) => [Python](chaine/pangramme/pangramme.py)
+3 - [CHAINE](chaines)
+* [anagramme](chaines/anagramme) => [JS](chaines/anagramme/anagramme.js) - [PHP](chaines/anagramme/anagramme.php) - [Python](chaines/anagramme/anagramme.py)
+* [deponctuation](chaines/deponctuation) => [JS](chaines/deponctuation/deponctuation.js) - [Python](chaines/deponctuation/deponctuation.py)
+* [lipogramme](chaines/lipogramme) => [JS](chaines/lipogramme/lipogramme.js) - [PHP](chaines/lipogramme/lipogramme.php) - [Python](chaines/lipogramme/lipogramme.py)
+* [palindrome](chaines/palindrome) => [JS](chaines/palindrome/palindrome.js) - [PHP](chaines/palindrome/palindrome.php) - [Python](chaines/palindrome/palindrome.py)
+* [pangramme](chaines/pangramme) => [Python](chaines/pangramme/pangramme.py)
 
 ---
 
